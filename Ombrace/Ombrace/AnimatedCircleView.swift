@@ -16,12 +16,12 @@ struct AnimatedCircleView: View {
             ForEach(0..<2, id: \.self) { i in
                 Circle()
                     .fill(RadialGradient(gradient: Gradient(colors: [
-                        Color.orange.opacity(0.7),
-                        Color.yellow.opacity(0.8),
+                        Color.yellow.opacity(0.7),
+                        Color.orange.opacity(0.8),
                         Color.red.opacity(0.9),
                         Color.white.opacity(0.6)
                     ]), center: .center, startRadius: 10, endRadius: 120))
-                    .frame(width: animate ? 30 : 80, height: animate ? 30 : 80)
+                    .frame(width: animate ? 80 : 120, height: animate ? 80 : 120)
                     .rotationEffect(.degrees(animate ? 360 : 0))
                     .scaleEffect(animate ? 1.4 : 0.7)
                     .blur(radius: animate ? 15 : 5)

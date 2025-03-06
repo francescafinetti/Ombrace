@@ -80,9 +80,9 @@ struct BodyPointsView: View {
 
     private let points: [BodyPoint: CGPoint] = [
          
-        .head: CGPoint(x: 0.45, y: 0.15), // Testa
-        .leftShoulder: CGPoint(x: 0.3, y: 0.35), // Spalla sinistra
-        .rightShoulder: CGPoint(x: 0.7, y: 0.35), // Spalla destra
+        .head: CGPoint(x: 0.38, y: 0.25), // Testa
+        .leftShoulder: CGPoint(x: 0.4, y: 0.38), // Spalla sinistra
+        .rightShoulder: CGPoint(x: 0.6, y: 0.38), // Spalla destra
         .heart: CGPoint(x: 0.5, y: 0.75), // Cuore
         .stomach: CGPoint(x: 0.5, y: 0.9), // Stomaco
         .out: CGPoint(x: -10.0, y: -10.0)
