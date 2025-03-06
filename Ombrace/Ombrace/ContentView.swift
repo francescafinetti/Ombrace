@@ -63,7 +63,7 @@ struct ContentView: View {
             }
             
             
-        } .accentColor(Color.accent1)
+        } .accentColor(Color.accent2)
     }
     
     private func addItemIfEmpty() {

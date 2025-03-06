@@ -42,7 +42,7 @@ struct GuidedStartView: View {
                         .bold()
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(Color.accent1)
+                        .background(Color.accent2)
                         .foregroundColor(.white)
                         .cornerRadius(12)
                         .shadow(radius: 5)

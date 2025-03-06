@@ -30,7 +30,7 @@ struct IntertwinedCirclesView: View {
                     }) {
                         Image(systemName: isSoundOn ? "speaker.wave.3.fill" : "speaker.slash.fill")
                             .font(.title2)
-                            .foregroundColor(isSoundOn ? .accent1 : .gray)
+                            .foregroundColor(isSoundOn ? .accent2 : .gray)
                             .padding()
                     }
 
@@ -46,7 +46,7 @@ struct IntertwinedCirclesView: View {
                     }) {
                         Image(systemName: isVibrationOn ? "iphone.radiowaves.left.and.right" : "iphone")
                             .font(.title2)
-                            .foregroundColor(isVibrationOn ? .yellow : .gray)
+                            .foregroundColor(isVibrationOn ? .accent2 : .gray)
                             .padding()
                     }
                 }
@@ -60,7 +60,7 @@ struct IntertwinedCirclesView: View {
                         Circle()
                             .fill(RadialGradient(gradient: Gradient(colors: [
                                 Color.yellow.opacity(0.7),
-                                Color.orange.opacity(0.8),
+                                Color.accent2.opacity(0.8),
                                 Color.red.opacity(0.9),
                                 Color.white.opacity(0.6)
                             ]), center: .center, startRadius: 10, endRadius: 120))
@@ -74,13 +74,13 @@ struct IntertwinedCirclesView: View {
                             .animation(Animation.easeInOut(duration: 6).repeatForever(autoreverses: true), value: animate)
                             .overlay(
                                 Circle()
-                                    .stroke(Color.yellow.opacity(0.1), lineWidth: 2)
+                                    .stroke(Color.accent2.opacity(0.1), lineWidth: 2)
                                     .scaleEffect(animate ? 1.6 : 1)
                                     .animation(Animation.easeInOut(duration: 6).repeatForever(autoreverses: true), value: animate)
                             )
                             .overlay(
                                 Circle()
-                                    .stroke(Color.yellow.opacity(0.1), lineWidth: 2)
+                                    .stroke(Color.accent2.opacity(0.1), lineWidth: 2)
                                     .scaleEffect(animate ? 2.2 : 1)
                                     .animation(Animation.easeInOut(duration: 6).repeatForever(autoreverses: true), value: animate)
                             )
@@ -89,7 +89,7 @@ struct IntertwinedCirclesView: View {
                     if isCountingDown {
                         Text("\(countdown)")
                             .font(.system(size: 1, weight: .bold))
-                            .foregroundColor(.accent1)
+                            .foregroundColor(.accent2)
                             .transition(.opacity)
                             .animation(.easeInOut(duration: 1), value: countdown)
                     }
