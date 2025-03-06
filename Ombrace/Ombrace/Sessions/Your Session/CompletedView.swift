@@ -8,6 +8,10 @@ struct CompletedView: View {
                 AnimatedCircleView()
                     .frame(width: 500, height: 150)
                 
+            Image("heart")
+                
+                //è da scegliere sorry
+                
                 Text("Well done!")
                     .font(.title)
                     .bold()

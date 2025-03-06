@@ -17,7 +17,7 @@ struct GuidedStartView: View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
                 
-                Image("man")
+                Image("body")
                     .resizable()
                     .scaledToFit()
 
@@ -35,27 +35,29 @@ struct GuidedStartView: View {
                 .pickerStyle(SegmentedPickerStyle())
                 .padding()
 
-               
-                NavigationLink(destination: GuidedCountdownView(selectedPath: selectedPath), isActive: $navigateToSession) {
-                    Text("Start")
-                        .font(.title2)
-                        .bold()
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.accent2)
-                        .foregroundColor(.white)
-                        .cornerRadius(12)
-                        .shadow(radius: 5)
-                        .padding(.horizontal, 40)
+                                Button(action: {
+                                    navigateToSession = true
+                                }) {
+                                    Text("Start")
+                                        .font(.title2)
+                                        .bold()
+                                        .padding()
+                                        .frame(maxWidth: .infinity)
+                                        .background(Color.accent2)
+                                        .foregroundColor(.white)
+                                        .cornerRadius(12)
+                                        .shadow(radius: 5)
+                                        .padding(.horizontal, 40)
+                                }
+                                .padding(.top, 100)
+                            }
+                            .navigationDestination(isPresented: $navigateToSession) {
+                                GuidedCountdownView(selectedPath: selectedPath)
+                            }
+                        }
+                    }
                 }
 
-                Spacer()
-            }
-            .padding(.top, 100)
-        }
-    }
-}
-
-#Preview {
-    GuidedStartView()
-}
+                #Preview {
+                    GuidedStartView()
+                }
