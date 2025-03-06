@@ -20,7 +20,7 @@ import UserNotifications
         content.body = body
         content.sound = .default
         
-        var dateComponents = Calendar.current.dateComponents([.hour, .minute], from: notificationTime)
+        let dateComponents = Calendar.current.dateComponents([.hour, .minute], from: notificationTime)
         
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
         

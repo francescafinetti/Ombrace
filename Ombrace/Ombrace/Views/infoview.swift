@@ -4,7 +4,7 @@ struct InfoView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                Text("Welcome to [App Name]")
+                Text("Welcome to Ombrace!")
                     .font(.body)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)

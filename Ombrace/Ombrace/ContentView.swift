@@ -38,21 +38,24 @@ struct ContentView: View {
                 ScrollView {
                     VStack(spacing: 25) {
                         NavigationLink(destination: GuidedStartView()) {
-                            CardView(title: "Guided Session", subtitle: "4 MIN", icon: "hand.tap.fill", onMoreTapped: {
-                                isPreferencesPresented.toggle()
-                            })
+                            CardView(
+                                title: "Guided Session",
+                                subtitle: "4 MIN",
+                                icon: "hand.tap.fill",
+                                description: "Step-by-step exercises combining mindfulness, breathing, and body-awareness techniques to help shift perception and build self-compassion."
+                            )
                         }
                         
                         NavigationLink(destination: StartView()) {
-                            CardView(title: "Your Session", subtitle: "-", icon: "hands.sparkles.fill", onMoreTapped: {
-                                isPreferencesPresented.toggle()
-                            })
+                            CardView(
+                                title: "Your Session",
+                                subtitle: "-",
+                                icon: "hands.sparkles.fill",
+                                description: "A self-guided and personal space where you can select exercises, reflections, and practices that best support your journey toward self-acceptance.")
                         }
                     }
-                    .padding(.horizontal)
                 }
                 
-                Spacer()
             }
             .onAppear(perform: addItemIfEmpty)
             .sheet(isPresented: $isSettingsPresented) {

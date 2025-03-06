@@ -49,8 +49,6 @@ struct SettingsView: View {
                                     .contentShape(Rectangle())
                                     .onTapGesture {
                                         selectedSound = sound
-                                        SoundManager.shared.playSound(named: sound)
-                                        isSoundMenuExpanded = false
                                     }
                                 }
                             },
@@ -81,85 +79,88 @@ struct SettingsView: View {
                             }
                         }
                         .pickerStyle(SegmentedPickerStyle())
+                        .onChange(of: selectedVibrationIntensity) { newValue in
+                            HapticManager().startBreathingHaptic(intensity: newValue)
+                        }
                     }
                 }
-                
-                Section(header: Text("Notification Settings")) {
-                    Toggle("Notification", isOn: $notificationsEnabled)
-                        .tint(Color.accent1)
-                        .onChange(of: notificationsEnabled) { newValue in
-                            if newValue {
-                                requestNotificationPermission()
-                            } else {
-                                UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+                    Section(header: Text("Notification Settings")) {
+                        Toggle("Notification", isOn: $notificationsEnabled)
+                            .tint(Color.accent1)
+                            .onChange(of: notificationsEnabled) { newValue in
+                                if newValue {
+                                    requestNotificationPermission()
+                                } else {
+                                    UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+                                }
+                            }
+                        
+                        if notificationsEnabled {
+                            HStack {
+                                Text("Notification Time")
+                                Spacer()
+                                Button(action: {
+                                    showingDatePicker.toggle()
+                                }) {
+                                    Text(notificationTime, style: .time)
+                                        .foregroundColor(.accent1)
+                                }
+                            }
+                            
+                            if showingDatePicker {
+                                DatePicker("Select Time", selection: $notificationTime, displayedComponents: .hourAndMinute)
+                                    .datePickerStyle(WheelDatePickerStyle())
+                                    .labelsHidden()
+                                    .onChange(of: notificationTime) { _ in
+                                        if notificationsEnabled {
+                                            UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["dailyNotification"])
+                                            scheduleNotification(title: "Hey, \(username)! ⏰", body: "Time for your session!", notificationTime: notificationTime)
+                                        }
+                                    }
                             }
                         }
+                    }
                     
-                    if notificationsEnabled {
+                    Section(header: Text("Language Settings")) {
                         HStack {
-                            Text("Notification Time")
+                            Text("Language")
                             Spacer()
                             Button(action: {
-                                showingDatePicker.toggle()
+                                showingLanguagePicker.toggle()
                             }) {
-                                Text(notificationTime, style: .time)
+                                Text(selectedLanguage)
                                     .foregroundColor(.accent1)
                             }
                         }
                         
-                        if showingDatePicker {
-                            DatePicker("Select Time", selection: $notificationTime, displayedComponents: .hourAndMinute)
-                                .datePickerStyle(WheelDatePickerStyle())
-                                .labelsHidden()
-                                .onChange(of: notificationTime) { _ in
-                                    if notificationsEnabled {
-                                        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["dailyNotification"])
-                                        scheduleNotification(title: "Hey, \(username)! ⏰", body: "Time for your session!", notificationTime: notificationTime)
-                                    }
+                        if showingLanguagePicker {
+                            Picker("Select Language", selection: $selectedLanguage) {
+                                ForEach(languages, id: \ .self) { language in
+                                    Text(language)
                                 }
-                        }
-                    }
-                }
-                
-                Section(header: Text("Language Settings")) {
-                    HStack {
-                        Text("Language")
-                        Spacer()
-                        Button(action: {
-                            showingLanguagePicker.toggle()
-                        }) {
-                            Text(selectedLanguage)
-                                .foregroundColor(.accent1)
+                            }
+                            .pickerStyle(WheelPickerStyle())
                         }
                     }
                     
-                    if showingLanguagePicker {
-                        Picker("Select Language", selection: $selectedLanguage) {
-                            ForEach(languages, id: \ .self) { language in
-                                Text(language)
-                            }
+                    Section {
+                        NavigationLink(destination: InfoView()) {
+                            Text("About")
                         }
-                        .pickerStyle(WheelPickerStyle())
                     }
                 }
-                
-                Section {
-                    NavigationLink(destination: InfoView()) {
-                        Text("About")
-                    }
-                }
+                .navigationTitle("Settings")
+                .navigationBarItems(trailing: Button("Done") {
+                    UserDefaults.standard.set(username, forKey: "username")
+                    UserDefaults.standard.set(selectedLanguage, forKey: "selectedLanguage")
+                    presentationMode.wrappedValue.dismiss()
+                })
             }
-            .navigationTitle("Settings")
-            .navigationBarItems(trailing: Button("Done") {
-                UserDefaults.standard.set(username, forKey: "username")
-                UserDefaults.standard.set(selectedLanguage, forKey: "selectedLanguage")
-                presentationMode.wrappedValue.dismiss()
-            })
+            .accentColor(Color.accent1)
         }
-        .accentColor(Color.accent1)
+        
     }
-    
-    }
+
 
 #Preview {
     SettingsView()

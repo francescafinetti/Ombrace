@@ -11,7 +11,8 @@ struct CardView: View {
     var title: String
     var subtitle: String
     var icon: String
-    var onMoreTapped: (() -> Void)?
+    var description: String
+   
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
@@ -30,7 +31,7 @@ struct CardView: View {
                             .font(.title3)
                             .fontWeight(.bold)
                             .foregroundColor(.primary)
-                            .multilineTextAlignment(.center)
+                            .multilineTextAlignment(.leading)
                         
                         HStack {
                             Image(systemName: "clock.fill")
@@ -39,11 +40,12 @@ struct CardView: View {
                                 .fontWeight(.semibold)
                                 .foregroundColor(.accent1)
                                 .font(.subheadline)
+                            
                         }
                     }
                 }
                 
-                Text("Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry.")
+                Text(description)
                     .font(.footnote)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.leading)
@@ -54,24 +56,13 @@ struct CardView: View {
             .padding()
             .background(Color(.systemGray6))
             .cornerRadius(15)
+            .padding(.horizontal)
             
-            Button(action: {
-                onMoreTapped?()
-            }) {
-                Circle()
-                    .fill(Color(.accent1))
-                    .opacity(15/100)
-                    .frame(width: 30, height: 30)
-                    .overlay(
-                        Image(systemName: "ellipsis")
-                            .foregroundColor(.accent1)
-                    )
-                    .padding(10)
-            }
         }
     }
 }
 
 #Preview {
-    CardView(title: "example", subtitle: "MIN", icon: "hand.tap.fill", onMoreTapped: {})
+    CardView(title: "example", subtitle: "MIN", icon: "hand.tap.fill", description: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry.")
 }
+
