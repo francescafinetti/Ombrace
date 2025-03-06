@@ -1,5 +1,5 @@
 //
-//  Untitled.swift
+//  OnBoardingView.swift
 //  challenge5
 //
 //  Created by Francesca Finetti on 05/03/25.
@@ -29,30 +29,28 @@ struct OnboardingView: View {
     }
 
     private var welcomeScreen: some View {
-        VStack(spacing: 10) {
+        
+        
+        VStack(spacing: 50) {
             
-            Image("prova")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: isAnimating ? 220 : 250, height: isAnimating ? 220 : 250)
-                        .animation(.easeInOut(duration: 1).repeatForever(autoreverses: true), value: isAnimating)
-                        .onAppear {
-                            isAnimating = true
-                        }
-                        .padding(.bottom, 50)
+            AnimatedCircleView()
+                .frame(maxWidth: .infinity)
+                .padding(.bottom)
+
+            
             
             Text("Welcome to Ombrace!")
                 .font(.title)
                 .bold()
-                .foregroundColor(.white)
-                .padding()
-            
-            Text("Connect with your body and embrace self-kindness. Through guided exercises and mindfulness, you'll build a healthier, more balanced relationship with yourself—at your own pace, without pressure. \n\n You’re in the right place. Let’s begin.")
-                .fontWeight(.regular)
                 .multilineTextAlignment(.center)
                 .foregroundColor(.white)
                 .padding(.horizontal)
-                .padding(.bottom, 30)
+            
+            Text("Connect with your body and embrace self-kindness. Through guided exercises and mindfulness, you'll build a healthier, more balanced relationship with yourself—at your own pace, without pressure. \n\n You’re in the right place. Let’s begin.")
+                .font(.headline)
+                .foregroundColor(.gray)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal)
                 
 
 
@@ -62,14 +60,15 @@ struct OnboardingView: View {
                 }
             }) {
                 Text("Continue")
-                    .frame(maxWidth: .infinity)
+                    .font(.title2)
+                    .bold()
                     .padding()
+                    .frame(maxWidth: .infinity)
                     .background(Color.accent2)
                     .foregroundColor(.white)
-                    .bold()
-                    .cornerRadius(10)
-                    .padding(.horizontal)
-                    .padding(.bottom, 30)
+                    .cornerRadius(12)
+                    .shadow(radius: 5)
+                    .padding(.horizontal, 40)
 
             }
         }
@@ -139,3 +138,4 @@ struct OnboardingView: View {
 #Preview {
     OnboardingView()
 }
+
