@@ -6,10 +6,11 @@ struct InfoView: View {
             VStack(alignment: .center, spacing: 20) {
                 
                 Spacer()
-                AnimatedCircleView()
-                    .frame(width: 30, height: 30)
+                Image("heart")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 100, height: 100)
 
-                Spacer(minLength: 50)
                 
                 Text("Welcome to Ombrace!")
                     .font(.title2)

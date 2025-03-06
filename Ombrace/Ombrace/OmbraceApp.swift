@@ -5,7 +5,8 @@ import UserNotifications
 @main
 struct OmbraceApp: App {
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding: Bool = false
-    
+    @UIApplicationDelegateAdaptor(NotificationDelegate.self) private var notificationDelegate
+
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -37,7 +38,7 @@ struct OmbraceApp: App {
 
     func setupNotifications() {
         let center = UNUserNotificationCenter.current()
-        center.delegate = NotificationDelegate()
+        center.delegate = notificationDelegate
 
         center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
             if let error = error {
@@ -49,10 +50,10 @@ struct OmbraceApp: App {
     }
 }
 
-class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate {
+class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate, UIApplicationDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter,
                                 willPresent notification: UNNotification,
                                 withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        completionHandler([.banner, .sound]) // Mostra la notifica anche in foreground
+        completionHandler([.banner, .sound])
     }
 }
