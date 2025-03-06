@@ -22,7 +22,7 @@ struct CardView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(height: 45)
-                        .foregroundColor(.accent1)
+                        .foregroundColor(.accent2)
                         .padding(.top)
                         .padding(.leading, 15)
                     
@@ -35,10 +35,10 @@ struct CardView: View {
                         
                         HStack {
                             Image(systemName: "clock.fill")
-                                .foregroundColor(.accent1)
+                                .foregroundColor(.accent2)
                             Text(subtitle)
                                 .fontWeight(.semibold)
-                                .foregroundColor(.accent1)
+                                .foregroundColor(.accent2)
                                 .font(.subheadline)
                             
                         }
