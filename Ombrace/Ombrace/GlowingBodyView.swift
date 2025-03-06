@@ -23,8 +23,8 @@ struct FluidHumanFigureView: View {
                         .resizable()
                     
                         .scaledToFit()
-                        .frame(width: 450.0, height: 600.0)
-                        .opacity(0.4)
+                        .frame(width: 400.0, height: 500.0)
+                        .opacity(0.2)
                     
                     Spacer()
                     Text(instructionVM.instructions[activeStep].text)

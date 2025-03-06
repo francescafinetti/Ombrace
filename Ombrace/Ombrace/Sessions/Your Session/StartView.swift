@@ -11,9 +11,9 @@ struct StartView: View {
     var body: some View {
         NavigationStack {
             
-            VStack(spacing: 30) {
+            VStack(spacing: 40) {
                  AnimatedCircleView()
-                        .frame(width: 500, height: 300)
+                        .frame(width: 500, height: 150)
                
                 Text("Welcome to \nYour Session")
                     .font(.title)
@@ -28,7 +28,6 @@ struct StartView: View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
                 
-                Spacer()
                 
                 NavigationLink(destination: IntertwinedCirclesView(hapticManager: hapticManager)) {
                     Text("Start")
@@ -48,7 +47,7 @@ struct StartView: View {
                     }
                 })
                 
-            }
+            } .padding(.bottom, 100)
         }
     }
 }
