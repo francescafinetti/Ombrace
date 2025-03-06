@@ -6,9 +6,12 @@
 //
 import SwiftUI
 
+enum BodyPoint: CaseIterable {
+    case head, leftShoulder, rightShoulder, heart, stomach , out }
+
 struct Instruction {
     var id: Int
-    var position: (x: CGFloat, y: CGFloat)
+    var bodyPoint: BodyPoint
     var text: String
     var duration: Double
 }

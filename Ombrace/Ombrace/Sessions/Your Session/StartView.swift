@@ -12,15 +12,9 @@ struct StartView: View {
         NavigationStack {
             
             VStack(spacing: 30) {
-                
-                Image("prova")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: isAnimating ? 220 : 250, height: isAnimating ? 220 : 250)
-                    .animation(.easeInOut(duration: 1).repeatForever(autoreverses: true), value: isAnimating)
-                    .onAppear {
-                        isAnimating = true
-                    } .padding(.top, 150)
+                 AnimatedCircleView()
+                        .frame(width: 500, height: 300)
+               
                 Text("Welcome to \nYour Session")
                     .font(.title)
                     .bold()
