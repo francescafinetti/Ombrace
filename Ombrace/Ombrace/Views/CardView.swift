@@ -12,7 +12,7 @@ struct CardView: View {
     var subtitle: String
     var icon: String
     var description: String
-   
+    
     
     var body: some View {
         ZStack(alignment: .topTrailing) {

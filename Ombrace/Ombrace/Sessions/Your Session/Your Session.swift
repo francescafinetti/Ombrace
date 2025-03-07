@@ -1,3 +1,6 @@
+//mettere i tre button in alto a destra in un'unica settings? scelta del volume per musica e audio
+
+
 import SwiftUI
 import CoreHaptics
 import AVFoundation
@@ -174,7 +177,6 @@ struct IntertwinedCirclesView: View {
         }
     }
     
-    // 🔹 Funzione per attivare/disattivare la lettura del testo
     private func toggleVoiceOver() {
         isVoiceOverOn.toggle()
         if isVoiceOverOn {
