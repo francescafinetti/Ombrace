@@ -1,5 +1,7 @@
 import SwiftUI
 import CoreHaptics
+import AVFoundation
+
 
 struct IntertwinedCirclesView: View {
     @State private var animate = false
@@ -9,39 +11,79 @@ struct IntertwinedCirclesView: View {
     @State private var isCountingDown = true
     @State private var isSoundOn = true
     @State private var isVibrationOn = true
+    @State private var isVoiceOverOn = true
     @State private var sessionCompleted = false
     
+    @AppStorage("selectedVoice") private var selectedVoice: String = AVSpeechSynthesisVoice.speechVoices().first?.identifier ?? ""
+    
+    let voiceGuide = VoiceGuide()
     var hapticManager: HapticManager
     
     var body: some View {
         VStack {
-            HStack() {
-                Button(action: {
-                    isSoundOn.toggle()
-                    if isSoundOn {
-                        SoundManager.shared.playSelectedSound()
-                    } else {
-                        SoundManager.shared.stopSound()
+            HStack {
+                HStack {
+                    Button(action: {
+                        isSoundOn.toggle()
+                        if isSoundOn {
+                            SoundManager.shared.playSelectedSound()
+                        } else {
+                            SoundManager.shared.stopSound()
+                        }
+                    }) {
+                        Image(systemName: isSoundOn ? "apple.haptics.and.music.note" : "apple.haptics.and.music.note.slash")
+                            .resizable()
+                            .frame(width: 22, height: 22)
+                            .foregroundColor(isSoundOn ? .accent2 : .gray)
+                            .bold()
                     }
-                }) {
-                    Image(systemName: isSoundOn ? "speaker.wave.3.fill" : "speaker.slash.fill")
-                        .foregroundColor(isSoundOn ? .accent2 : .gray)
-                        .padding()
+                    
+                    Button(action: {
+                        isVibrationOn.toggle()
+                        if isVibrationOn {
+                            hapticManager.startBreathingHaptic(intensity: "Medium")
+                        } else {
+                            hapticManager.stopBreathingHaptic()
+                        }
+                    }) {
+                        Image(systemName: "iphone.radiowaves.left.and.right")
+                            .resizable()
+                            .frame(width: 32, height: 22)
+                            .foregroundColor(isVibrationOn ? .accent2 : .gray)
+                            .bold()
+                    }
+                    
+                    
+                    Button(action: {
+                        toggleVoiceOver()
+                    }) {
+                        Image(systemName: isVoiceOverOn ? "person.wave.2.fill" : "person.wave.2.fill")
+                            .resizable()
+                            .frame(width: 22, height: 22)
+                            .foregroundColor(isVoiceOverOn ? .accent2 : .gray)
+                            .bold()
+                    }
                 }
+                .padding()
                 
                 Spacer()
                 
                 Button(action: {
-                    isVibrationOn.toggle()
-                    if isVibrationOn {
-                        hapticManager.startBreathingHaptic(intensity: "Medium")
-                    } else {
-                        hapticManager.stopBreathingHaptic()
+                    textTimer?.invalidate()
+                    hapticManager.stopBreathingHaptic()
+                    SoundManager.shared.stopSound()
+                    voiceGuide.stop()
+                    withAnimation {
+                        sessionCompleted = true
                     }
                 }) {
-                    Image(systemName: isVibrationOn ? "iphone.radiowaves.left.and.right" : "iphone.radiowaves.left.and.right")
-                        .foregroundColor(isVibrationOn ? .accent2 : .gray)
-                        .padding()
+                    NavigationLink(destination: CompletedView()) {
+                        Image(systemName: "figure.walk.departure")
+                            .resizable()
+                            .frame(width: 22, height: 22)
+                            .foregroundColor(.accent2)
+                            .bold()
+                    }
                 }
             }
             .padding(.horizontal)
@@ -67,6 +109,7 @@ struct IntertwinedCirclesView: View {
                 textTimer?.invalidate()
                 hapticManager.stopBreathingHaptic()
                 SoundManager.shared.stopSound()
+                voiceGuide.stop()
             }
             
             if !isCountingDown {
@@ -80,27 +123,6 @@ struct IntertwinedCirclesView: View {
                     .animation(.easeInOut(duration: 3), value: textIndex)
                     .padding(.bottom, 40)
                     .padding(.horizontal, 20)
-                
-                Button(action: {
-                    textTimer?.invalidate()
-                    hapticManager.stopBreathingHaptic()
-                    SoundManager.shared.stopSound()
-                    withAnimation {
-                        sessionCompleted = true
-                    }
-                }) {
-                    NavigationLink(destination: CompletedView()) {
-                        Text("End Session")
-                            .font(.subheadline)
-                            .bold()
-                            .padding(.vertical, 6)
-                            .padding(.horizontal, 12)
-                            .background(Color.gray.opacity(0.7))
-                            .foregroundColor(.white)
-                            .cornerRadius(8)
-                    }
-                }
-                .padding(.top, 10)
             }
         }
         .navigationBarBackButtonHidden(true)
@@ -108,7 +130,6 @@ struct IntertwinedCirclesView: View {
             CompletedView()
         }
     }
-    
     
     private func startCountdown() {
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
@@ -132,10 +153,17 @@ struct IntertwinedCirclesView: View {
     }
     
     private func startTextTimer() {
-        textTimer = Timer.scheduledTimer(withTimeInterval: 6, repeats: true) { _ in
+        if isVoiceOverOn {
+            voiceGuide.speak(texts[textIndex], voiceIdentifier: selectedVoice)
+        }
+        
+        textTimer = Timer.scheduledTimer(withTimeInterval: 9, repeats: true) { _ in
             if textIndex < texts.count - 1 {
                 withAnimation {
                     textIndex += 1
+                }
+                if isVoiceOverOn {
+                    voiceGuide.speak(texts[textIndex], voiceIdentifier: selectedVoice)
                 }
             } else {
                 textTimer?.invalidate()
@@ -143,6 +171,16 @@ struct IntertwinedCirclesView: View {
                     sessionCompleted = true
                 }
             }
+        }
+    }
+    
+    // 🔹 Funzione per attivare/disattivare la lettura del testo
+    private func toggleVoiceOver() {
+        isVoiceOverOn.toggle()
+        if isVoiceOverOn {
+            voiceGuide.speak(texts[textIndex], voiceIdentifier: selectedVoice)
+        } else {
+            voiceGuide.stop()
         }
     }
 }
