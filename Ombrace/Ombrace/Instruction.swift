@@ -7,11 +7,11 @@
 import SwiftUI
 
 enum BodyPoint: CaseIterable {
-    case head, leftShoulder, rightShoulder, heart, stomach , out }
+    case leftcheek,rightcheek, leftShoulder, rightShoulder, heart, stomach , out , rightelbow, leftelbow , righthand , lefthand,rightarm,leftarm }
 
 struct Instruction {
     var id: Int
-    var bodyPoint: BodyPoint
+    var bodyPoints: [BodyPoint]
     var text: String
     var duration: Double
 }
