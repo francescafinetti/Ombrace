@@ -1,8 +1,10 @@
 import AVFoundation
 import SwiftUI
 
+
 class VoiceGuide {
     let synthesizer = AVSpeechSynthesizer()
+    
     
     func speak(_ text: String, voiceIdentifier: String) {
         let utterance = AVSpeechUtterance(string: text)
@@ -17,3 +19,4 @@ class VoiceGuide {
         synthesizer.stopSpeaking(at: .immediate)
     }
 }
+

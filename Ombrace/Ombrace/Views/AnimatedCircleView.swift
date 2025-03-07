@@ -1,17 +1,17 @@
 //
-//  SessionCircleView.swift
+//  AnimatedCircleView.swift
 //  Ombrace
 //
-//  Created by Serena Pia Capasso on 07/03/25.
+//  Created by Serena Pia Capasso on 06/03/25.
 //
 
 
 import SwiftUI
 
-struct SessionCircleView: View {
+struct AnimatedCircleView: View {
     @State private var animate = false
     
-
+    
     var body: some View {
         ZStack {
             ForEach(0..<2, id: \.self) { i in
@@ -22,7 +22,7 @@ struct SessionCircleView: View {
                         Color.red.opacity(0.9),
                         Color.white.opacity(0.6)
                     ]), center: .center, startRadius: 10, endRadius: 120))
-                    .frame(width: animate ? 50 : 80, height: animate ? 50 : 80)
+                    .frame(width: animate ? 80 : 120, height: animate ? 80 : 120)
                     .rotationEffect(.degrees(animate ? 360 : 0))
                     .scaleEffect(animate ? 1.4 : 0.7)
                     .blur(radius: animate ? 15 : 5)
@@ -49,8 +49,8 @@ struct SessionCircleView: View {
 }
 
 #Preview {
-    SessionCircleView()
-        
+    AnimatedCircleView()
+    
 }
 
 

@@ -11,15 +11,15 @@ struct OnboardingView: View {
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding: Bool = false
     @AppStorage("username") private var username: String = ""
     @State private var isAnimating = false
-
+    
     
     @State private var currentPage: Int = 0
     @State private var tempUsername: String = ""
-
+    
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
-
+            
             if currentPage == 0 {
                 welcomeScreen
             } else {
@@ -27,7 +27,7 @@ struct OnboardingView: View {
             }
         }
     }
-
+    
     private var welcomeScreen: some View {
         
         
@@ -36,7 +36,7 @@ struct OnboardingView: View {
             AnimatedCircleView()
                 .frame(maxWidth: .infinity)
                 .padding(.bottom)
-
+            
             
             
             Text("Welcome to Ombrace!")
@@ -51,9 +51,9 @@ struct OnboardingView: View {
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
-                
-
-
+            
+            
+            
             Button(action: {
                 withAnimation {
                     currentPage = 1
@@ -69,27 +69,27 @@ struct OnboardingView: View {
                     .cornerRadius(12)
                     .shadow(radius: 5)
                     .padding(.horizontal, 40)
-
+                
             }
         }
         .padding(.top, 50)
     }
-
+    
     private var nameInputScreen: some View {
         VStack {
             Spacer()
-
+            
             Text("How would you like to be called?")
                 .font(.title2)
                 .bold()
                 .foregroundColor(.white)
-
+            
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
                     .stroke(Color.gray.opacity(0.5), lineWidth: 1)
                     .frame(height: 50)
                     .padding(.horizontal)
-
+                
                 TextField("Insert name", text: $tempUsername)
                     .padding()
                     .foregroundColor(.white)
@@ -99,9 +99,9 @@ struct OnboardingView: View {
                     .padding(.horizontal, 30)
             }
             .padding(.horizontal)
-
+            
             Spacer()
-
+            
             Button(action: {
                 if !tempUsername.isEmpty {
                     username = tempUsername
@@ -117,7 +117,7 @@ struct OnboardingView: View {
                     .cornerRadius(10)
                     .padding(.horizontal)
             }
-
+            
             Button(action: {
                 completeOnboarding()
             }) {

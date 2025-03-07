@@ -4,11 +4,11 @@ class HapticManager {
     private var engine: CHHapticEngine?
     private var breathPlayer: CHHapticAdvancedPatternPlayer?
     private var isPlaying = false
-
+    
     init() {
         prepareHaptics()
     }
-
+    
     func prepareHaptics() {
         do {
             engine = try CHHapticEngine()
@@ -17,23 +17,23 @@ class HapticManager {
             print("Haptic Engine Error: \(error.localizedDescription)")
         }
     }
-
+    
     func startBreathingHaptic(intensity: String) {
-            guard let engine = engine, !isPlaying else { return }
-            isPlaying = true
-
-            let intensityValue: Float
-            switch intensity {
-            case "Soft":
-                intensityValue = 0.5
-            case "Medium":
-                intensityValue = 0.8
-            case "Strong":
-                intensityValue = 1.3
-            default:
-                intensityValue = 0.8
-            }
-
+        guard let engine = engine, !isPlaying else { return }
+        isPlaying = true
+        
+        let intensityValue: Float
+        switch intensity {
+        case "Soft":
+            intensityValue = 0.5
+        case "Medium":
+            intensityValue = 0.8
+        case "Strong":
+            intensityValue = 1.3
+        default:
+            intensityValue = 0.8
+        }
+        
         func playHapticPattern() {
             do {
                 let pattern = try CHHapticPattern(events: [
@@ -126,24 +126,24 @@ class HapticManager {
                         CHHapticEventParameter(parameterID: .hapticIntensity, value: intensityValue)
                     ], relativeTime: 16.0)
                 ], parameters: [])
-
+                
                 breathPlayer = try engine.makeAdvancedPlayer(with: pattern)
                 try breathPlayer?.start(atTime: 0)
-
+                
                 DispatchQueue.main.asyncAfter(deadline: .now() + 18) {
                     if self.isPlaying {
                         playHapticPattern()
                     }
                 }
-
+                
             } catch {
                 print("Failed to create haptic pattern: \(error.localizedDescription)")
             }
         }
-
+        
         playHapticPattern()
     }
-
+    
     func stopBreathingHaptic() {
         isPlaying = false
         do {

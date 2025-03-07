@@ -2,7 +2,7 @@ import SwiftUI
 
 struct animazione: View {
     @State private var animate = false
-
+    
     var body: some View {
         ZStack {
             ForEach(0..<2, id: \ .self) { i in
@@ -35,7 +35,7 @@ struct animazione: View {
                             .scaleEffect(animate ? 2.2 : 1)
                             .animation(Animation.easeInOut(duration: 7)
                                 .delay(5)
-  .repeatForever(autoreverses: true), value: animate)
+                                .repeatForever(autoreverses: true), value: animate)
                     )
             }
         }

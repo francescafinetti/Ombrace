@@ -7,7 +7,7 @@ struct CompletedView: View {
             VStack(spacing: 30) {
                 
                 
-            Image("heart2")
+                Image("heart2")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 200, height: 200 )

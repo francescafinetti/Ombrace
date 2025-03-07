@@ -10,12 +10,10 @@ import SwiftUI
 struct BodyPointsView: View {
     @Binding var highlightedPoints: [BodyPoint]
     var geometry: GeometryProxy
-
-    private let points: [BodyPoint: CGPoint] = [
-        
+    
+    private let points: [BodyPoint: CGPoint] = [        
         .leftcheek: CGPoint(x: 0.30, y: 0.25), // Testa
         .rightcheek: CGPoint(x: 0.68, y: 0.25), // Testa
-        
         .leftShoulder: CGPoint(x: 0.4, y: 0.38), // Spalla sinistra
         .rightShoulder: CGPoint(x: 0.6, y: 0.38), // Spalla destra
         .heart: CGPoint(x: 0.45, y: 0.4), // Cuore
@@ -26,23 +24,20 @@ struct BodyPointsView: View {
         .righthand: CGPoint(x: 0.6, y: 0.5),
         .lefthand: CGPoint(x: 0.42, y: 0.48),
         .rightarm: CGPoint(x: 0.65, y: 0.42),
-        
         .leftarm: CGPoint(x: 0.35, y: 0.42)
         
-        
-    
     ]
-
+    
     var body: some View {
         ForEach(BodyPoint.allCases, id: \.self) { point in
             SessionCircleView()
-               .opacity(highlightedPoints.contains(point) ? 1 : 0) // Mostra solo il punto evidenziato
+                .opacity(highlightedPoints.contains(point) ? 1 : 0) // Mostra solo il punto evidenziato
                 .position(x: points[point]!.x * geometry.size.width,
-                                          y: points[point]!.y * geometry.size.height)
-                    .animation(.easeInOut(duration: 0.5), value: highlightedPoints) 
+                          y: points[point]!.y * geometry.size.height)
+                .animation(.easeInOut(duration: 0.5), value: highlightedPoints)
         }
     }
-
+    
 }
 
 #Preview {
@@ -50,7 +45,7 @@ struct BodyPointsView: View {
         GeometryReader { geometry in
             BodyPointsView(highlightedPoints: .constant([.righthand, .rightShoulder]), geometry: geometry)
         }
-       
+        
     }
 }
 

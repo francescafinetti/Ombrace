@@ -5,11 +5,9 @@ import SwiftData
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
-    
-    
     @State private var isSettingsPresented = false
     @AppStorage("username") private var username: String = "User"
-
+    
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading, spacing: 20) {
@@ -65,7 +63,7 @@ struct ContentView: View {
             
         } .accentColor(Color.accent2)
             .navigationBarBackButtonHidden(true)
-
+        
         
     }
     

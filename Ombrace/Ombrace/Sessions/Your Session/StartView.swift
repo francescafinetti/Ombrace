@@ -12,9 +12,9 @@ struct StartView: View {
         NavigationStack {
             
             VStack(spacing: 40) {
-                 AnimatedCircleView()
-                        .frame(width: 500, height: 150)
-               
+                AnimatedCircleView()
+                    .frame(width: 500, height: 150)
+                
                 Text("Welcome to \nYour Session")
                     .font(.title)
                     .bold()
