@@ -50,7 +50,7 @@ struct BodyPointsView: View {
         GeometryReader { geometry in
             BodyPointsView(highlightedPoints: .constant([.righthand, .rightShoulder]), geometry: geometry)
         }
-        FluidHumanFigureView()
+       
     }
 }
 

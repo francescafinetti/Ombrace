@@ -1,7 +1,7 @@
 import SwiftUI
 
  
-struct FluidHumanFigureView: View {
+struct GlowingBodyView: View {
     @State private var activeStep = 0
     @State private var textVisible = false
     @State private var highlightedPoints: [BodyPoint] = []
@@ -91,6 +91,6 @@ struct FluidHumanFigureView: View {
 
 
 #Preview {
-    FluidHumanFigureView()
+    GlowingBodyView()
     
 }
