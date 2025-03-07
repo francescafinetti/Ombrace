@@ -6,8 +6,8 @@ struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
     
+    
     @State private var isSettingsPresented = false
-    @State private var isPreferencesPresented = false
     @AppStorage("username") private var username: String = "User"
 
     var body: some View {
@@ -16,7 +16,7 @@ struct ContentView: View {
                 HStack {
                     VStack(alignment: .leading) {
                         Text(currentDateFormatted())
-                            .font(.subheadline)
+                            .font(.callout)
                             .foregroundColor(.gray)
                         Text("Hello, \(username)")
                             .font(.largeTitle)
@@ -63,7 +63,10 @@ struct ContentView: View {
             }
             
             
-        } .accentColor(Color.accent1)
+        } .accentColor(Color.accent2)
+            .navigationBarBackButtonHidden(true)
+
+        
     }
     
     private func addItemIfEmpty() {

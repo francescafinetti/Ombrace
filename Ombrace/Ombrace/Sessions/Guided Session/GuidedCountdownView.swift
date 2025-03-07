@@ -13,7 +13,7 @@ struct GuidedCountdownView: View {
             if !navigateToSession {
                 Text("\(countdown)")
                     .font(.system(size: 100, weight: .bold))
-                    .foregroundColor(.accent1)
+                    .foregroundColor(.accent2)
                     .scaleEffect(fadeOut ? 2 : 1)
                     .opacity(fadeOut ? 0 : 1)
                     .transition(.opacity)

@@ -12,7 +12,7 @@ struct SettingsView: View {
     @State private var showingLanguagePicker = false
     
     @AppStorage("soundEnabled") private var soundEnabled: Bool = true
-    @AppStorage("selectedSound") private var selectedSound: String = "Default"
+    @AppStorage("selectedSound") private var selectedSound: String = "None"
     @AppStorage("vibrationEnabled") private var vibrationEnabled: Bool = true
     @AppStorage("selectedVibrationIntensity") private var selectedVibrationIntensity: String = "Medium"
     
@@ -31,7 +31,7 @@ struct SettingsView: View {
                 
                 Section(header: Text("Sound Settings")) {
                     Toggle("Sound", isOn: $soundEnabled)
-                        .tint(Color.accent1)
+                        .tint(Color.accent2)
                     
                     if soundEnabled {
                         DisclosureGroup(
@@ -43,7 +43,7 @@ struct SettingsView: View {
                                         Spacer()
                                         if selectedSound == sound {
                                             Image(systemName: "checkmark")
-                                                .foregroundColor(Color.accent1)
+                                                .foregroundColor(Color.accent2)
                                         }
                                     }
                                     .contentShape(Rectangle())
@@ -70,7 +70,7 @@ struct SettingsView: View {
                 
                 Section(header: Text("Vibration Settings")) {
                     Toggle("Vibration", isOn: $vibrationEnabled)
-                        .tint(Color.accent1)
+                        .tint(Color.accent2)
                     
                     if vibrationEnabled {
                         Picker("Vibration Intensity", selection: $selectedVibrationIntensity) {
@@ -79,15 +79,15 @@ struct SettingsView: View {
                             }
                         }
                         .pickerStyle(SegmentedPickerStyle())
-                        .onChange(of: selectedVibrationIntensity) { newValue in
+                        .onChange(of: selectedVibrationIntensity) { ldValue, newValue in
                             HapticManager().startBreathingHaptic(intensity: newValue)
                         }
                     }
                 }
                     Section(header: Text("Notification Settings")) {
                         Toggle("Notification", isOn: $notificationsEnabled)
-                            .tint(Color.accent1)
-                            .onChange(of: notificationsEnabled) { newValue in
+                            .tint(Color.accent2)
+                            .onChange(of: notificationsEnabled) { ldValue, newValue in
                                 if newValue {
                                     requestNotificationPermission()
                                 } else {
@@ -103,7 +103,7 @@ struct SettingsView: View {
                                     showingDatePicker.toggle()
                                 }) {
                                     Text(notificationTime, style: .time)
-                                        .foregroundColor(.accent1)
+                                        .foregroundColor(.accent2)
                                 }
                             }
                             
@@ -111,7 +111,7 @@ struct SettingsView: View {
                                 DatePicker("Select Time", selection: $notificationTime, displayedComponents: .hourAndMinute)
                                     .datePickerStyle(WheelDatePickerStyle())
                                     .labelsHidden()
-                                    .onChange(of: notificationTime) { _ in
+                                    .onChange(of: notificationTime) { oldValue, newValue in
                                         if notificationsEnabled {
                                             UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["dailyNotification"])
                                             scheduleNotification(title: "Hey, \(username)! ⏰", body: "Time for your session!", notificationTime: notificationTime)
@@ -129,7 +129,7 @@ struct SettingsView: View {
                                 showingLanguagePicker.toggle()
                             }) {
                                 Text(selectedLanguage)
-                                    .foregroundColor(.accent1)
+                                    .foregroundColor(.accent2)
                             }
                         }
                         
@@ -156,7 +156,7 @@ struct SettingsView: View {
                     presentationMode.wrappedValue.dismiss()
                 })
             }
-            .accentColor(Color.accent1)
+            .accentColor(Color.accent2)
         }
         
     }
