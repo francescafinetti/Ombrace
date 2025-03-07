@@ -5,12 +5,13 @@ struct CompletedView: View {
         NavigationStack {
             
             VStack(spacing: 30) {
-                AnimatedCircleView()
-                    .frame(width: 500, height: 150)
                 
-            Image("heart")
                 
-                //è da scegliere sorry
+            Image("heart2")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200, height: 200 )
+                
                 
                 Text("Well done!")
                     .font(.title)

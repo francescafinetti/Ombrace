@@ -1,4 +1,5 @@
 import SwiftUI
+import AVFoundation
 
 let texts = [
        "If you’d like, you can close your eyes and allow yourself to settle into this moment.",
@@ -30,3 +31,6 @@ let texts = [
        "And when you’re ready… gently release your hands… knowing that this sense of warmth and care is always within reach.",
        "You can return to it anytime… like a soft whisper of kindness… reminding you that you are worthy of love and compassion, just as you are."
    ]
+
+let voiceGuide = VoiceGuide()
+
