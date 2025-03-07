@@ -1,4 +1,5 @@
 import SwiftUI
+import AVFAudio
 import UserNotifications
 
 struct SettingsView: View {
@@ -15,11 +16,16 @@ struct SettingsView: View {
     @AppStorage("selectedSound") private var selectedSound: String = "None"
     @AppStorage("vibrationEnabled") private var vibrationEnabled: Bool = true
     @AppStorage("selectedVibrationIntensity") private var selectedVibrationIntensity: String = "Medium"
-    
+    @AppStorage("voiceOverEnabled") private var voiceOverEnabled: Bool = true
+    @AppStorage("selectedVoice") private var selectedVoice: String = AVSpeechSynthesisVoice.speechVoices().first?.identifier ?? ""
     @State private var isSoundMenuExpanded: Bool = false
+    
     
     let soundOptions = ["None", "Forest", "Meditation", "Melody", "Piano", "Rain", "Relaxing", "Ocean", "Yoga"]
     let languages = ["Italiano", "English (USA)", "Français", "Español"]
+    let voiceGuide = VoiceGuide()
+    let availableVoices = AVSpeechSynthesisVoice.speechVoices().filter { $0.language.hasPrefix("en")}
+    
     
     var body: some View {
         NavigationStack {
@@ -83,7 +89,31 @@ struct SettingsView: View {
                             HapticManager().startBreathingHaptic(intensity: newValue)
                         }
                     }
+                    
                 }
+                Section(header: Text("Voice Guidance Settings")) {
+                                Toggle("Voice Guidance", isOn: $voiceOverEnabled)
+                                    .tint(Color.accent2)
+                                    .onChange(of: voiceOverEnabled) { _, newValue in
+                                        if newValue {
+                                            voiceGuide.speak("Voice guidance enabled.", voiceIdentifier: selectedVoice)
+                                        } else {
+                                            voiceGuide.stop()
+                                        }
+                                    }
+                                
+                                if voiceOverEnabled {
+                                    Picker("Select Voice", selection: $selectedVoice) {
+                                        ForEach(availableVoices, id: \.identifier) { voice in
+                                            Text(voice.name).tag(voice.identifier)
+                                        }
+                                    }
+                                    .onChange(of: selectedVoice) { _, newValue in
+                                        voiceGuide.speak("New voice selected.", voiceIdentifier: newValue)
+                                    }
+                                }
+                            }
+                
                     Section(header: Text("Notification Settings")) {
                         Toggle("Notification", isOn: $notificationsEnabled)
                             .tint(Color.accent2)
@@ -150,7 +180,8 @@ struct SettingsView: View {
                     }
                 }
                 .navigationTitle("Settings")
-                .navigationBarItems(trailing: Button("Done") {
+                .navigationBarItems(trailing: Button("Done")
+                                    {
                     UserDefaults.standard.set(username, forKey: "username")
                     UserDefaults.standard.set(selectedLanguage, forKey: "selectedLanguage")
                     presentationMode.wrappedValue.dismiss()

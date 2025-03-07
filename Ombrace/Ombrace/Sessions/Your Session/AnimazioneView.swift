@@ -1,5 +1,3 @@
-
-
 import SwiftUI
 
 struct animazione: View {
@@ -7,8 +5,7 @@ struct animazione: View {
 
     var body: some View {
         ZStack {
-
-            ForEach(0..<2, id: \.self) { i in
+            ForEach(0..<2, id: \ .self) { i in
                 Circle()
                     .fill(RadialGradient(gradient: Gradient(colors: [
                         Color.yellow.opacity(0.7),
@@ -22,23 +19,25 @@ struct animazione: View {
                     .rotationEffect(.degrees(animate ? 360 : 0))
                     .scaleEffect(animate ? 1.4 : 0.7)
                     .blur(radius: animate ? 15 : 5)
-                    .animation(Animation.easeInOut(duration: 6).repeatForever(autoreverses: true), value: animate)
+                    .animation(Animation.easeInOut(duration: 7)                         .delay(5)
+                        .repeatForever(autoreverses: true), value: animate)
                     .overlay(
-                                                   Circle()
-                                                       .stroke(Color.accent2.opacity(0.1), lineWidth: 2)
-                                                       .scaleEffect(animate ? 1.6 : 1)
-                                                       .animation(Animation.easeInOut(duration: 6).repeatForever(autoreverses: true), value: animate)
-                                               )
-                                               .overlay(
-                                                   Circle()
-                                                       .stroke(Color.accent2.opacity(0.1), lineWidth: 2)
-                                                       .scaleEffect(animate ? 2.2 : 1)
-                                                       .animation(Animation.easeInOut(duration: 6).repeatForever(autoreverses: true), value: animate)
-                                               )
+                        Circle()
+                            .stroke(Color.accent2.opacity(0.1), lineWidth: 2)
+                            .scaleEffect(animate ? 1.6 : 1)
+                            .animation(Animation.easeInOut(duration: 7)
+                                .delay(5)
+                                .repeatForever(autoreverses: true), value: animate)
+                    )
+                    .overlay(
+                        Circle()
+                            .stroke(Color.accent2.opacity(0.1), lineWidth: 2)
+                            .scaleEffect(animate ? 2.2 : 1)
+                            .animation(Animation.easeInOut(duration: 7)
+                                .delay(5)
+  .repeatForever(autoreverses: true), value: animate)
+                    )
             }
-
-            
-            
         }
         .onAppear {
             animate.toggle()
@@ -48,7 +47,4 @@ struct animazione: View {
 
 #Preview {
     animazione()
-        
 }
-
-
