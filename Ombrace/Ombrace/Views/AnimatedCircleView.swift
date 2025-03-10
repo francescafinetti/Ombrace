@@ -4,14 +4,11 @@
 //
 //  Created by Serena Pia Capasso on 06/03/25.
 //
-
-
 import SwiftUI
 
 struct AnimatedCircleView: View {
     @State private var animate = false
-    
-    
+ 
     var body: some View {
         ZStack {
             ForEach(0..<2, id: \.self) { i in

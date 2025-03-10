@@ -16,8 +16,7 @@ struct SettingsView: View {
     @AppStorage("selectedSound") private var selectedSound: String = "None"
     @State private var isSoundMenuExpanded: Bool = false
     
-    
-    let soundOptions = ["None", "Forest", "Meditation", "Melody", "Piano", "Rain", "Relaxing", "Ocean", "Yoga"]
+    let soundOptions = ["None", "Meditation", "Melody", "Piano", "Relaxing", "Yoga"]
     let languages = ["Italiano", "English (USA)", "Français", "Español"]
     
     

@@ -17,7 +17,7 @@ struct GlowingBodyView: View {
                     Image("body")
                         .resizable()
                         .scaledToFit()
-                        .opacity(0.4)
+                        .opacity(0.8)
                         .padding()
                     Spacer()
                     Text(instructionVM.instructions[activeStep].text)

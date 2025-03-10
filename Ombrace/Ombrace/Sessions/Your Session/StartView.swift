@@ -2,9 +2,6 @@ import SwiftUI
 import CoreHaptics
 
 struct StartView: View {
-    @AppStorage("vibrationEnabled") private var vibrationEnabled: Bool = true
-    @AppStorage("selectedVibrationIntensity") private var selectedVibrationIntensity: String = "Medium"
-    
     @State private var isAnimating = false
     
     var body: some View {

@@ -7,9 +7,7 @@ struct IntertwinedCirclesView: View {
     @State private var textTimer: Timer?
     @State private var isSoundOn = true
     @State private var sessionCompleted = false
-    
-    
-    
+
     var body: some View {
         VStack {
             HStack {
