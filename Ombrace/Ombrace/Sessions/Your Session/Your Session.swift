@@ -16,36 +16,7 @@ struct IntertwinedCirclesView: View {
     var body: some View {
         VStack {
             HStack {
-                HStack {
-                    Button(action: {
-                        isSoundOn.toggle()
-                        if isSoundOn {
-                            SoundManager.shared.playSelectedSound()
-                        } else {
-                            SoundManager.shared.stopSound()
-                        }
-                    }) {
-                        Image(systemName: isSoundOn ? "apple.haptics.and.music.note" : "apple.haptics.and.music.note.slash")
-                            .resizable()
-                            .frame(width: 22, height: 22)
-                            .foregroundColor(isSoundOn ? .accent2 : .gray)
-                            .bold()
-                    }
-                    
-                    Button(action: {
-                        toggleVoiceOver()
-                    }) {
-                        Image(systemName: isVoiceOverOn ? "person.wave.2.fill" : "person.wave.2.fill")
-                            .resizable()
-                            .frame(width: 22, height: 22)
-                            .foregroundColor(isVoiceOverOn ? .accent2 : .gray)
-                            .bold()
-                    }
-                }
-                .padding()
-                
                 Spacer()
-                
                 Button(action: {
                     textTimer?.invalidate()
                     SoundManager.shared.stopSound()
