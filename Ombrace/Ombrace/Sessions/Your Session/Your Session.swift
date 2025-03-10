@@ -13,14 +13,12 @@ struct IntertwinedCirclesView: View {
     @State private var countdown = 5
     @State private var isCountingDown = true
     @State private var isSoundOn = true
-    @State private var isVibrationOn = true
     @State private var isVoiceOverOn = true
     @State private var sessionCompleted = false
     
     @AppStorage("selectedVoice") private var selectedVoice: String = AVSpeechSynthesisVoice.speechVoices().first?.identifier ?? ""
     
     let voiceGuide = VoiceGuide()
-    var hapticManager: HapticManager
     
     var body: some View {
         VStack {
@@ -41,20 +39,7 @@ struct IntertwinedCirclesView: View {
                             .bold()
                     }
                     
-                    Button(action: {
-                        isVibrationOn.toggle()
-                        if isVibrationOn {
-                            hapticManager.startBreathingHaptic(intensity: "Medium")
-                        } else {
-                            hapticManager.stopBreathingHaptic()
-                        }
-                    }) {
-                        Image(systemName: "iphone.radiowaves.left.and.right")
-                            .resizable()
-                            .frame(width: 32, height: 22)
-                            .foregroundColor(isVibrationOn ? .accent2 : .gray)
-                            .bold()
-                    }
+                    
                     
                     
                     Button(action: {
@@ -73,7 +58,6 @@ struct IntertwinedCirclesView: View {
                 
                 Button(action: {
                     textTimer?.invalidate()
-                    hapticManager.stopBreathingHaptic()
                     SoundManager.shared.stopSound()
                     voiceGuide.stop()
                     withAnimation {
@@ -110,7 +94,6 @@ struct IntertwinedCirclesView: View {
             }
             .onDisappear {
                 textTimer?.invalidate()
-                hapticManager.stopBreathingHaptic()
                 SoundManager.shared.stopSound()
                 voiceGuide.stop()
             }
@@ -189,6 +172,6 @@ struct IntertwinedCirclesView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        IntertwinedCirclesView(hapticManager: HapticManager())
+        IntertwinedCirclesView()
     }
 }

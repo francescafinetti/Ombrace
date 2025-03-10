@@ -5,7 +5,6 @@ struct StartView: View {
     @AppStorage("vibrationEnabled") private var vibrationEnabled: Bool = true
     @AppStorage("selectedVibrationIntensity") private var selectedVibrationIntensity: String = "Medium"
     
-    @State private var hapticManager = HapticManager()
     @State private var isAnimating = false
     
     var body: some View {
@@ -29,7 +28,7 @@ struct StartView: View {
                     .padding(.horizontal)
                 
                 
-                NavigationLink(destination: IntertwinedCirclesView(hapticManager: hapticManager)) {
+                NavigationLink(destination: IntertwinedCirclesView()) {
                     Text("Start")
                         .font(.title2)
                         .bold()
@@ -42,9 +41,7 @@ struct StartView: View {
                         .padding(.horizontal, 40)
                 }
                 .simultaneousGesture(TapGesture().onEnded {
-                    if vibrationEnabled {
-                        hapticManager.startBreathingHaptic(intensity: selectedVibrationIntensity)
-                    }
+                    
                 })
                 
             } .padding(.bottom, 100)

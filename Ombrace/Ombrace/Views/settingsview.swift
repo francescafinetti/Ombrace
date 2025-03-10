@@ -14,8 +14,6 @@ struct SettingsView: View {
     
     @AppStorage("soundEnabled") private var soundEnabled: Bool = true
     @AppStorage("selectedSound") private var selectedSound: String = "None"
-    @AppStorage("vibrationEnabled") private var vibrationEnabled: Bool = true
-    @AppStorage("selectedVibrationIntensity") private var selectedVibrationIntensity: String = "Medium"
     @AppStorage("voiceOverEnabled") private var voiceOverEnabled: Bool = true
     @AppStorage("selectedVoice") private var selectedVoice: String = AVSpeechSynthesisVoice.speechVoices().first?.identifier ?? ""
     @State private var isSoundMenuExpanded: Bool = false
@@ -74,23 +72,6 @@ struct SettingsView: View {
                     }
                 }
                 
-                Section(header: Text("Vibration Settings")) {
-                    Toggle("Vibration", isOn: $vibrationEnabled)
-                        .tint(Color.accent2)
-                    
-                    if vibrationEnabled {
-                        Picker("Vibration Intensity", selection: $selectedVibrationIntensity) {
-                            ForEach(["Soft", "Medium", "Strong"], id: \ .self) { intensity in
-                                Text(intensity)
-                            }
-                        }
-                        .pickerStyle(SegmentedPickerStyle())
-                        .onChange(of: selectedVibrationIntensity) { ldValue, newValue in
-                            HapticManager().startBreathingHaptic(intensity: newValue)
-                        }
-                    }
-                    
-                }
                 Section(header: Text("Voice Guidance Settings")) {
                     Toggle("Voice Guidance", isOn: $voiceOverEnabled)
                         .tint(Color.accent2)
