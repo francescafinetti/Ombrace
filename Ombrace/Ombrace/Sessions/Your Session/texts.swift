@@ -32,5 +32,4 @@ let texts = [
        "You can return to it anytime… like a soft whisper of kindness… reminding you that you are worthy of love and compassion, just as you are."
    ]
 
-let voiceGuide = VoiceGuide()
 

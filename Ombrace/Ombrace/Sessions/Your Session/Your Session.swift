@@ -6,12 +6,9 @@ struct IntertwinedCirclesView: View {
     @State private var textIndex = 0
     @State private var textTimer: Timer?
     @State private var isSoundOn = true
-    @State private var isVoiceOverOn = true
     @State private var sessionCompleted = false
     
-    @AppStorage("selectedVoice") private var selectedVoice: String = AVSpeechSynthesisVoice.speechVoices().first?.identifier ?? ""
     
-    let voiceGuide = VoiceGuide()
     
     var body: some View {
         VStack {
@@ -20,7 +17,6 @@ struct IntertwinedCirclesView: View {
                 Button(action: {
                     textTimer?.invalidate()
                     SoundManager.shared.stopSound()
-                    voiceGuide.stop()
                     withAnimation {
                         sessionCompleted = true
                     }
@@ -49,7 +45,6 @@ struct IntertwinedCirclesView: View {
             .onDisappear {
                 textTimer?.invalidate()
                 SoundManager.shared.stopSound()
-                voiceGuide.stop()
             }
             
             Text(texts[textIndex])
@@ -77,17 +72,11 @@ struct IntertwinedCirclesView: View {
     }
     
     private func startTextTimer() {
-        if isVoiceOverOn {
-            voiceGuide.speak(texts[textIndex], voiceIdentifier: selectedVoice)
-        }
         
         textTimer = Timer.scheduledTimer(withTimeInterval: 9, repeats: true) { _ in
             if textIndex < texts.count - 1 {
                 withAnimation {
                     textIndex += 1
-                }
-                if isVoiceOverOn {
-                    voiceGuide.speak(texts[textIndex], voiceIdentifier: selectedVoice)
                 }
             } else {
                 textTimer?.invalidate()
@@ -98,14 +87,6 @@ struct IntertwinedCirclesView: View {
         }
     }
     
-    private func toggleVoiceOver() {
-        isVoiceOverOn.toggle()
-        if isVoiceOverOn {
-            voiceGuide.speak(texts[textIndex], voiceIdentifier: selectedVoice)
-        } else {
-            voiceGuide.stop()
-        }
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {

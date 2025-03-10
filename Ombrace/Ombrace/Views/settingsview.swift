@@ -14,15 +14,11 @@ struct SettingsView: View {
     
     @AppStorage("soundEnabled") private var soundEnabled: Bool = true
     @AppStorage("selectedSound") private var selectedSound: String = "None"
-    @AppStorage("voiceOverEnabled") private var voiceOverEnabled: Bool = true
-    @AppStorage("selectedVoice") private var selectedVoice: String = AVSpeechSynthesisVoice.speechVoices().first?.identifier ?? ""
     @State private var isSoundMenuExpanded: Bool = false
     
     
     let soundOptions = ["None", "Forest", "Meditation", "Melody", "Piano", "Rain", "Relaxing", "Ocean", "Yoga"]
     let languages = ["Italiano", "English (USA)", "Français", "Español"]
-    let voiceGuide = VoiceGuide()
-    let availableVoices = AVSpeechSynthesisVoice.speechVoices().filter { $0.language.hasPrefix("en")}
     
     
     var body: some View {
@@ -72,28 +68,6 @@ struct SettingsView: View {
                     }
                 }
                 
-                Section(header: Text("Voice Guidance Settings")) {
-                    Toggle("Voice Guidance", isOn: $voiceOverEnabled)
-                        .tint(Color.accent2)
-                        .onChange(of: voiceOverEnabled) { _, newValue in
-                            if newValue {
-                                voiceGuide.speak("Voice guidance enabled.", voiceIdentifier: selectedVoice)
-                            } else {
-                                voiceGuide.stop()
-                            }
-                        }
-                    
-                    if voiceOverEnabled {
-                        Picker("Select Voice", selection: $selectedVoice) {
-                            ForEach(availableVoices, id: \.identifier) { voice in
-                                Text(voice.name).tag(voice.identifier)
-                            }
-                        }
-                        .onChange(of: selectedVoice) { _, newValue in
-                            voiceGuide.speak("New voice selected.", voiceIdentifier: newValue)
-                        }
-                    }
-                }
                 
                 Section(header: Text("Notification Settings")) {
                     Toggle("Notification", isOn: $notificationsEnabled)

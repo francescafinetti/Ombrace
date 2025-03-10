@@ -11,8 +11,6 @@ struct OnboardingView: View {
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding: Bool = false
     @AppStorage("username") private var username: String = ""
     @State private var isAnimating = false
-    
-    
     @State private var currentPage: Int = 0
     @State private var tempUsername: String = ""
     
