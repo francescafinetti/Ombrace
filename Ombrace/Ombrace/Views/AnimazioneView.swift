@@ -19,14 +19,13 @@ struct animazione: View {
                     .rotationEffect(.degrees(animate ? 360 : 0))
                     .scaleEffect(animate ? 1.4 : 0.7)
                     .blur(radius: animate ? 15 : 5)
-                    .animation(Animation.easeInOut(duration: 7)                         .delay(5)
+                    .animation(Animation.easeInOut(duration: 7)
                         .repeatForever(autoreverses: true), value: animate)
                     .overlay(
                         Circle()
                             .stroke(Color.accent2.opacity(0.1), lineWidth: 2)
                             .scaleEffect(animate ? 1.6 : 1)
                             .animation(Animation.easeInOut(duration: 7)
-                                .delay(5)
                                 .repeatForever(autoreverses: true), value: animate)
                     )
                     .overlay(
@@ -34,7 +33,6 @@ struct animazione: View {
                             .stroke(Color.accent2.opacity(0.1), lineWidth: 2)
                             .scaleEffect(animate ? 2.2 : 1)
                             .animation(Animation.easeInOut(duration: 7)
-                                .delay(5)
                                 .repeatForever(autoreverses: true), value: animate)
                     )
             }

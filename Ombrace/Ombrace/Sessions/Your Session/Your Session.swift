@@ -1,17 +1,10 @@
-//mettere i tre button in alto a destra in un'unica settings? scelta del volume per musica e audio
-
-
 import SwiftUI
-import CoreHaptics
 import AVFoundation
-
 
 struct IntertwinedCirclesView: View {
     @State private var animate = false
     @State private var textIndex = 0
     @State private var textTimer: Timer?
-    @State private var countdown = 5
-    @State private var isCountingDown = true
     @State private var isSoundOn = true
     @State private var isVoiceOverOn = true
     @State private var sessionCompleted = false
@@ -38,9 +31,6 @@ struct IntertwinedCirclesView: View {
                             .foregroundColor(isSoundOn ? .accent2 : .gray)
                             .bold()
                     }
-                    
-                    
-                    
                     
                     Button(action: {
                         toggleVoiceOver()
@@ -80,17 +70,10 @@ struct IntertwinedCirclesView: View {
                 Color.black.ignoresSafeArea()
                 animazione()
                     .frame(width: 500, height: 150)
-                if isCountingDown {
-                    Text("\(countdown)")
-                        .font(.system(size: 1, weight: .bold))
-                        .foregroundColor(.accent2)
-                        .transition(.opacity)
-                        .animation(.easeInOut(duration: 1), value: countdown)
-                }
             }
             .onAppear {
                 animate.toggle()
-                startCountdown()
+                startSession()
             }
             .onDisappear {
                 textTimer?.invalidate()
@@ -98,36 +81,20 @@ struct IntertwinedCirclesView: View {
                 voiceGuide.stop()
             }
             
-            if !isCountingDown {
-                Text(texts[textIndex])
-                    .foregroundColor(.white)
-                    .bold()
-                    .font(.body)
-                    .frame(maxWidth: .infinity, minHeight: 50, maxHeight: 70)
-                    .multilineTextAlignment(.center)
-                    .transition(.opacity)
-                    .animation(.easeInOut(duration: 3), value: textIndex)
-                    .padding(.bottom, 40)
-                    .padding(.horizontal, 20)
-            }
+            Text(texts[textIndex])
+                .foregroundColor(.white)
+                .bold()
+                .font(.body)
+                .frame(maxWidth: .infinity, minHeight: 50, maxHeight: 70)
+                .multilineTextAlignment(.center)
+                .transition(.opacity)
+                .animation(.easeInOut(duration: 3), value: textIndex)
+                .padding(.bottom, 40)
+                .padding(.horizontal, 20)
         }
         .navigationBarBackButtonHidden(true)
         .navigationDestination(isPresented: $sessionCompleted) {
             CompletedView()
-        }
-    }
-    
-    private func startCountdown() {
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-            if countdown > 1 {
-                countdown -= 1
-            } else {
-                timer.invalidate()
-                withAnimation {
-                    isCountingDown = false
-                }
-                startSession()
-            }
         }
     }
     
