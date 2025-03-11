@@ -11,14 +11,14 @@ struct StartView: View {
                 AnimatedCircleView()
                     .frame(width: 500, height: 150)
                 
-                Text("Welcome to \nYour Session")
+                Text("Welcome to \nYour Session", comment: "Title that welcome the user after selecting Your Session mode in the menu")
                     .font(.title)
                     .bold()
                     .multilineTextAlignment(.center)
                     .foregroundColor(.white)
                     .padding(.horizontal)
                 
-                Text("Take a deep breath and begin when you're ready.")
+                Text("Take a deep breath and begin when you're ready.", comment: "Text that explains the user how to start the session")
                     .font(.headline)
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
@@ -26,7 +26,7 @@ struct StartView: View {
                 
                 
                 NavigationLink(destination: IntertwinedCirclesView()) {
-                    Text("Start")
+                    Text("Start", comment: "Button to start the session.")
                         .font(.title2)
                         .bold()
                         .padding()
