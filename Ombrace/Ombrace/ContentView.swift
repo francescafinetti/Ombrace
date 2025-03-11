@@ -8,7 +8,7 @@ struct ContentView: View {
     @State private var isSettingsPresented = false
     @AppStorage("username") private var username: String = ""
     var displayUsername: String {
-        username.isEmpty ? NSLocalizedString("User", comment: "Default username") : username
+        username.isEmpty ? NSLocalizedString("User", comment: "Default username variable if the user dont set one, it is used on the greeting Hello, User") : username
     }
     var body: some View {
         NavigationStack {
@@ -18,7 +18,7 @@ struct ContentView: View {
                         Text(currentDateFormatted())
                             .font(.callout)
                             .foregroundColor(.gray)
-                        Text("Hello, \(displayUsername)")
+                        Text("Hello, \(displayUsername)", comment:  "Title of the app, it give a greeting to the the user as Hello, UserName")
                             .font(.largeTitle)
                             .bold()
                             .foregroundColor(.primary)
