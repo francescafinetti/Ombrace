@@ -24,7 +24,6 @@ struct SettingsView: View {
         NSLocalizedString("Relaxing", comment: "Button option in sound settings for relaxing sound, visible in the sound picker"),
         NSLocalizedString("Yoga", comment: "Button option in sound settings for yoga sound, visible in the sound picker")
     ]
-    let languages = ["Italiano", "English (USA)", "Français", "Español"]
     
     
     var body: some View {
@@ -112,27 +111,6 @@ struct SettingsView: View {
                     }
                 }
                 
-                Section(header: Text("Language Settings")) {
-                    HStack {
-                        Text("Language")
-                        Spacer()
-                        Button(action: {
-                            showingLanguagePicker.toggle()
-                        }) {
-                            Text(selectedLanguage)
-                                .foregroundColor(.accent2)
-                        }
-                    }
-                    
-                    if showingLanguagePicker {
-                        Picker("Select Language", selection: $selectedLanguage) {
-                            ForEach(languages, id: \ .self) { language in
-                                Text(language)
-                            }
-                        }
-                        .pickerStyle(WheelPickerStyle())
-                    }
-                }
                 
                 Section {
                     NavigationLink(destination: InfoView()) {
