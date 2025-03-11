@@ -20,10 +20,11 @@ struct CardView: View {
                     Image(icon)
                         .resizable()
                         .scaledToFit()
-                        .frame(height: 100)
+                        .frame(height: 110)
                         .foregroundColor(.accent2)
                         .padding(.top)
-                        .padding(.leading, 15)
+                    
+                    Spacer()
                     
                     VStack(alignment: .leading) {
                         Text(title)
@@ -41,14 +42,15 @@ struct CardView: View {
                                 .font(.subheadline)
                         }
                     }
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 }
             }
             .padding()
+            .frame(maxWidth: .infinity, maxHeight: 250)
             .background(
                 Rectangle()
                     .fill(Color(.systemGray6))
-                    .frame(width: 100, height: 150)
-                    .cornerRadius(15) // Arrotonda i bordi
+                    .cornerRadius(15)
             )
             .padding(.horizontal)
         }

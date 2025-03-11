@@ -1,51 +1,58 @@
 import SwiftUI
-import CoreHaptics
 
 struct StartView: View {
     @State private var isAnimating = false
-    
+
     var body: some View {
         NavigationStack {
-            
-            VStack(spacing: 40) {
-                AnimatedCircleView()
-                    .frame(width: 500, height: 150)
-                
-                Text("Welcome to \nYour Session")
-                    .font(.title)
-                    .bold()
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(.white)
-                    .padding(.horizontal)
-                
-                Text("Take a deep breath and begin when you're ready.")
-                    .font(.headline)
-                    .foregroundColor(.gray)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal)
-                
-                
-                NavigationLink(destination: IntertwinedCirclesView()) {
-                    Text("Start")
-                        .font(.title2)
+            ZStack {
+                VStack(spacing: 30) {
+                    AnimatedCircleView()
+                        .frame(width: 250, height: 150)
+                        .padding(.top, 60)
+
+                    Text("Your Session")
+                        .font(.largeTitle)
                         .bold()
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.accent2)
+                        .multilineTextAlignment(.center)
                         .foregroundColor(.white)
-                        .cornerRadius(12)
-                        .shadow(radius: 5)
-                        .padding(.horizontal, 40)
-                }
-                .simultaneousGesture(TapGesture().onEnded {
+                        .padding(.horizontal, 30)
+
+                    VStack(spacing: 20) {
+                        Text("A self-guided and personal space where you can select exercises, reflections, and practices that best support your journey toward self-acceptance.")
+                        
+                        Text("You're free to end the session anytime you need and repeat it whenever you want.")
+                        
+                        Text("Take a deep breath and begin when you're ready.")
+                            .fontWeight(.bold)
+                    }
+                    .font(.headline)
+                    .foregroundColor(.white.opacity(0.8))
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 30)
+
+                    Spacer()
                     
-                })
-                
-            } .padding(.bottom, 100)
+                    NavigationLink(destination: IntertwinedCirclesView()) {
+                        Text("Start")
+                            .font(.title2)
+                            .bold()
+                            .padding()
+                            .frame(maxWidth: 220)
+                            .background(
+                                RoundedRectangle(cornerRadius: 28)
+                                    .fill(Color.accent2)
+                            )
+                            .foregroundColor(.white)
+                            
+                    }
+                    
+                    .padding(.bottom, 70)
+                }
+            }
         }
     }
 }
-
 
 #Preview {
     StartView()
