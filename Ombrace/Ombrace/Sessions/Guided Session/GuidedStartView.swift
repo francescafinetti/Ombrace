@@ -14,29 +14,38 @@ struct GuidedStartView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 400)
+                            .opacity(0.8)
 
                         VStack(alignment: .leading, spacing: 15) {
-                            Text("Guided Session")
+                            Text("Guided \nSession")
                                 .font(.largeTitle)
                                 .bold()
                                 .multilineTextAlignment(.leading)
                                 .foregroundColor(.white)
-                                .frame(width: 200, alignment: .leading)
+                                .frame(width: 220, alignment: .leading)
                             
-                            Text("Find A Calm Space\nFor You Focus On Yourself And Start Your Journey")
-                                .font(.headline)
-                                .multilineTextAlignment(.leading)
-                                .foregroundColor(.white)
-                                .frame(width: 200, alignment: .leading)
-                            
-                            Text("Take a deep breath and begin when you're ready.")
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
-                                .frame(width: 200, alignment: .leading)
+                            VStack(alignment: .leading, spacing: 15) {
+                                Text("Step-by-step exercises combining mindfulness, breathing, and body-awareness techniques to help shift perception and build self-compassion.")
+                                    .font(.body)
+                                    .multilineTextAlignment(.leading)
+                                    .foregroundColor(.gray)
+                                    .frame(width: 180, alignment: .leading)
+
+                                Text("Let the glowing dots guide your hands with mindfulness and intention.")
+                                    .font(.subheadline)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.accent2)
+                                    .frame(width: 200, alignment: .leading)
+
+                                Text("Take a deep breath and begin when you're ready.")
+                                    .font(.body)
+                                    .foregroundColor(.gray)
+                                    .frame(width: 200, alignment: .leading)
+                            }
                             Button(action: {
                                 navigateToSession = true
                             }) {
-                                Text("Start session")
+                                Text("Start")
                                     .font(.title2)
                                     .bold()
                                     .padding()
@@ -47,7 +56,7 @@ struct GuidedStartView: View {
                                     )
                                     .foregroundColor(.white)
                             }
-                            .padding(.top, 10)
+                            .padding(.top, 50)
                         }
                         .padding(.trailing, 200)
                     }
