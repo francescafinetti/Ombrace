@@ -6,8 +6,10 @@ struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
     @State private var isSettingsPresented = false
-    @AppStorage("username") private var username: String = "User"
-    
+    @AppStorage("username") private var username: String = ""
+    var displayUsername: String {
+        username.isEmpty ? NSLocalizedString("User", comment: "Default username") : username
+    }
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading, spacing: 20) {
@@ -16,7 +18,7 @@ struct ContentView: View {
                         Text(currentDateFormatted())
                             .font(.callout)
                             .foregroundColor(.gray)
-                        Text("Hello, \(username)")
+                        Text("Hello, \(displayUsername)")
                             .font(.largeTitle)
                             .bold()
                             .foregroundColor(.primary)
