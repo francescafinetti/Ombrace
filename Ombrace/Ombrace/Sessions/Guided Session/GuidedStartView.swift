@@ -39,7 +39,7 @@ struct GuidedStartView: View {
             .padding(.top, 100)
         }
         .navigationDestination(isPresented: $navigateToSession) {
-            GlowingBodyView()
+            GlowingBodyContainerView()
         }
     }
 }
