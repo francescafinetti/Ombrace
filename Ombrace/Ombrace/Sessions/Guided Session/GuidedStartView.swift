@@ -5,7 +5,7 @@ struct GuidedStartView: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 30) {
-                Text("Welcome to Your Guided Session")
+                Text("Welcome to your Guided Session", comment: "Title that welcome the user after selecting Guided Session mode in the menu")
                     .font(.largeTitle)
                     .bold()
                     .multilineTextAlignment(.center)
@@ -15,7 +15,7 @@ struct GuidedStartView: View {
                     .resizable()
                     .scaledToFit()
                 
-                Text("Take a deep breath and begin when you're ready.")
+                Text("Take a deep breath and begin when you're ready.", comment: "Text that explains the user how to start the session")
                     .font(.headline)
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
@@ -25,7 +25,7 @@ struct GuidedStartView: View {
             Button(action: {
                 navigateToSession = true
             }) {
-                Text("Start")
+                Text("Start", comment: "Button to start the session.")
                     .font(.title2)
                     .bold()
                     .padding()
