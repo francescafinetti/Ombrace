@@ -12,7 +12,7 @@ enum BodyPoint: CaseIterable {
 struct Instruction {
     var id: Int
     var bodyPoints: [BodyPoint]
-    var text: String
+    var text: LocalizedStringKey
     var duration: Double
 }
 
