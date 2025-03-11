@@ -5,7 +5,7 @@ import UserNotifications
 struct SettingsView: View {
     @Environment(\.presentationMode) var presentationMode
     
-    @AppStorage("username") private var username: String = "example"
+    @AppStorage("username") private var username: String = ""
     @State private var notificationsEnabled: Bool = true
     @State private var notificationTime: Date = Date()
     @State private var selectedLanguage: String = "English (USA)"
