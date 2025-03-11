@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct CardView: View {
-    var title: String
-    var subtitle: String
+    var title: LocalizedStringKey
+    var subtitle: LocalizedStringKey
     var icon: String
     
     
