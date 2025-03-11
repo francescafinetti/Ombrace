@@ -79,6 +79,7 @@ struct ContentView: View {
     
     private func currentDateFormatted() -> String {
         let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: Locale.preferredLanguages.first ?? "en")
         formatter.dateFormat = "EEEE, d MMMM"
         return formatter.string(from: Date()).capitalized
     }
