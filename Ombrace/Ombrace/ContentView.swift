@@ -39,8 +39,8 @@ struct ContentView: View {
                             CardView(
                                 title: "Guided Session",
                                 subtitle: "4 MIN",
-                                icon: "hand.tap.fill",
-                                description: "Step-by-step exercises combining mindfulness, breathing, and body-awareness techniques to help shift perception and build self-compassion."
+                                icon: "aaaa"
+                                
                             )
                         }
                         
@@ -48,8 +48,9 @@ struct ContentView: View {
                             CardView(
                                 title: "Your Session",
                                 subtitle: "-",
-                                icon: "hands.sparkles.fill",
-                                description: "A self-guided and personal space where you can select exercises, reflections, and practices that best support your journey toward self-acceptance.")
+                                icon: "aaa"
+                               
+                            )
                         }
                     }
                 }

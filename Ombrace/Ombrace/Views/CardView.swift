@@ -11,17 +11,16 @@ struct CardView: View {
     var title: String
     var subtitle: String
     var icon: String
-    var description: String
     
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
             VStack(alignment: .leading, spacing: 25) {
                 HStack {
-                    Image(systemName: icon)
+                    Image(icon)
                         .resizable()
                         .scaledToFit()
-                        .frame(height: 45)
+                        .frame(height: 100)
                         .foregroundColor(.accent2)
                         .padding(.top)
                         .padding(.leading, 15)
@@ -40,29 +39,28 @@ struct CardView: View {
                                 .fontWeight(.semibold)
                                 .foregroundColor(.accent2)
                                 .font(.subheadline)
-                            
                         }
                     }
                 }
-                
-                Text(description)
-                    .font(.footnote)
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.leading)
-                    .lineLimit(3)
-                    .padding(.bottom)
-                    .padding(.leading, 15)
             }
             .padding()
-            .background(Color(.systemGray6))
-            .cornerRadius(15)
+            .background(
+                Rectangle()
+                    .fill(Color(.systemGray6))
+                    .frame(width: 100, height: 150)
+                    .cornerRadius(15) // Arrotonda i bordi
+            )
             .padding(.horizontal)
-            
         }
     }
 }
 
 #Preview {
-    CardView(title: "example", subtitle: "MIN", icon: "hand.tap.fill", description: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry.")
+    CardView(title: "example", subtitle: "MIN", icon: "aaa")
 }
 
+
+#Preview {
+    ContentView()
+        .modelContainer(for: Item.self, inMemory: true)
+}

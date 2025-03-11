@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct MovingDotView: View {
     let pathPoints: [CGPoint] = [
         CGPoint(x: 285, y: 0),
