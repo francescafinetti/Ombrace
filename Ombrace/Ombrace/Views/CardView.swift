@@ -20,7 +20,7 @@ struct CardView: View {
                     Image(icon)
                         .resizable()
                         .scaledToFit()
-                        .frame(height: 110)
+                        .frame(height: 100)
                         .foregroundColor(.accent2)
                         .padding(.top)
                     
