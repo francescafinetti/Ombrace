@@ -16,8 +16,8 @@ func requestNotificationPermission() {
 
 func scheduleNotification(title: String, body: String, notificationTime: Date) {
     let content = UNMutableNotificationContent()
-    content.title = title
-    content.body = body
+    content.title = NSLocalizedString(title, comment: "Title of the notification that will receive the user, the information is the next one: Hey, Esername ⏰")
+    content.body = NSLocalizedString(body, comment: "Body of the notification that will receive the user, the information is the next one: Time for your session!")
     content.sound = .default
     
     let dateComponents = Calendar.current.dateComponents([.hour, .minute], from: notificationTime)
