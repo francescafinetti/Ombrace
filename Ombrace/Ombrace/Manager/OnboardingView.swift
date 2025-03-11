@@ -37,14 +37,14 @@ struct OnboardingView: View {
             
             
             
-            Text("Welcome to Ombrace!")
+            Text("Welcome to Ombrace!", comment: "The title of the Onboarding, Ombrace is the name of the App")
                 .font(.title)
                 .bold()
                 .multilineTextAlignment(.center)
                 .foregroundColor(.white)
                 .padding(.horizontal)
             
-            Text("Connect with your body and embrace self-kindness. Through guided exercises and mindfulness, you'll build a healthier, more balanced relationship with yourself—at your own pace, without pressure. \n\n You’re in the right place. Let’s begin.")
+            Text("Connect with your body and embrace self-kindness. Through guided exercises and mindfulness, you'll build a healthier, more balanced relationship with yourself—at your own pace, without pressure. \n\n You’re in the right place. Let’s begin.", comment: "The text of the onboarding")
                 .font(.headline)
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
@@ -57,7 +57,7 @@ struct OnboardingView: View {
                     currentPage = 1
                 }
             }) {
-                Text("Continue")
+                Text("Continue", comment: "A button to continue to the next screen of the onboarding")
                     .font(.title2)
                     .bold()
                     .padding()
@@ -77,7 +77,7 @@ struct OnboardingView: View {
         VStack {
             Spacer()
             
-            Text("How would you like to be called?")
+            Text("How would you like to be called?", comment: "The title of the view where the user can insert their name inside a text field")
                 .font(.title2)
                 .bold()
                 .foregroundColor(.white)
@@ -106,7 +106,7 @@ struct OnboardingView: View {
                 }
                 completeOnboarding()
             }) {
-                Text("Continue")
+                Text("Continue", comment: "Button text to continue the onboarding process after the user has inserted their name")
                     .frame(maxWidth: .infinity)
                     .padding()
                     .background(Color.accent2)
@@ -119,7 +119,7 @@ struct OnboardingView: View {
             Button(action: {
                 completeOnboarding()
             }) {
-                Text("Insert Later")
+                Text("Insert Later", comment: "Button text that is below a continue button, allowing the user to continue the onboarding process without entering a name")
                     .foregroundColor(.gray)
                     .bold()
             }
