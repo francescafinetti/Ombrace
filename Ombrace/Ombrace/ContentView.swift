@@ -39,7 +39,7 @@ struct ContentView: View {
                             CardView(
                                 title: "Guided Session",
                                 subtitle: "4 MIN",
-                                icon: "aaa"
+                                icon: "guided"
                                 
                             )
                         }
@@ -48,7 +48,7 @@ struct ContentView: View {
                             CardView(
                                 title: "Your Session",
                                 subtitle: "4 MIN",
-                                icon: "aaaa"
+                                icon: "your"
                                
                             )
                         }
