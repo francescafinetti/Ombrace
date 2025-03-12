@@ -91,6 +91,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
+				it,
 			);
 			mainGroup = F9BCD99F2D786CA30038F2E6;
 			minimizedProjectReferenceProxies = 1;
@@ -252,6 +254,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ombrace/Preview Content\"";
+
 				DEVELOPMENT_TEAM = Z5DMH5698Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -281,6 +284,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ombrace/Preview Content\"";
+
 				DEVELOPMENT_TEAM = Z5DMH5698Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

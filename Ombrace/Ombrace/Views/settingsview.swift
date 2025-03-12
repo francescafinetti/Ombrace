@@ -5,7 +5,7 @@ import UserNotifications
 struct SettingsView: View {
     @Environment(\.presentationMode) var presentationMode
     
-    @AppStorage("username") private var username: String = "example"
+    @AppStorage("username") private var username: String = ""
     @State private var notificationsEnabled: Bool = true
     @State private var notificationTime: Date = Date()
     @State private var selectedLanguage: String = "English (USA)"
@@ -16,8 +16,14 @@ struct SettingsView: View {
     @AppStorage("selectedSound") private var selectedSound: String = "None"
     @State private var isSoundMenuExpanded: Bool = false
     
-    let soundOptions = ["None", "Meditation", "Melody", "Piano", "Relaxing", "Yoga"]
-    let languages = ["Italiano", "English (USA)", "Français", "Español"]
+    let soundOptions = [
+        NSLocalizedString("None", comment: "Button option in sound settings, no sound selected, visible in the sound picker"),
+        NSLocalizedString("Meditation", comment: "Button option in sound settings for meditation sound, visible in the sound picker"),
+        NSLocalizedString("Melody", comment: "Button option in sound settings for melody sound, visible in the sound picker"),
+        NSLocalizedString("Piano", comment: "Button option in sound settings for piano sound, visible in the sound picker"),
+        NSLocalizedString("Relaxing", comment: "Button option in sound settings for relaxing sound, visible in the sound picker"),
+        NSLocalizedString("Yoga", comment: "Button option in sound settings for yoga sound, visible in the sound picker")
+    ]
     
     
     var body: some View {
@@ -105,27 +111,6 @@ struct SettingsView: View {
                     }
                 }
                 
-                Section(header: Text("Language Settings")) {
-                    HStack {
-                        Text("Language")
-                        Spacer()
-                        Button(action: {
-                            showingLanguagePicker.toggle()
-                        }) {
-                            Text(selectedLanguage)
-                                .foregroundColor(.accent2)
-                        }
-                    }
-                    
-                    if showingLanguagePicker {
-                        Picker("Select Language", selection: $selectedLanguage) {
-                            ForEach(languages, id: \ .self) { language in
-                                Text(language)
-                            }
-                        }
-                        .pickerStyle(WheelPickerStyle())
-                    }
-                }
                 
                 Section {
                     NavigationLink(destination: InfoView()) {

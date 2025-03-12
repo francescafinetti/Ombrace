@@ -6,8 +6,10 @@ struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
     @State private var isSettingsPresented = false
-    @AppStorage("username") private var username: String = "User"
-    
+    @AppStorage("username") private var username: String = ""
+    var displayUsername: String {
+        username.isEmpty ? NSLocalizedString("User", comment: "Default username variable if the user dont set one, it is used on the greeting Hello, User") : username
+    }
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading, spacing: 20) {
@@ -16,7 +18,7 @@ struct ContentView: View {
                         Text(currentDateFormatted())
                             .font(.callout)
                             .foregroundColor(.gray)
-                        Text("Hello, \(username)")
+                        Text("Hello, \(displayUsername)", comment:  "Title of the app, it give a greeting to the the user as Hello, UserName")
                             .font(.largeTitle)
                             .bold()
                             .foregroundColor(.primary)
@@ -79,6 +81,7 @@ struct ContentView: View {
     
     private func currentDateFormatted() -> String {
         let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: Locale.preferredLanguages.first ?? "en")
         formatter.dateFormat = "EEEE, d MMMM"
         return formatter.string(from: Date()).capitalized
     }

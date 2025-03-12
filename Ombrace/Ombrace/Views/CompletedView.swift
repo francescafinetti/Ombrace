@@ -7,22 +7,23 @@ struct CompletedView: View {
                 AnimatedCircleView()
                     .padding(.bottom)
 
-                Text("Well done!")
+                Text("Well done!", comment: "I title that explains to the user that has completed the session")
                     .font(.title)
                     .bold()
                     .multilineTextAlignment(.center)
                     .foregroundColor(.white)
                     .padding(.horizontal)
+
                     .padding(.top)
 
-                Text("You completed the session! \n You should be proud of what you have accomplished today.")
+                Text("You completed the session! \n You should be proud of what you have accomplished today.", comment: "A text that explains to the user that has completed the session")
                     .font(.headline)
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
                     .padding(.bottom)
                 NavigationLink(destination: ContentView()) {
-                    Text("Complete")
+                    Text("Complete", comment: "A button that allows the user to go back to the home screen after completing the session, the button give the idea of had completed it.")
                         .font(.title2)
                         .bold()
                         .padding()

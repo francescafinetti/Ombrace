@@ -1,7 +1,7 @@
 import SwiftUI
 import AVFoundation
 
-let texts = [
+let texts: [LocalizedStringKey] = [
        "If you’d like, you can close your eyes and allow yourself to settle into this moment.",
        "Let your body soften just a little… and take a gentle breath—no need to change anything, just noticing your inhale and exhale.",
        "Now, bring awareness to your hands. Feel their warmth, their presence, the gentle contact with your body.",

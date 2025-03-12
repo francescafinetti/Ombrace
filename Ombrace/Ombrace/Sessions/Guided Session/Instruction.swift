@@ -12,7 +12,7 @@ enum BodyPoint: CaseIterable {
 struct Instruction {
     var id: Int
     var handsposition: handposition
-    var text: String
+    var text: LocalizedStringKey
     var duration: Double
     var scale: CGFloat
     var offset: CGSize

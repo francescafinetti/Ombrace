@@ -4,12 +4,13 @@ struct GuidedStartView: View {
     @State private var navigateToSession = false
     
     var body: some View {
+
         NavigationView {
             ZStack {
                 VStack(alignment: .trailing, spacing: 50) {
                     HStack {
                         VStack(alignment: .trailing, spacing: 15) {
-                            Text("Guided Session")
+                            Text("Guided Session", comment: "Title that welcome the user after selecting Guided Session mode in the menu")
                                 .font(.largeTitle)
                                 .bold()
                                 .multilineTextAlignment(.leading)
@@ -18,7 +19,7 @@ struct GuidedStartView: View {
                                 .offset(x: -50)
                             
                             VStack(alignment: .trailing, spacing: 25) {
-                                Text("Let the glowing dots guide your hands with mindfulness and intention.")
+                                Text("Let the glowing dots guide your hands with mindfulness and intention.", comment: "Text that explains the user how to start the session")
                                     .font(.subheadline)
                                     .fontWeight(.bold)
                                     .foregroundColor(.accent2)
@@ -27,7 +28,7 @@ struct GuidedStartView: View {
                                     .offset(x: 20)
 
 
-                                Text("Take a deep breath and begin when you're ready.")
+                                Text("Take a deep breath and begin when you're ready.", comment: "Text that explains the user how to start the session")
                                     .font(.body)
                                     .foregroundColor(.gray)
                                     .multilineTextAlignment(.leading)
@@ -39,7 +40,7 @@ struct GuidedStartView: View {
                             Button(action: {
                                 navigateToSession = true
                             }) {
-                                Text("Start")
+                                Text("Start", comment: "Button to start the session.")
                                     .font(.title2)
                                     .bold()
                                     .padding()
