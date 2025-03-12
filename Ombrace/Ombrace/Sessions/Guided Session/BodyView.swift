@@ -24,11 +24,21 @@ struct BodyView: View {
                     .opacity(0.8)
                     
                 
-                SessionCircleView()
+                SessionCircleView(gradientColors: [
+                    Color.yellow.opacity(0.7),
+                           Color.yellow.opacity(0.8),
+                           Color.red.opacity(0.9),
+                           Color.white.opacity(0.6)
+                ])
                     .frame(width: 20, height: 20)
                     .position(leftPosition)
                 
-                SessionCircleView()
+                SessionCircleView(gradientColors: [
+                    Color.orange.opacity(0.7),
+                           Color.orange.opacity(0.8),
+                           Color.red.opacity(0.9),
+                           Color.white.opacity(0.6)
+                ])
                     .frame(width: 20, height: 20)
                     .position(rightPosition)
             }
