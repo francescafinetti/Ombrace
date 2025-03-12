@@ -2,48 +2,77 @@ import SwiftUI
 
 struct GuidedStartView: View {
     @State private var navigateToSession = false
+    
     var body: some View {
-        NavigationStack {
-            VStack(spacing: 30) {
-                Text("Welcome to your Guided Session", comment: "Title that welcome the user after selecting Guided Session mode in the menu")
-                    .font(.largeTitle)
-                    .bold()
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal)
-                
-                Image("body")
-                    .resizable()
-                    .scaledToFit()
-                
-                Text("Take a deep breath and begin when you're ready.", comment: "Text that explains the user how to start the session")
-                    .font(.headline)
-                    .foregroundColor(.gray)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal)
+
+        NavigationView {
+            ZStack {
+                VStack(alignment: .trailing, spacing: 50) {
+                    HStack {
+                        VStack(alignment: .trailing, spacing: 15) {
+                            Text("Guided Session", comment: "Title that welcome the user after selecting Guided Session mode in the menu")
+                                .font(.largeTitle)
+                                .bold()
+                                .multilineTextAlignment(.leading)
+                                .foregroundColor(.white)
+                                .frame(width: 220, alignment: .trailing)
+                                .offset(x: -50)
+                            
+                            VStack(alignment: .trailing, spacing: 25) {
+                                Text("Let the glowing dots guide your hands with mindfulness and intention.", comment: "Text that explains the user how to start the session")
+                                    .font(.subheadline)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.accent2)
+                                    .multilineTextAlignment(.leading)
+                                    .frame(width: 200, alignment: .trailing)
+                                    .offset(x: 20)
+
+
+                                Text("Take a deep breath and begin when you're ready.", comment: "Text that explains the user how to start the session")
+                                    .font(.body)
+                                    .foregroundColor(.gray)
+                                    .multilineTextAlignment(.leading)
+                                    .frame(width: 200, alignment: .trailing)
+                                    .offset(x: 10)
+
+                            }
+                            
+                            Button(action: {
+                                navigateToSession = true
+                            }) {
+                                Text("Start", comment: "Button to start the session.")
+                                    .font(.title2)
+                                    .bold()
+                                    .padding()
+                                    .frame(width: 200)
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 28)
+                                            .fill(Color.accent2)
+                                    )
+                                    .foregroundColor(.white)
+                                    .offset(x: 12)
+                            }
+                            .padding(.top, 50)
+                        }
+                        .padding(.bottom, 50)
+                        .padding(.leading, 200)
+
+                        Image("body") 
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 400)
+                            .opacity(0.8)
+                            .ignoresSafeArea()
+                    }
+                    .padding(.horizontal, 20)
+                }
             }
-            .padding()
-            Button(action: {
-                navigateToSession = true
-            }) {
-                Text("Start", comment: "Button to start the session.")
-                    .font(.title2)
-                    .bold()
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color.accent2)
-                    .foregroundColor(.white)
-                    .cornerRadius(12)
-                    .shadow(radius: 5)
-                    .padding(.horizontal, 40)
-            }
-            .padding(.top, 100)
         }
         .navigationDestination(isPresented: $navigateToSession) {
-            GlowingBodyView()
+            GlowingBodyContainerView()
         }
     }
 }
-
 
 #Preview {
     GuidedStartView()

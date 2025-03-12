@@ -19,7 +19,7 @@ struct IntertwinedCirclesView: View {
                         sessionCompleted = true
                     }
                 }) {
-                    NavigationLink(destination: CompletedView()) {
+                    NavigationLink(destination: ExitSessionView()) {
                         Image(systemName: "figure.walk.departure")
                             .resizable()
                             .frame(width: 22, height: 22)

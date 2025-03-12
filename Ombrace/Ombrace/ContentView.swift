@@ -41,7 +41,7 @@ struct ContentView: View {
                             CardView(
                                 title: "Guided Session",
                                 subtitle: "4 MIN",
-                                icon: "aaaa"
+                                icon: "guided"
                                 
                             )
                         }
@@ -49,8 +49,8 @@ struct ContentView: View {
                         NavigationLink(destination: StartView()) {
                             CardView(
                                 title: "Your Session",
-                                subtitle: "-",
-                                icon: "aaa"
+                                subtitle: "4 MIN",
+                                icon: "your"
                                
                             )
                         }
