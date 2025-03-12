@@ -26,12 +26,10 @@ struct BodyView: View {
                 
                 SessionCircleView()
                     .frame(width: 20, height: 20)
-                    .foregroundColor(.blue)
                     .position(leftPosition)
                 
                 SessionCircleView()
                     .frame(width: 20, height: 20)
-                    .foregroundColor(.red)
                     .position(rightPosition)
             }
             .scaleEffect(scale)
@@ -45,10 +43,10 @@ struct BodyView: View {
 struct BodyView_Previews: PreviewProvider {
     static var previews: some View {
         BodyView(
-            leftPosition: .constant(CGPoint(x: 170, y: 155)),
-            rightPosition: .constant(CGPoint(x: 320, y: 600)),
-            scale: .constant(2.0),
-            offset: .constant(CGSize(width: 100, height: 200))
+            leftPosition: .constant(CGPoint(x: 170, y: 300)),
+            rightPosition: .constant(CGPoint(x: 200, y: 450)),
+            scale: .constant(1.5),
+            offset: .constant(CGSize(width: 0, height: 150))
         )
         .frame(width: 400, height: 800)
     }

@@ -18,17 +18,17 @@ struct GlowingBodyContainerView: View {
     // A dictionary to map each BodyPoint to a corresponding CGPoint
     private var bodyPointPositions: [BodyPoint: CGPoint] = [
         .leftcheek: CGPoint(x: 170, y: 155),
-        .rightcheek: CGPoint(x: 300, y: 250),
-        .leftShoulder: CGPoint(x: 80, y: 200),
-        .rightShoulder: CGPoint(x: 320, y: 200),
-        .heart: CGPoint(x: 200, y: 300),
-        .stomach: CGPoint(x: 200, y: 400),
-        .rightelbow: CGPoint(x: 320, y: 400),
-        .leftelbow: CGPoint(x: 80, y: 400),
+        .rightcheek: CGPoint(x: 230, y: 155),
+        .leftShoulder: CGPoint(x: 110, y: 250),
+        .rightShoulder: CGPoint(x: 290, y: 250),
+        .heart: CGPoint(x: 170, y: 300),
+        .stomach: CGPoint(x: 200, y: 450),
+        .rightelbow: CGPoint(x: 320, y: 430),
+        .leftelbow: CGPoint(x: 80, y: 430),
         .righthand: CGPoint(x: 320, y: 600),
         .lefthand: CGPoint(x: 80, y: 600),
-        .rightarm: CGPoint(x: 320, y: 350),
-        .leftarm: CGPoint(x: 80, y: 350)
+        .rightarm: CGPoint(x: 310, y: 360),
+        .leftarm: CGPoint(x: 90, y: 360)
     ]
     
     var body: some View {
