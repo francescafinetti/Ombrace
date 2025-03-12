@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct InstructionView: View {
-    let text: String
+    let text: LocalizedStringKey
     @Binding var textVisible: Bool
     
     var body: some View {
