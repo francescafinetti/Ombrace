@@ -43,13 +43,13 @@ struct GuidedStartView: View {
                                     .font(.title2)
                                     .bold()
                                     .padding()
-                                    .frame(width: 220)
+                                    .frame(width: 200)
                                     .background(
                                         RoundedRectangle(cornerRadius: 28)
                                             .fill(Color.accent2)
                                     )
                                     .foregroundColor(.white)
-                                    .offset(x: 35)
+                                    .offset(x: 12)
                             }
                             .padding(.top, 50)
                         }
