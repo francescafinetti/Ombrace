@@ -6,39 +6,36 @@ struct GuidedStartView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                VStack(alignment: .leading, spacing: 50) {
+                VStack(alignment: .trailing, spacing: 50) {
                     HStack {
-                        Image("body")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 400)
-                            .opacity(0.8)
-                            .ignoresSafeArea()
-                        
-                        VStack(alignment: .leading, spacing: 15) {
+                        VStack(alignment: .trailing, spacing: 15) {
                             Text("Guided Session")
                                 .font(.largeTitle)
                                 .bold()
                                 .multilineTextAlignment(.leading)
                                 .foregroundColor(.white)
-                                .frame(width: 220, alignment: .leading)
-                                .offset(x: -20)
+                                .frame(width: 220, alignment: .trailing)
+                                .offset(x: -50)
                             
-                            
-                            VStack(alignment: .leading, spacing: 25) {
-                                
-                                
+                            VStack(alignment: .trailing, spacing: 25) {
                                 Text("Let the glowing dots guide your hands with mindfulness and intention.")
                                     .font(.subheadline)
                                     .fontWeight(.bold)
                                     .foregroundColor(.accent2)
-                                    .frame(width: 200, alignment: .leading)
-                                
+                                    .multilineTextAlignment(.leading)
+                                    .frame(width: 200, alignment: .trailing)
+                                    .offset(x: 20)
+
+
                                 Text("Take a deep breath and begin when you're ready.")
                                     .font(.body)
                                     .foregroundColor(.gray)
-                                    .frame(width: 200, alignment: .leading)
-                            } .offset(x: -20)
+                                    .multilineTextAlignment(.leading)
+                                    .frame(width: 200, alignment: .trailing)
+                                    .offset(x: 10)
+
+                            }
+                            
                             Button(action: {
                                 navigateToSession = true
                             }) {
@@ -50,14 +47,21 @@ struct GuidedStartView: View {
                                     .background(
                                         RoundedRectangle(cornerRadius: 28)
                                             .fill(Color.accent2)
-                                        
                                     )
                                     .foregroundColor(.white)
-                                    .offset(x: -35)
+                                    .offset(x: 35)
                             }
                             .padding(.top, 50)
-                        }.padding(.bottom, 50)
-                        .padding(.trailing, 200)
+                        }
+                        .padding(.bottom, 50)
+                        .padding(.leading, 200)
+
+                        Image("body") 
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 400)
+                            .opacity(0.8)
+                            .ignoresSafeArea()
                     }
                     .padding(.horizontal, 20)
                 }
