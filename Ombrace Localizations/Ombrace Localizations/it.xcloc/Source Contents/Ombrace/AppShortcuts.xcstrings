@@ -1,0 +1,34 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Start guided session" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Start guided session",
+              "Begin guided session"
+            ]
+          }
+        }
+      }
+    },
+    "Start session" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Start session",
+              "Begin session"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

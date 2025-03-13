@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Ombrace/AppShortcuts.xcstrings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A242d"/>
+    </header>
+    <body>
+      <trans-unit id="Start guided session" xml:space="preserve">
+        <source>
+          <mrk mtype="x-set" mid="0">Start guided session</mrk>
+          <mrk mtype="x-set" mid="1">Begin guided session</mrk>
+        </source>
+        <target state="new">
+          <mrk mtype="x-set" mid="0">Start guided session</mrk>
+          <mrk mtype="x-set" mid="1">Begin guided session</mrk>
+        </target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Start session" xml:space="preserve">
+        <source>
+          <mrk mtype="x-set" mid="0">Start session</mrk>
+          <mrk mtype="x-set" mid="1">Begin session</mrk>
+        </source>
+        <target state="new">
+          <mrk mtype="x-set" mid="0">Start session</mrk>
+          <mrk mtype="x-set" mid="1">Begin session</mrk>
+        </target>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Ombrace/InfoPlist.xcstrings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A242d"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>Ombrace</source>
+        <target state="new">Ombrace</target>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSCameraUsageDescription" xml:space="preserve">
+        <source>Questa app utilizza la fotocamera per il tracciamento delle mani.</source>
+        <target state="new">Questa app utilizza la fotocamera per il tracciamento delle mani.</target>
+        <note>Privacy - Camera Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSFaceIDUsageDescription" xml:space="preserve">
+        <source>Utilizzato per il riconoscimento delle mani con Vision</source>
+        <target state="new">Utilizzato per il riconoscimento delle mani con Vision</target>
+        <note>Privacy - Face ID Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSSiriUsageDescription" xml:space="preserve">
+        <source>Allows Siri to start a session in the app.</source>
+        <target state="new">Allows Siri to start a session in the app.</target>
+        <note>Privacy - Siri Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Ombrace/Localizable.xcstrings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A242d"/>
+    </header>
+    <body>
+      <trans-unit id="4 MIN" xml:space="preserve">
+        <source>4 MIN</source>
+        <target state="new">4 MIN</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="A self-guided and personal space where you can select exercises, reflections, and practices that best support your journey toward self-acceptance. &#10; You're free to end the session anytime you need and repeat it whenever you want." xml:space="preserve">
+        <source>A self-guided and personal space where you can select exercises, reflections, and practices that best support your journey toward self-acceptance. 
+ You're free to end the session anytime you need and repeat it whenever you want.</source>
+        <target state="new">A self-guided and personal space where you can select exercises, reflections, and practices that best support your journey toward self-acceptance. 
+ You're free to end the session anytime you need and repeat it whenever you want.</target>
+        <note>Text that explains the user how to start the session</note>
+      </trans-unit>
+      <trans-unit id="A space designed to support individuals who are navigating body dysmorphia with self-awareness and a desire for change." xml:space="preserve">
+        <source>A space designed to support individuals who are navigating body dysmorphia with self-awareness and a desire for change.</source>
+        <target state="new">A space designed to support individuals who are navigating body dysmorphia with self-awareness and a desire for change.</target>
+        <note>Information about the app</note>
+      </trans-unit>
+      <trans-unit id="About" xml:space="preserve">
+        <source>About</source>
+        <target state="new">About</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow yourself to enjoy this space of calm, knowing that you can always return to it whenever you need." xml:space="preserve">
+        <source>Allow yourself to enjoy this space of calm, knowing that you can always return to it whenever you need.</source>
+        <target state="new">Allow yourself to enjoy this space of calm, knowing that you can always return to it whenever you need.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Are you sure you want to leave?" xml:space="preserve">
+        <source>Are you sure you want to leave?</source>
+        <target state="new">Are you sure you want to leave?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Bring your attention to the heartbeat, letting your breath guide you." xml:space="preserve">
+        <source>Bring your attention to the heartbeat, letting your breath guide you.</source>
+        <target state="new">Bring your attention to the heartbeat, letting your breath guide you.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Calmly, move both hands toward your elbows." xml:space="preserve">
+        <source>Calmly, move both hands toward your elbows.</source>
+        <target state="new">Calmly, move both hands toward your elbows.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Complete" xml:space="preserve">
+        <source>Complete</source>
+        <target state="new">Complete</target>
+        <note>A button that allows the user to go back to the home screen after completing the session, the button give the idea of had completed it.</note>
+      </trans-unit>
+      <trans-unit id="Connect with your body and embrace self-kindness. Through guided exercises and mindfulness, you'll build a healthier, more balanced relationship with yourself—at your own pace, without pressure. &#10;&#10; You’re in the right place. Let’s begin." xml:space="preserve">
+        <source>Connect with your body and embrace self-kindness. Through guided exercises and mindfulness, you'll build a healthier, more balanced relationship with yourself—at your own pace, without pressure. 
+
+ You’re in the right place. Let’s begin.</source>
+        <target state="new">Connect with your body and embrace self-kindness. Through guided exercises and mindfulness, you'll build a healthier, more balanced relationship with yourself—at your own pace, without pressure. 
+
+ You’re in the right place. Let’s begin.</target>
+        <note>The text of the onboarding</note>
+      </trans-unit>
+      <trans-unit id="Continue" xml:space="preserve">
+        <source>Continue</source>
+        <target state="new">Continue</target>
+        <note>A button to continue to the next screen of the onboarding
+Button text to continue the onboarding process after the user has inserted their name</note>
+      </trans-unit>
+      <trans-unit id="Done" xml:space="preserve">
+        <source>Done</source>
+        <target state="new">Done</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enter your name" xml:space="preserve">
+        <source>Enter your name</source>
+        <target state="new">Enter your name</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Gently bring your attention to the part of you that feels good right now, even if it’s just a small area of comfort." xml:space="preserve">
+        <source>Gently bring your attention to the part of you that feels good right now, even if it’s just a small area of comfort.</source>
+        <target state="new">Gently bring your attention to the part of you that feels good right now, even if it’s just a small area of comfort.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Give yourself a little squeeze, as if you’re offering yourself a gentle hug with love." xml:space="preserve">
+        <source>Give yourself a little squeeze, as if you’re offering yourself a gentle hug with love.</source>
+        <target state="new">Give yourself a little squeeze, as if you’re offering yourself a gentle hug with love.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Give yourself the time to listen to what your body is communicating today." xml:space="preserve">
+        <source>Give yourself the time to listen to what your body is communicating today.</source>
+        <target state="new">Give yourself the time to listen to what your body is communicating today.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Guided Session" xml:space="preserve">
+        <source>Guided Session</source>
+        <target state="new">Guided Session</target>
+        <note>Title that welcome the user after selecting Guided Session mode in the menu</note>
+      </trans-unit>
+      <trans-unit id="HOW WOULD YOU LIKE TO BE CALLED?" xml:space="preserve">
+        <source>HOW WOULD YOU LIKE TO BE CALLED?</source>
+        <target state="new">HOW WOULD YOU LIKE TO BE CALLED?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Hello, %@" xml:space="preserve">
+        <source>Hello, %@</source>
+        <target state="new">Hello, %@</target>
+        <note>Title of the app, it give a greeting to the the user as Hello, UserName</note>
+      </trans-unit>
+      <trans-unit id="How does this sensation feel? Stay for a moment and experience it." xml:space="preserve">
+        <source>How does this sensation feel? Stay for a moment and experience it.</source>
+        <target state="new">How does this sensation feel? Stay for a moment and experience it.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="How would you like to be called?" xml:space="preserve">
+        <source>How would you like to be called?</source>
+        <target state="new">How would you like to be called?</target>
+        <note>The title of the view where the user can insert their name inside a text field</note>
+      </trans-unit>
+      <trans-unit id="I now invite you to try on your own, exploring the movement and feeling what helps you feel better." xml:space="preserve">
+        <source>I now invite you to try on your own, exploring the movement and feeling what helps you feel better.</source>
+        <target state="new">I now invite you to try on your own, exploring the movement and feeling what helps you feel better.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="If it feels right, try gently shifting your attention to another part of your body, perhaps one you haven’t considered yet." xml:space="preserve">
+        <source>If it feels right, try gently shifting your attention to another part of your body, perhaps one you haven’t considered yet.</source>
+        <target state="new">If it feels right, try gently shifting your attention to another part of your body, perhaps one you haven’t considered yet.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="If it feels right, you can accompany this sensation with a light touch, as if giving yourself a gentle hug." xml:space="preserve">
+        <source>If it feels right, you can accompany this sensation with a light touch, as if giving yourself a gentle hug.</source>
+        <target state="new">If it feels right, you can accompany this sensation with a light touch, as if giving yourself a gentle hug.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="If you’d like, try bringing your hand to that area with kindness, without judging the sensation." xml:space="preserve">
+        <source>If you’d like, try bringing your hand to that area with kindness, without judging the sensation.</source>
+        <target state="new">If you’d like, try bringing your hand to that area with kindness, without judging the sensation.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="If you’d like, you can close your eyes to focus more on the sensations your body is experiencing." xml:space="preserve">
+        <source>If you’d like, you can close your eyes to focus more on the sensations your body is experiencing.</source>
+        <target state="new">If you’d like, you can close your eyes to focus more on the sensations your body is experiencing.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="If you’d like, you can gently move your thumbs, exploring the sensation of contact." xml:space="preserve">
+        <source>If you’d like, you can gently move your thumbs, exploring the sensation of contact.</source>
+        <target state="new">If you’d like, you can gently move your thumbs, exploring the sensation of contact.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Imagine offering that area the same warmth and care you would give to someone you love." xml:space="preserve">
+        <source>Imagine offering that area the same warmth and care you would give to someone you love.</source>
+        <target state="new">Imagine offering that area the same warmth and care you would give to someone you love.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Immersive Session" xml:space="preserve">
+        <source>Immersive Session</source>
+        <target state="new">Immersive Session</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Insert Later" xml:space="preserve">
+        <source>Insert Later</source>
+        <target state="new">Insert Later</target>
+        <note>Button text that is below a continue button, allowing the user to continue the onboarding process without entering a name</note>
+      </trans-unit>
+      <trans-unit id="Insert name" xml:space="preserve">
+        <source>Insert name</source>
+        <target state="new">Insert name</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Inspired by research on self-compassion and supportive touch, our approach encourages gentle, non-judgmental engagement with your body, helping you shift towards a more balanced and appreciative self-perception." xml:space="preserve">
+        <source>Inspired by research on self-compassion and supportive touch, our approach encourages gentle, non-judgmental engagement with your body, helping you shift towards a more balanced and appreciative self-perception.</source>
+        <target state="new">Inspired by research on self-compassion and supportive touch, our approach encourages gentle, non-judgmental engagement with your body, helping you shift towards a more balanced and appreciative self-perception.</target>
+        <note>Information about the app</note>
+      </trans-unit>
+      <trans-unit id="It's okay to take a break. &#10;You can always come back whenever you're ready." xml:space="preserve">
+        <source>It's okay to take a break. 
+You can always come back whenever you're ready.</source>
+        <target state="new">It's okay to take a break. 
+You can always come back whenever you're ready.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Leave Session" xml:space="preserve">
+        <source>Leave Session</source>
+        <target state="new">Leave Session</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Let the air gently flow in and expand where it is needed." xml:space="preserve">
+        <source>Let the air gently flow in and expand where it is needed.</source>
+        <target state="new">Let the air gently flow in and expand where it is needed.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Let the glowing dots guide your hands with mindfulness and intention." xml:space="preserve">
+        <source>Let the glowing dots guide your hands with mindfulness and intention.</source>
+        <target state="new">Let the glowing dots guide your hands with mindfulness and intention.</target>
+        <note>Text that explains the user how to start the session</note>
+      </trans-unit>
+      <trans-unit id="Let the warmth of your hand bring support and security, like an act of care towards yourself." xml:space="preserve">
+        <source>Let the warmth of your hand bring support and security, like an act of care towards yourself.</source>
+        <target state="new">Let the warmth of your hand bring support and security, like an act of care towards yourself.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Let’s begin together, taking a moment to listen. Make sure your body feels comfortable and ready to follow the movement." xml:space="preserve">
+        <source>Let’s begin together, taking a moment to listen. Make sure your body feels comfortable and ready to follow the movement.</source>
+        <target state="new">Let’s begin together, taking a moment to listen. Make sure your body feels comfortable and ready to follow the movement.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Listen to what your body is telling you, trusting its wisdom." xml:space="preserve">
+        <source>Listen to what your body is telling you, trusting its wisdom.</source>
+        <target state="new">Listen to what your body is telling you, trusting its wisdom.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Make soft movements, as if you’re gently caressing yourself with tenderness." xml:space="preserve">
+        <source>Make soft movements, as if you’re gently caressing yourself with tenderness.</source>
+        <target state="new">Make soft movements, as if you’re gently caressing yourself with tenderness.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Meditation" xml:space="preserve">
+        <source>Meditation</source>
+        <target state="new">Meditation</target>
+        <note>Button option in sound settings for meditation sound, visible in the sound picker</note>
+      </trans-unit>
+      <trans-unit id="Melody" xml:space="preserve">
+        <source>Melody</source>
+        <target state="new">Melody</target>
+        <note>Button option in sound settings for melody sound, visible in the sound picker</note>
+      </trans-unit>
+      <trans-unit id="Move your right hand and place it gently on your left shoulder, so that both shoulders are supported by your hands." xml:space="preserve">
+        <source>Move your right hand and place it gently on your left shoulder, so that both shoulders are supported by your hands.</source>
+        <target state="new">Move your right hand and place it gently on your left shoulder, so that both shoulders are supported by your hands.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="None" xml:space="preserve">
+        <source>None</source>
+        <target state="new">None</target>
+        <note>Button option in sound settings, no sound selected, visible in the sound picker</note>
+      </trans-unit>
+      <trans-unit id="Notification" xml:space="preserve">
+        <source>Notification</source>
+        <target state="new">Notification</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Notification Settings" xml:space="preserve">
+        <source>Notification Settings</source>
+        <target state="new">Notification Settings</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Notification Time" xml:space="preserve">
+        <source>Notification Time</source>
+        <target state="new">Notification Time</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Now slowly move your hands down to your biceps, letting your right and left hands slide down your arms, at your own pace." xml:space="preserve">
+        <source>Now slowly move your hands down to your biceps, letting your right and left hands slide down your arms, at your own pace.</source>
+        <target state="new">Now slowly move your hands down to your biceps, letting your right and left hands slide down your arms, at your own pace.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Now, move your left hand over your heart and your right hand over your stomach, as if appreciating these two important spaces of your body." xml:space="preserve">
+        <source>Now, move your left hand over your heart and your right hand over your stomach, as if appreciating these two important spaces of your body.</source>
+        <target state="new">Now, move your left hand over your heart and your right hand over your stomach, as if appreciating these two important spaces of your body.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Now, slowly move both hands down your arms, bringing them together as if you want to unite the hearts of your hands." xml:space="preserve">
+        <source>Now, slowly move both hands down your arms, bringing them together as if you want to unite the hearts of your hands.</source>
+        <target state="new">Now, slowly move both hands down your arms, bringing them together as if you want to unite the hearts of your hands.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Now, slowly move your left hand to your right shoulder, as if you want to cradle yourself gently with the touch." xml:space="preserve">
+        <source>Now, slowly move your left hand to your right shoulder, as if you want to cradle yourself gently with the touch.</source>
+        <target state="new">Now, slowly move your left hand to your right shoulder, as if you want to cradle yourself gently with the touch.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Now, without forcing anything, notice if there is a part that feels tense, tired, or heavy." xml:space="preserve">
+        <source>Now, without forcing anything, notice if there is a part that feels tense, tired, or heavy.</source>
+        <target state="new">Now, without forcing anything, notice if there is a part that feels tense, tired, or heavy.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Opens the guided session with animations and sounds." xml:space="preserve">
+        <source>Opens the guided session with animations and sounds.</source>
+        <target state="new">Opens the guided session with animations and sounds.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Opens the interactive session." xml:space="preserve">
+        <source>Opens the interactive session.</source>
+        <target state="new">Opens the interactive session.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Our mission is to help you cultivate a healthier connection with your body through self-compassion, body-focused exercises, and mindful practices." xml:space="preserve">
+        <source>Our mission is to help you cultivate a healthier connection with your body through self-compassion, body-focused exercises, and mindful practices.</source>
+        <target state="new">Our mission is to help you cultivate a healthier connection with your body through self-compassion, body-focused exercises, and mindful practices.</target>
+        <note>Information about the app</note>
+      </trans-unit>
+      <trans-unit id="Piano" xml:space="preserve">
+        <source>Piano</source>
+        <target state="new">Piano</target>
+        <note>Button option in sound settings for piano sound, visible in the sound picker</note>
+      </trans-unit>
+      <trans-unit id="Relaxing" xml:space="preserve">
+        <source>Relaxing</source>
+        <target state="new">Relaxing</target>
+        <note>Button option in sound settings for relaxing sound, visible in the sound picker</note>
+      </trans-unit>
+      <trans-unit id="Select Time" xml:space="preserve">
+        <source>Select Time</source>
+        <target state="new">Select Time</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Settings" xml:space="preserve">
+        <source>Settings</source>
+        <target state="new">Settings</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Sound" xml:space="preserve">
+        <source>Sound</source>
+        <target state="new">Sound</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Sound Settings" xml:space="preserve">
+        <source>Sound Settings</source>
+        <target state="new">Sound Settings</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Sound Type" xml:space="preserve">
+        <source>Sound Type</source>
+        <target state="new">Sound Type</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Start" xml:space="preserve">
+        <source>Start</source>
+        <target state="new">Start</target>
+        <note>Button to start the session.</note>
+      </trans-unit>
+      <trans-unit id="Start Guided Session" xml:space="preserve">
+        <source>Start Guided Session</source>
+        <target state="new">Start Guided Session</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Start Session" xml:space="preserve">
+        <source>Start Session</source>
+        <target state="new">Start Session</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Start Your Session" xml:space="preserve">
+        <source>Start Your Session</source>
+        <target state="new">Start Your Session</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Start by gently bringing your left hand to your right cheek, as if you want to softly caress your face with your palm." xml:space="preserve">
+        <source>Start by gently bringing your left hand to your right cheek, as if you want to softly caress your face with your palm.</source>
+        <target state="new">Start by gently bringing your left hand to your right cheek, as if you want to softly caress your face with your palm.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Stay in this feeling of well-being for a moment, allowing it to expand like a gentle light within you." xml:space="preserve">
+        <source>Stay in this feeling of well-being for a moment, allowing it to expand like a gentle light within you.</source>
+        <target state="new">Stay in this feeling of well-being for a moment, allowing it to expand like a gentle light within you.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Stay with the sensation of contact with your hand, without rushing. Simply notice how it makes you feel." xml:space="preserve">
+        <source>Stay with the sensation of contact with your hand, without rushing. Simply notice how it makes you feel.</source>
+        <target state="new">Stay with the sensation of contact with your hand, without rushing. Simply notice how it makes you feel.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Take a deep breath and begin when you're ready." xml:space="preserve">
+        <source>Take a deep breath and begin when you're ready.</source>
+        <target state="new">Take a deep breath and begin when you're ready.</target>
+        <note>Text that explains the user how to start the session</note>
+      </trans-unit>
+      <trans-unit id="Take a moment to feel the connection with your body and your breath." xml:space="preserve">
+        <source>Take a moment to feel the connection with your body and your breath.</source>
+        <target state="new">Take a moment to feel the connection with your body and your breath.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Take a moment to feel the difference between before and now, without expectations." xml:space="preserve">
+        <source>Take a moment to feel the difference between before and now, without expectations.</source>
+        <target state="new">Take a moment to feel the difference between before and now, without expectations.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Take a moment to feel your two hands moving together, as if they are gentle hands offering warmth and care." xml:space="preserve">
+        <source>Take a moment to feel your two hands moving together, as if they are gentle hands offering warmth and care.</source>
+        <target state="new">Take a moment to feel your two hands moving together, as if they are gentle hands offering warmth and care.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Thank your body for welcoming this experience, exactly as it could today." xml:space="preserve">
+        <source>Thank your body for welcoming this experience, exactly as it could today.</source>
+        <target state="new">Thank your body for welcoming this experience, exactly as it could today.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="There is nothing to change or fix right away—simply stay present with your touch and your breath." xml:space="preserve">
+        <source>There is nothing to change or fix right away—simply stay present with your touch and your breath.</source>
+        <target state="new">There is nothing to change or fix right away—simply stay present with your touch and your breath.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This journey is personal, and progress looks different for everyone. Whether you're taking your first step or deepening your practice, Ombrace is here to guide you in fostering a more positive and compassionate relationship with yourself." xml:space="preserve">
+        <source>This journey is personal, and progress looks different for everyone. Whether you're taking your first step or deepening your practice, Ombrace is here to guide you in fostering a more positive and compassionate relationship with yourself.</source>
+        <target state="new">This journey is personal, and progress looks different for everyone. Whether you're taking your first step or deepening your practice, Ombrace is here to guide you in fostering a more positive and compassionate relationship with yourself.</target>
+        <note>Information about the app</note>
+      </trans-unit>
+      <trans-unit id="This position is very practical, and you can use it whenever you want, anywhere, to feel supported." xml:space="preserve">
+        <source>This position is very practical, and you can use it whenever you want, anywhere, to feel supported.</source>
+        <target state="new">This position is very practical, and you can use it whenever you want, anywhere, to feel supported.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Try to follow my gestures, but remember you can go at your own pace. There’s no rush." xml:space="preserve">
+        <source>Try to follow my gestures, but remember you can go at your own pace. There’s no rush.</source>
+        <target state="new">Try to follow my gestures, but remember you can go at your own pace. There’s no rush.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Use the position that makes you feel calmer and more serene, letting go of everything else." xml:space="preserve">
+        <source>Use the position that makes you feel calmer and more serene, letting go of everything else.</source>
+        <target state="new">Use the position that makes you feel calmer and more serene, letting go of everything else.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="User" xml:space="preserve">
+        <source>User</source>
+        <target state="new">User</target>
+        <note>Default username variable if the user dont set one, it is used on the greeting Hello, User</note>
+      </trans-unit>
+      <trans-unit id="Welcome to Ombrace!" xml:space="preserve">
+        <source>Welcome to Ombrace!</source>
+        <target state="new">Welcome to Ombrace!</target>
+        <note>Ombrace is the name of the app, is a welcoming title
+The title of the Onboarding, Ombrace is the name of the App</note>
+      </trans-unit>
+      <trans-unit id="Well done!" xml:space="preserve">
+        <source>Well done!</source>
+        <target state="new">Well done!</target>
+        <note>I title that explains to the user that has completed the session</note>
+      </trans-unit>
+      <trans-unit id="What do you feel when you support yourself gently, just like a kind friend would?" xml:space="preserve">
+        <source>What do you feel when you support yourself gently, just like a kind friend would?</source>
+        <target state="new">What do you feel when you support yourself gently, just like a kind friend would?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="What happens in your body and mind when you offer yourself a gentle touch, just like you would for a friend?" xml:space="preserve">
+        <source>What happens in your body and mind when you offer yourself a gentle touch, just like you would for a friend?</source>
+        <target state="new">What happens in your body and mind when you offer yourself a gentle touch, just like you would for a friend?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="When you’re ready, slowly let go of the contact and return your awareness to the space around you." xml:space="preserve">
+        <source>When you’re ready, slowly let go of the contact and return your awareness to the space around you.</source>
+        <target state="new">When you’re ready, slowly let go of the contact and return your awareness to the space around you.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Wherever this experience takes you, you are safe. You are welcomed exactly as you are." xml:space="preserve">
+        <source>Wherever this experience takes you, you are safe. You are welcomed exactly as you are.</source>
+        <target state="new">Wherever this experience takes you, you are safe. You are welcomed exactly as you are.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="While we are not medical professionals, our methods are rooted in scientific studies that emphasize kindness, acceptance, and connection as tools for well-being." xml:space="preserve">
+        <source>While we are not medical professionals, our methods are rooted in scientific studies that emphasize kindness, acceptance, and connection as tools for well-being.</source>
+        <target state="new">While we are not medical professionals, our methods are rooted in scientific studies that emphasize kindness, acceptance, and connection as tools for well-being.</target>
+        <note>Information about the app</note>
+      </trans-unit>
+      <trans-unit id="Yoga" xml:space="preserve">
+        <source>Yoga</source>
+        <target state="new">Yoga</target>
+        <note>Button option in sound settings for yoga sound, visible in the sound picker</note>
+      </trans-unit>
+      <trans-unit id="You are worthy of kindness—especially from yourself." xml:space="preserve">
+        <source>You are worthy of kindness—especially from yourself.</source>
+        <target state="new">You are worthy of kindness—especially from yourself.</target>
+        <note>Information about the app</note>
+      </trans-unit>
+      <trans-unit id="You completed the session! &#10; You should be proud of what you have accomplished today." xml:space="preserve">
+        <source>You completed the session! 
+ You should be proud of what you have accomplished today.</source>
+        <target state="new">You completed the session! 
+ You should be proud of what you have accomplished today.</target>
+        <note>A text that explains to the user that has completed the session</note>
+      </trans-unit>
+      <trans-unit id="Your Session" xml:space="preserve">
+        <source>Your Session</source>
+        <target state="new">Your Session</target>
+        <note>Title that welcome the user after selecting Your Session mode in the menu</note>
+      </trans-unit>
+      <trans-unit id="Your body has its own wisdom, knowing how to find balance between what feels light and what feels intense." xml:space="preserve">
+        <source>Your body has its own wisdom, knowing how to find balance between what feels light and what feels intense.</source>
+        <target state="new">Your body has its own wisdom, knowing how to find balance between what feels light and what feels intense.</target>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Ombrace/Ombrace-InfoPlist.xcstrings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A242d"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>Ombrace</source>
+        <target state="new">Ombrace</target>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSCameraUsageDescription" xml:space="preserve">
+        <source>Questa app utilizza la fotocamera per il tracciamento delle mani.</source>
+        <target state="new">Questa app utilizza la fotocamera per il tracciamento delle mani.</target>
+        <note>Privacy - Camera Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSFaceIDUsageDescription" xml:space="preserve">
+        <source>Utilizzato per il riconoscimento delle mani con Vision</source>
+        <target state="new">Utilizzato per il riconoscimento delle mani con Vision</target>
+        <note>Privacy - Face ID Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

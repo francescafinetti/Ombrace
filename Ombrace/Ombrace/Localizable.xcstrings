@@ -23,28 +23,6 @@
         }
       }
     },
-    "A moment of allowing… a moment of being." : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Un momento para permitir… un momento para simplemente ser."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Un moment pour accueillir… un moment pour être simplement là.  "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Un momento di accoglienza… un momento di pura presenza."
-          }
-        }
-      }
-    },
     "A self-guided and personal space where you can select exercises, reflections, and practices that best support your journey toward self-acceptance. \n You're free to end the session anytime you need and repeat it whenever you want." : {
       "comment" : "Text that explains the user how to start the session",
       "localizations" : {
@@ -113,24 +91,12 @@
         }
       }
     },
-    "And when you’re ready… gently release your hands… knowing that this sense of warmth and care is always within reach." : {
+    "Allow yourself to enjoy this space of calm, knowing that you can always return to it whenever you need." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Y cuando estés listo… suelta suavemente tus manos… sabiendo que esta sensación de calidez y cuidado siempre está al alcance."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Et quand tu es prêt… relâche doucement tes mains… en sachant que cette chaleur et cette bienveillance restent toujours à ta portée.  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "E quando ti senti pronto… lascia andare delicatamente le mani, sapendo che questa sensazione di calore e cura è sempre a tua disposizione."
+            "value" : "Concediti di godere di questo spazio di calma, sapendo che puoi sempre tornarci quando ne hai bisogno."
           }
         }
       }
@@ -157,68 +123,22 @@
         }
       }
     },
-    "As you rest in this space, know that you are already whole, already worthy, already enough." : {
+    "Bring your attention to the heartbeat, letting your breath guide you." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mientras descansas en este espacio, recuerda que ya eres completo, ya eres digno, ya eres suficiente."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Alors que vous vous accordez ce moment, souvenez-vous que vous êtes déjà complet, déjà digne, déjà à votre juste place."
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mentre riposi in questo spazio, sappi che sei già completo, già degno, già abbastanza."
+            "value" : "Porta la tua attenzione sul battito del cuore, lasciando che il respiro ti accompagni."
           }
         }
       }
     },
-    "Can you allow yourself to be worthy of this moment, just as you are?" : {
+    "Calmly, move both hands toward your elbows." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "¿Puedes permitirte sentir que mereces este momento, tal como eres?"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Peux-tu te permettre d’être digne de cet instant, exactement tel que tu es ?  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Puoi concederti di essere degno di questo momento, esattamente così come sei?"
-          }
-        }
-      }
-    },
-    "Can you let yourself receive this small act of care as you would accept a gift from a dear friend?" : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "¿Puedes permitirte recibir este pequeño acto de cuidado, como el regalo de un querido amigo?"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : " Peux-tu accueillir ce petit geste de bienveillance comme un cadeau offert par un ami cher ?  "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Puoi permetterti di ricevere questo piccolo gesto di cura così come accetteresti un dono da un caro amico?"
+            "value" : "Con calma, muovi entrambe le mani verso i gomiti."
           }
         }
       }
@@ -314,28 +234,6 @@
         }
       }
     },
-    "Each breath is an invitation to return—to yourself, to this moment, to kindness." : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cada respiro es una invitación a regresar—regresar a ti, a este momento, a la amabilidad."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Chaque respiration est une invitation à revenir—à toi-même, à cet instant, à la douceur.  "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ogni respiro è un invito a tornare—a te stesso, a questo momento, alla gentilezza.\n"
-          }
-        }
-      }
-    },
     "Enter your name" : {
       "localizations" : {
         "es-419" : {
@@ -358,90 +256,32 @@
         }
       }
     },
-    "Even amidst the noise of the world, you can always return to this quiet refuge within yourself." : {
+    "Gently bring your attention to the part of you that feels good right now, even if it’s just a small area of comfort." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Incluso en medio del ruido del mundo, siempre puedes volver a este refugio silencioso dentro de ti."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Même au milieu du tumulte du monde, tu peux toujours revenir à ce refuge silencieux en toi.  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Anche nel mezzo del caos del mondo, puoi sempre tornare a questo rifugio silenzioso dentro di te.\n"
+            "value" : "Porta dolcemente l’attenzione su quella parte di te che in questo momento si sente bene, anche solo un piccolo angolo di comfort."
           }
         }
       }
     },
-    "Focus on your heartbeat" : {
+    "Give yourself a little squeeze, as if you’re offering yourself a gentle hug with love." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Enfócate en los latidos de tu corazón"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Concentre-toi sur les battements de ton cœur  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Concentrati sul battito del tuo cuore"
+            "value" : "Datti una piccola stretta, come un abbraccio gentile che ti offri con amore."
           }
         }
       }
     },
-    "Give yourself a little squeeze." : {
+    "Give yourself the time to listen to what your body is communicating today." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Date un pequeño apretón."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Offre-toi une petite étreinte  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Concediti un piccolo abbraccio."
-          }
-        }
-      }
-    },
-    "Give yourself gentle strokes" : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Date caricias suaves"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fais-toi de légers effleurements  "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Accarezzati con dolcezza."
+            "value" : "Concediti il tempo di ascoltare cosa il tuo corpo ti comunica oggi."
           }
         }
       }
@@ -492,46 +332,12 @@
         }
       }
     },
-    "How does it feel to offer yourself this moment of comfort?" : {
+    "How does this sensation feel? Stay for a moment and experience it." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cómo se siente ofrecerte este momento de consuelo?"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Comment te sens-tu en t'offrant ce moment de réconfort ?  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Come ti senti nel concederti questo momento di conforto?"
-          }
-        }
-      }
-    },
-    "How does this feel?" : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "¿Cómo se siente?"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Comment cela te fait-il sentir ?  "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Come ti fa sentire?"
+            "value" : "Come ti sembra questa sensazione? Resta un momento a percepirla."
           }
         }
       }
@@ -581,134 +387,72 @@
         }
       }
     },
-    "I want to invite you to practice on your own, and feel free to experiment." : {
+    "I now invite you to try on your own, exploring the movement and feeling what helps you feel better." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Quiero invitarte a practicar por tu cuenta, siéntete libre de experimentar."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Je t'invite à pratiquer par toi-même et à expérimenter librement."
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ti invito a praticare in autonomia e a sentirti libero di sperimentare."
+            "value" : "Ti invito ora a provare da solo, esplorando il movimento e sentendo cosa ti fa star meglio."
           }
         }
       }
     },
-    "If it feels right, you can explore different forms of touch. A light, soothing hold. A gentle press. A slow movement of your hands as if offering reassurance." : {
+    "If it feels right, try gently shifting your attention to another part of your body, perhaps one you haven’t considered yet." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Si lo sientes bien, puedes explorar diferentes formas de contacto. Un agarre suave y calmado. Una presión ligera. Un movimiento lento con tus manos como si te dieras consuelo."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Si cela te semble juste, explore différentes formes de contact. Une légère pression apaisante. Un mouvement lent de tes mains, comme un geste d’encouragement.  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Se ti sembra giusto, puoi esplorare diverse forme di contatto. Una presa leggera e rassicurante. Una pressione delicata. Un movimento lento delle mani, come a offrirti conforto."
+            "value" : "Se ti fa piacere, prova a spostare dolcemente l’attenzione verso un’altra zona del corpo, magari una che finora non hai considerato."
           }
         }
       }
     },
-    "If you like, you can move your thumb gently, exploring this sensation." : {
+    "If it feels right, you can accompany this sensation with a light touch, as if giving yourself a gentle hug." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Si lo prefieres, puedes acariciarte con el pulgar, explorando esta sensación."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Si tu le souhaites, tu peux bouger doucement ton pouce pour explorer cette sensation."
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Se vuoi, puoi muovere delicatamente il pollice, esplorando questa sensazione."
+            "value" : "Se ti fa piacere, puoi accompagnare questa sensazione con un tocco leggero, come fosse un abbraccio gentile a te stesso"
           }
         }
       }
     },
-    "If you’d like, you can close your eyes and allow yourself to settle into this moment." : {
+    "If you’d like, try bringing your hand to that area with kindness, without judging the sensation." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Si lo deseas, puedes cerrar los ojos y permitirte enfocarte en este momento."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tu peux fermer les yeux si tu le souhaites, pour mieux ressentir ce qui se passe dans ton corps"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Se lo desideri, puoi chiudere gli occhi e lasciarti immergere in questo momento."
+            "value" : "Se ti va, prova ad avvicinare una mano con gentilezza, senza giudicare quella sensazione."
           }
         }
       }
     },
-    "If your mind wanders, that’s okay. Gently bring it back, as you would guide a dear friend with patience and care." : {
+    "If you’d like, you can close your eyes to focus more on the sensations your body is experiencing." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Si tu mente se distrae, está bien. Con suavidad, guíala de vuelta, como lo harías con una amiga querida, con paciencia y cuidado."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Si ton esprit s’égare, ce n’est pas grave. Ramène-le doucement, comme tu le ferais pour un ami cher, avec patience et bienveillance. "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Se la tua mente vaga, va bene così. Riportala dolcemente indietro, come guideresti un caro amico con pazienza e cura.\n"
+            "value" : "Se ti fa piacere, puoi chiudere gli occhi per concentrarti di più sulle sensazioni che il tuo corpo sta vivendo."
           }
         }
       }
     },
-    "Imagine what it would feel like to treat yourself with the same patience and warmth you offer to others." : {
+    "If you’d like, you can gently move your thumbs, exploring the sensation of contact." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Imagina cómo se sentiría tratarte a ti mismo con la misma paciencia y calidez con la que tratas a los demás."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Imagine ce que cela ferait de te traiter avec la même patience et la même tendresse que tu offres aux autres. "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Immagina come sarebbe trattarti con la stessa pazienza e lo stesso calore che offri agli altri.\n"
+            "value" : "Se vuoi, puoi far scivolare lentamente i pollici, esplorando questa sensazione di contatto."
+          }
+        }
+      }
+    },
+    "Imagine offering that area the same warmth and care you would give to someone you love." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Immagina di poter offrire a quella zona la stessa cura e calore che daresti a qualcuno a cui vuoi bene."
           }
         }
       }
@@ -825,94 +569,6 @@
         }
       }
     },
-    "Just begin by bringing your left hand up to your cheek and cradling your face in your hand." : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Comienza llevando tu mano izquierda a la mejilla y acaricia tu rostro con suavidad."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Commence simplement par poser ta main gauche sur ta joue et enlaçant ton visage."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Inizia portando la tua mano sinistra sulla guancia e accarezzando delicatamente il tuo viso."
-          }
-        }
-      }
-    },
-    "Just feel the contact of this hand." : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Siente el tacto de tu mano.\n\n"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ressens simplement le contact de cette main."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Senti semplicemente il contatto di questa mano."
-          }
-        }
-      }
-    },
-    "Just like every human being, you deserve care, understanding, and gentleness." : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Al igual que cualquier ser humano, mereces cuidado, comprensión y amabilidad."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Comme chaque être humain, tu mérites soin, compréhension et douceur.  "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Proprio come ogni essere umano, meriti cura, comprensione e dolcezza."
-          }
-        }
-      }
-    },
-    "Just taking a moment to feel these two hands, perhaps imagining that they are caring hands, offering kindness and warmth." : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tómate un momento para sentir el tacto de tus manos. Puedes imaginar que son manos cuidadosas, que te ofrecen calidez y cariño."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Prends un instant pour ressentir ces deux mains, en imaginant peut-être qu'elles sont bienveillantes, t'offrant douceur et chaleur."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Prenditi un momento per sentire queste due mani, magari immaginando che siano mani premurose, pronte a offrirti gentilezza e calore."
-          }
-        }
-      }
-    },
     "Leave Session" : {
       "localizations" : {
         "es-419" : {
@@ -931,6 +587,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abbandona la Sessione"
+          }
+        }
+      }
+    },
+    "Let the air gently flow in and expand where it is needed." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lascia che l’aria entri dolcemente e si espanda dove serve."
           }
         }
       }
@@ -958,90 +624,42 @@
         }
       }
     },
-    "Let this moment be a small act of self-care—an offering of peace, of presence, of acceptance." : {
+    "Let the warmth of your hand bring support and security, like an act of care towards yourself." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Deja que este momento sea un pequeño acto de autocuidado—una ofrenda de paz, presencia y aceptación."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Laisse cet instant être un petit acte de bienveillance envers toi-même—une offrande de paix, de présence, d’acceptation.  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lascia che questo momento sia un piccolo atto di cura per te stesso—un’offerta di pace, di presenza, di accettazione.\n"
+            "value" : "Lascia che il calore della tua mano porti sostegno e sicurezza, come un gesto di cura verso di te."
           }
         }
       }
     },
-    "Let your body soften just a little… and take a gentle breath—no need to change anything, just noticing your inhale and exhale." : {
+    "Let’s begin together, taking a moment to listen. Make sure your body feels comfortable and ready to follow the movement." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Permite que tu cuerpo se relaje un poco… y toma una respiración suave—no necesitas cambiar nada, solo siente cómo inhalas y exhalas."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Laisse ton corps se détendre un peu… et prends une respiration douce—sans rien forcer, simplement en remarquant l’inspiration et l’expiration.  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lascia che il tuo corpo si rilassi leggermente… e fai un respiro delicato—senza bisogno di cambiare nulla, semplicemente osservando l’inspirazione e l’espirazione."
+            "value" : "Iniziamo insieme, prendendo un momento per ascoltare. Fai in modo che il tuo corpo si senta comodo e preparato a seguire il movimento."
           }
         }
       }
     },
-    "Let yourself rest in this space, even if just for a few breaths." : {
+    "Listen to what your body is telling you, trusting its wisdom." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Permítete descansar en este momento, aunque sea solo por unas cuantas respiraciones."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Accorde-toi le droit de te reposer dans cet espace, ne serait-ce que pour quelques respirations.  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Concediti di riposare in questo spazio, anche solo per qualche respiro."
+            "value" : "Ascolta cosa il tuo corpo ti sta dicendo, fidandoti della sua saggezza."
           }
         }
       }
     },
-    "Listen to what your own body tells you." : {
+    "Make soft movements, as if you’re gently caressing yourself with tenderness." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Escucha lo que tu cuerpo tenga para decirte."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Écoute ce que ton propre corps te dit.  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ascolta ciò che il tuo corpo ti comunica."
+            "value" : "Fai dei movimenti delicati, come se stessi accarezzando te stesso con dolcezza."
           }
         }
       }
@@ -1092,90 +710,12 @@
         }
       }
     },
-    "Move slowly and with both hands cup your elbows" : {
+    "Move your right hand and place it gently on your left shoulder, so that both shoulders are supported by your hands." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Muévete despacio y lleva ambas manos a abrazar tus codos."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Déplace-toi lentement et entoure tes coudes avec tes mains."
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Muoviti lentamente e, con entrambe le mani, avvolgi delicatamente i tuoi gomiti."
-          }
-        }
-      }
-    },
-    "Move your hand down a little bit to your shoulder." : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desliza una mano un poco hacia tu hombro."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : " Descends légèrement ta main jusqu'à ton épaule."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sposta leggermente la tua mano verso la spalla."
-          }
-        }
-      }
-    },
-    "Move your other hand and rest gently on both of your shoulders" : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lleva la otra mano y déjala reposar suavemente sobre ambos hombros."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Déplace ton autre main et repose-la doucement sur tes épaules."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sposta l’altra mano e appoggiala delicatamente su entrambe le spalle."
-          }
-        }
-      }
-    },
-    "No matter what is happening around you, your breath is here, steady and constant, a quiet companion." : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No importa lo que ocurra a tu alrededor, tu respiración está aquí, constante y tranquila, como un compañero silencioso."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Peu importe ce qui se passe autour de toi, ta respiration est là, constante et paisible, un compagnon silencieux.  "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Non importa cosa sta accadendo intorno a te, il tuo respiro è qui, costante e silenzioso, un compagno fidato.\n"
+            "value" : "Muovi la mano destra e appoggiala con dolcezza sulla tua spalla sinistra, così da sentire entrambe le spalle supportate dalle mani."
           }
         }
       }
@@ -1199,28 +739,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nessun Suono"
-          }
-        }
-      }
-    },
-    "Notice the quiet support beneath you—the ground, the chair, the space that holds you without question." : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Siente el apoyo debajo de ti—el suelo, la silla, el espacio que te sostiene sin cuestionar."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Observe le soutien discret sous toi—le sol, la chaise, l’espace qui te porte sans condition.  "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nota il supporto silenzioso sotto di te—il pavimento, la sedia, lo spazio che ti sostiene senza esitazione.\n"
           }
         }
       }
@@ -1291,96 +809,72 @@
         }
       }
     },
-    "Now keep going down your arms and put your hands together" : {
+    "Now slowly move your hands down to your biceps, letting your right and left hands slide down your arms, at your own pace." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ahora sigue bajando por tus brazos y junta tus manos."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Continue à descendre le long de tes bras et joins tes mains."
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ora continua a scendere lungo le braccia e unisci le mani."
+            "value" : "Inizia ora a spostare lentamente le mani verso i tuoi bicipiti, facendo scivolare la mano destra e la mano sinistra lungo le braccia, senza fretta."
           }
         }
       }
     },
-    "Now move one hand over your heart space, and one over your tummy." : {
+    "Now, move your left hand over your heart and your right hand over your stomach, as if appreciating these two important spaces of your body." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ahora coloca una mano sobre el pecho y la otra sobre tu abdomen."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Place maintenant une main sur ta poitrine et l’autre sur ton ventre ."
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ora porta una mano sul cuore e l’altra sul ventre."
+            "value" : "Ora sposta la mano sinistra sopra il tuo cuore, e la mano destra sopra la tua pancia, come a voler apprezzare questi due spazi importanti del tuo corpo."
           }
         }
       }
     },
-    "Now, bring awareness to your hands. Feel their warmth, their presence, the gentle contact with your body." : {
+    "Now, slowly move both hands down your arms, bringing them together as if you want to unite the hearts of your hands." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lleva tu atención a tus manos. Siente su calidez, su presencia, el contacto suave con tu cuerpo."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "À présent, porte ton attention sur tes mains. Sens leur chaleur, leur présence, le contact doux avec ton corps.  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ora porta attenzione alle tue mani. Percepisci il loro calore, la loro presenza, il contatto delicato con il tuo corpo."
+            "value" : "Ora, sposta lentamente entrambe le mani verso il basso lungo le braccia, e uniscile insieme, come se volessi unire il cuore delle tue mani."
+          }
+        }
+      }
+    },
+    "Now, slowly move your left hand to your right shoulder, as if you want to cradle yourself gently with the touch." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ora, porta lentamente la mano sinistra sulla spalla destra, come se volessi cullarti delicatamente con il tocco."
+          }
+        }
+      }
+    },
+    "Now, without forcing anything, notice if there is a part that feels tense, tired, or heavy." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ora, senza forzare, nota se c’è una parte che si sente più tesa, stanca o appesantita."
           }
         }
       }
     },
     "Opens the guided session with animations and sounds." : {
-
-    },
-    "Opens the interactive session." : {
-
-    },
-    "Or simply recognize that this gesture is coming from you—to you. A quiet offering of kindness, no expectations, no demands." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "O simplemente reconoce que este gesto viene de ti, para ti. Una muestra silenciosa de amabilidad, sin exigencias ni expectativas."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ou reconnais simplement que ce geste vient de toi—pour toi. Un acte de bienveillance silencieux, sans attente, sans exigence.  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "O semplicemente riconosci che questo gesto viene da te, per te. Un’offerta silenziosa di gentilezza, senza aspettative, senza richieste."
+            "value" : "Apre la sessione guidata con animazioni e suoni."
+          }
+        }
+      }
+    },
+    "Opens the interactive session." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apre la sessione interattiva."
           }
         }
       }
@@ -1408,28 +902,6 @@
         }
       }
     },
-    "Perhaps you can imagine them as kind, caring hands—offering comfort, support, and understanding." : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Quizá puedas imaginar que estas manos son amables y cuidadoras—ofreciéndote consuelo, apoyo y comprensión."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Peut-être peux-tu les imaginer comme des mains bienveillantes et attentionnées—offrant réconfort, soutien et compréhension. "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Forse puoi immaginarle come mani gentili e premurose, pronte a offrirti conforto, supporto e comprensione."
-          }
-        }
-      }
-    },
     "Piano" : {
       "comment" : "Button option in sound settings for piano sound, visible in the sound picker",
       "localizations" : {
@@ -1453,28 +925,6 @@
         }
       }
     },
-    "Picture yourself as someone truly deserving of compassion—because you are." : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Imagínate como alguien que merece compasión… porque así es."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Imagine-toi comme quelqu’un qui mérite pleinement la compassion—car c’est le cas.  "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Immaginati come una persona davvero meritevole di compassione—perché lo sei."
-          }
-        }
-      }
-    },
     "Relaxing" : {
       "comment" : "Button option in sound settings for relaxing sound, visible in the sound picker",
       "localizations" : {
@@ -1494,28 +944,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rilassante"
-          }
-        }
-      }
-    },
-    "Right now, there is nothing you need to do… nowhere you need to be… just this moment, just this breath." : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "En este instante, no tienes que hacer nada… no tienes que estar en ningún lugar… solo este momento, solo este respiro."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "À cet instant précis, il n’y a rien à faire… nulle part où aller… juste cet instant, juste cette respiration.  "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "In questo momento, non c’è nulla che tu debba fare… nessun luogo in cui tu debba essere… solo questo istante, solo questo respiro.\n"
           }
         }
       }
@@ -1560,50 +988,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impostazioni"
-          }
-        }
-      }
-    },
-    "Slowly move your hands down on your biceps" : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lleva tus manos lentamente hacia tus brazos, a la altura de los bíceps."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Descends lentement tes mains le long de tes biceps  "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Muovi lentamente le tue mani lungo i bicipiti."
-          }
-        }
-      }
-    },
-    "So now, we're going to practice together" : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ahora vamos a practicar juntos."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maintenant, nous allons pratiquer ensemble  "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ora iniziamo insieme"
           }
         }
       }
@@ -1697,11 +1081,55 @@
         }
       }
     },
+    "Start by gently bringing your left hand to your right cheek, as if you want to softly caress your face with your palm." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inizia portando la tua mano sinistra delicatamente verso la tua guancia destra, come se volessi accarezzare dolcemente il tuo viso con il palmo."
+          }
+        }
+      }
+    },
     "Start Guided Session" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inizia Sessione Guidata"
+          }
+        }
+      }
     },
     "Start Your Session" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inizia La Tua Sessione"
+          }
+        }
+      }
+    },
+    "Stay in this feeling of well-being for a moment, allowing it to expand like a gentle light within you." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rimani un momento in questa sensazione di benessere, lasciandola espandere come una luce gentile dentro di te."
+          }
+        }
+      }
+    },
+    "Stay with the sensation of contact with your hand, without rushing. Simply notice how it makes you feel." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rimani a sentire la sensazione di contatto con la mano, senza fretta. Semplicemente nota come ti fa sentire."
+          }
+        }
+      }
     },
     "Take a deep breath and begin when you're ready." : {
       "comment" : "Text that explains the user how to start the session",
@@ -1726,90 +1154,52 @@
         }
       }
     },
-    "Take a moment to arrive, here and now. Allow yourself to settle into this space, just as you are." : {
+    "Take a moment to feel the connection with your body and your breath." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tómate un momento para llegar, aquí y ahora. Permítete entrar en este espacio, tal como eres."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Prends un moment pour arriver, ici et maintenant. Autorise-toi à t’installer dans cet espace, tel que tu es.  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Prenditi un momento per arrivare, qui e ora. Permetti a te stesso di rilassarti in questo spazio, così come sei.\n"
+            "value" : "Prenditi un momento per sentire il contatto con il tuo corpo e il tuo respiro."
           }
         }
       }
     },
-    "There is no rush. No pressure. Just a gentle unfolding of this moment, exactly as it is." : {
+    "Take a moment to feel the difference between before and now, without expectations." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No hay necesidad de apresurarse ni de forzar nada. Solo deja que este momento fluya con calma, tal como es."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Il n’y a pas d’urgence. Pas de pression. Juste un doux déploiement de cet instant, exactement tel qu’il est.  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Non c’è fretta. Nessuna pressione. Solo un delicato dispiegarsi di questo momento, esattamente com’è.\n"
+            "value" : "Prenditi un momento per sentire la differenza tra prima e ora, senza aspettative."
           }
         }
       }
     },
-    "There is nothing to force… nothing to fix… just a quiet moment of connection with yourself." : {
+    "Take a moment to feel your two hands moving together, as if they are gentle hands offering warmth and care." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No hay nada que forzar… nada que corregir… solo un momento tranquilo para conectar contigo mismo."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Il n’y a rien à forcer… rien à réparer… juste un moment de connexion avec toi-même.  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Non c’è nulla da forzare… nulla da aggiustare… solo un momento di quieta connessione con te stesso."
+            "value" : "Prenditi un momento per sentire le tue due mani che si muovono insieme, come se fossero mani gentili che ti offrono calore e cura."
           }
         }
       }
     },
-    "There is nothing you need to prove… nothing you need to earn. Right here, in this moment, you are enough." : {
+    "Thank your body for welcoming this experience, exactly as it could today." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No necesitas demostrar nada, ni ganarte nada. Aquí y ahora, tal como eres, estás bien."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tu n’as rien à prouver… rien à mériter. Ici, en cet instant, tu es suffisant.  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Non c’è nulla che tu debba dimostrare… nulla che tu debba guadagnare. Proprio qui, in questo momento, sei abbastanza."
+            "value" : "Ringrazia il tuo corpo per aver accolto questa esperienza, esattamente come poteva oggi."
+          }
+        }
+      }
+    },
+    "There is nothing to change or fix right away—simply stay present with your touch and your breath." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⁠“Non c’è nulla da cambiare o risolvere subito, semplicemente rimani presente con il tuo tocco e il tuo respiro"
           }
         }
       }
@@ -1837,112 +1227,32 @@
         }
       }
     },
-    "This position is nice because you can use it anywhere, anytime." : {
+    "This position is very practical, and you can use it whenever you want, anywhere, to feel supported." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Esta posición es especial porque puedes usarla en cualquier momento y lugar."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cette position est agréable car tu peux l’utiliser partout et à tout moment  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Questa posizione è ideale perché puoi utilizzarla ovunque e in qualsiasi momento."
+            "value" : "Questa posizione è molto pratica e puoi usarla quando vuoi, ovunque ti trovi, per sentirti supportato."
           }
         }
       }
     },
-    "This small act of kindness is always available to you." : {
+    "Try to follow my gestures, but remember you can go at your own pace. There’s no rush." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Este pequeño gesto de amabilidad siempre está disponible para ti."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ce petit geste de bienveillance est toujours à ta portée.  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Questo piccolo gesto di gentilezza è sempre a tua disposizione."
+            "value" : "Prova a seguire i miei gesti, ma ricorda che puoi andare al tuo ritmo. Non c’è fretta."
           }
         }
       }
     },
-    "To return to it when you need a reminder that you are not alone, that you are worthy of kindness?" : {
+    "Use the position that makes you feel calmer and more serene, letting go of everything else." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Puedes regresar a él cuando necesites recordarte que no estás solo, que mereces cuidado y compasión."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reviens-y chaque fois que tu as besoin de te rappeler que tu n’es pas seul, que tu mérites la douceur.  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Per tornarci ogni volta che hai bisogno di ricordare che non sei solo, che sei degno di gentilezza?"
-          }
-        }
-      }
-    },
-    "Try to follow along" : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Intenta seguir los movimientos."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Essaie de suivre le mouvement  "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cerca di seguire passo passo"
-          }
-        }
-      }
-    },
-    "Use any posture or position that helps you feel calm, and let go of the rest." : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Elige la posición que te ayude a sentirte tranquilo, y suelta lo demás."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Adopte toute posture qui t'aide à te sentir calme et lâche prise sur le reste  "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Assumi la postura o la posizione che ti fa sentire più a tuo agio e lascia andare tutto il resto."
+            "value" : "Usa la posizione che ti fa sentire più calmo e sereno, lasciando andare tutto il resto."
           }
         }
       }
@@ -2016,266 +1326,42 @@
         }
       }
     },
-    "What do you notice in your body as you do? Is there warmth, a sense of ease—or maybe just the simple awareness of being here?" : {
+    "What do you feel when you support yourself gently, just like a kind friend would?" : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "¿Qué notas en tu cuerpo mientras haces este gesto? ¿Es cálido, una sensación de calma… o simplemente la conciencia de estar aquí?"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Que ressens-tu dans ton corps en t’offrant ce moment ? De la chaleur, une sensation d’apaisement—ou simplement la conscience d’être ici ?  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cosa noti nel tuo corpo mentre lo fai? Senti calore, una sensazione di leggerezza—o forse semplicemente la consapevolezza di essere qui?"
+            "value" : "Cosa provi quando ti sostieni con gentilezza, come farebbe un amico affettuoso?"
           }
         }
       }
     },
-    "What does it feel like when you support yourself, like a good friend?" : {
+    "What happens in your body and mind when you offer yourself a gentle touch, just like you would for a friend?" : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "¿Cómo se siente cuando te acompañas a ti mismo, como lo haría un buen amigo?"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Qu'est-ce que cela fait de te soutenir, comme un bon ami ?  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Come ti senti nel sostenerti, proprio come farebbe un buon amico?"
+            "value" : "Cosa succede nel tuo corpo, nella tua mente, quando offri a te stesso un tocco gentile, proprio come faresti per un amico?"
           }
         }
       }
     },
-    "What feels most comforting in this moment? And if something doesn’t feel quite right, can you give yourself permission to adjust or let it go?" : {
+    "When you’re ready, slowly let go of the contact and return your awareness to the space around you." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "¿Qué es lo que más reconforta en este momento? Y si algo no se siente del todo bien, ¿puedes darte permiso para ajustarlo… o simplemente soltarlo?"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Qu’est-ce qui t’apporte le plus de réconfort en ce moment ? Et si quelque chose ne semble pas tout à fait juste, peux-tu t’accorder le droit d’ajuster ou de lâcher prise ?  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cosa ti dona più conforto in questo momento? E se qualcosa non ti sembra del tutto giusto, puoi concederti il permesso di modificarlo o lasciarlo andare?"
+            "value" : "Quando sei pronto, lascia andare il contatto lentamente e torna a sentire l’ambiente intorno a te."
           }
         }
       }
     },
-    "What happens in your nervous system, in your body, when you offer yourself a little bit of soothing, supportive touch?" : {
+    "Wherever this experience takes you, you are safe. You are welcomed exactly as you are." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "¿Qué ocurre en tu cuerpo, en tu sistema nervioso, cuando te ofreces un gesto suave y reconfortante?"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Que se passe-t-il dans ton système nerveux, dans ton corps, lorsque tu t'offres un toucher apaisant et réconfortant ?"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cosa accade al tuo sistema nervoso, al tuo corpo, quando ti concedi un tocco delicato e rassicurante?"
-          }
-        }
-      }
-    },
-    "What if, for a moment, you simply let go of the need to be anything other than enough?" : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "¿Qué pasaría si, por un instante, simplemente dejaras ir la necesidad de ser algo más?"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Et si, juste un instant, tu laissais tomber l’idée de devoir être autre chose que suffisant ?  "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "E se, invece di sforzarti, ti permettessi di ricevere?"
-          }
-        }
-      }
-    },
-    "What if, instead of judging yourself, you simply offered understanding?" : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "¿Y si en lugar de juzgarte, simplemente te ofrecieras comprensión?"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Et si, au lieu de te juger, tu t’offrais simplement de la compréhension ?  "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "E se, invece di giudicarti, provassi semplicemente a offrirti comprensione?\n"
-          }
-        }
-      }
-    },
-    "What if, instead of pushing through, you allowed yourself to pause?" : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "¿Y si en vez de forzarte a seguir, te dieras permiso para hacer una pausa?"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Et si, au lieu de forcer, tu t’autorisais à faire une pause ? "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "E se, invece di forzare, ti concedessi una pausa?"
-          }
-        }
-      }
-    },
-    "What if, instead of striving, you allowed yourself to receive?" : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "¿Qué pasaría si, en lugar de esforzarte, te dieras permiso para recibir?"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Et si, au lieu de toujours avancer, tu t’autorisais à recevoir ?  "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "E se, invece di sforzarti, ti permettessi di ricevere?"
-          }
-        }
-      }
-    },
-    "What if, just for a moment, you allowed yourself to be held in this gentle kindness, without resistance or hesitation?" : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "¿Y si, solo por un instante, te permitieras sostenerte con esta amabilidad suave, sin resistencia ni exigencias?"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Et si, ne serait-ce que pour un instant, vous vous permettiez d’être enveloppé par cette bienveillance douce, sans résistance ni hésitation ?"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "E se, anche solo per un momento, ti permettessi di accogliere questa dolce gentilezza, senza resistenza né esitazione?"
-          }
-        }
-      }
-    },
-    "What would it be like to carry this sense of care with you throughout the day?" : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "¿Cómo sería llevar contigo esta sensación de cuidado a lo largo del día?"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Comment ce serait de porter ce sentiment de bienveillance avec vous tout au long de la journée ?"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Come sarebbe portare con te questa sensazione di cura per tutto il giorno?"
-          }
-        }
-      }
-    },
-    "What would it be like to receive this touch with an open heart?" : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "¿Cómo sería recibir este gesto con el corazón abierto?"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Comment ce serait de recevoir ce toucher avec un cœur ouvert ?"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Come sarebbe accogliere questo tocco con apertura e gentilezza?"
-          }
-        }
-      }
-    },
-    "Whether you’re sitting quietly at home, in the middle of a busy day, or moving through the world… you can return to this gentle touch whenever you need a moment of support." : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ya sea que estés sentado tranquilamente en casa, en medio de un día ocupado o moviéndote por el mundo… siempre puedes volver a este toque suave cuando necesites un momento de apoyo."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Que vous soyez assis tranquillement chez vous, en plein milieu d'une journée chargée, ou en mouvement dans le monde... vous pouvez revenir à ce toucher doux chaque fois que vous avez besoin d'un moment de soutien."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Che tu sia a casa in silenzio, immerso nella frenesia della giornata o in movimento, puoi sempre ritrovare questo tocco gentile ogni volta che ne senti il bisogno."
+            "value" : "Ovunque ti porti questa esperienza, sei al sicuro. Sei accolto esattamente così come sei."
           }
         }
       }
@@ -2326,28 +1412,6 @@
         }
       }
     },
-    "You are allowed to slow down, to soften, to simply be as you are." : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tienes permiso para desacelerar, para suavizarte, para simplemente ser como eres."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vous avez le droit de ralentir, de vous adoucir, de simplement être tel que vous êtes."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Puoi concederti il permesso di rallentare, di ammorbidire, di esistere semplicemente così come sei.\n"
-          }
-        }
-      }
-    },
     "You are worthy of kindness—especially from yourself." : {
       "comment" : "Information about the app",
       "localizations" : {
@@ -2367,50 +1431,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Meriti gentilezza, soprattutto da parte di te stesso."
-          }
-        }
-      }
-    },
-    "You can close your eyes if you like, so that you can pay attention to what’s happening in your body." : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Si lo deseas, puedes cerrar los ojos para conectar más con lo que está ocurriendo en tu cuerpo."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tu peux fermer les yeux si tu le souhaites, pour mieux ressentir ce qui se passe dans ton corps."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Puoi chiudere gli occhi, se lo desideri, per concentrarti su ciò che sta accadendo nel tuo corpo."
-          }
-        }
-      }
-    },
-    "You can return to it anytime… like a soft whisper of kindness… reminding you that you are worthy of love and compassion, just as you are." : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Puedes volver a este gesto siempre que lo necesites… como un susurro suave de amabilidad que te recuerda que mereces amor y compasión, tal como eres."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vous pouvez y revenir à tout moment… comme un doux murmure de bienveillance… vous rappelant que vous êtes digne d'amour et de compassion, tel que vous êtes."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Puoi tornarci in qualsiasi momento… come un lieve sussurro di gentilezza… che ti ricorda che sei degno di amore e compassione, esattamente così come sei."
           }
         }
       }
@@ -2438,46 +1458,12 @@
         }
       }
     },
-    "You don’t have to earn this kindness. It is already yours, freely given, always available." : {
+    "Your body has its own wisdom, knowing how to find balance between what feels light and what feels intense." : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No tienes que ganarte esta amabilidad. Ya es tuya, sin condiciones, siempre disponible."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tu n’as pas à mériter cette bienveillance. Elle est déjà tienne, offerte librement, toujours disponible.  "
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Non devi guadagnarti questa gentilezza. È già tua, offerta liberamente, sempre disponibile.\n"
-          }
-        }
-      }
-    },
-    "You might even picture someone you love placing their hands there, offering the same warmth and care." : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Incluso puedes imaginar que alguien que amas coloca sus manos ahí, ofreciéndote ese mismo calor y cuidado."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tu peux même imaginer quelqu’un que tu aimes posant ses mains là, t’offrant la même chaleur et la même tendresse."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Potresti persino immaginare qualcuno che ami posare le sue mani lì, offrendoti lo stesso calore e la stessa cura."
+            "value" : "Il tuo corpo ha una sua saggezza, sa trovare equilibrio tra ciò che è leggero e ciò che è più intenso."
           }
         }
       }
