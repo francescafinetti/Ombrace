@@ -347,7 +347,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Entrez votre nom."
+            "value" : "Entrez votre nom"
           }
         },
         "it" : {
@@ -458,7 +458,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Session guidée."
+            "value" : "Session Guidée"
           }
         },
         "it" : {
@@ -724,7 +724,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Session immersive"
+            "value" : "Session Immersive"
           }
         },
         "it" : {
@@ -747,7 +747,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Insérer plus tard."
+            "value" : "Insérer Plus Tard"
           }
         },
         "it" : {
@@ -769,7 +769,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Insérer le nom."
+            "value" : "Insérer le Nom"
           }
         },
         "it" : {
@@ -924,7 +924,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Quitter la session"
+            "value" : "Quitter la Session"
           }
         },
         "it" : {
@@ -1258,7 +1258,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Paramètres de notification"
+            "value" : "Paramètres de Notification"
           }
         },
         "it" : {
@@ -1280,7 +1280,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Heure de notification"
+            "value" : "Heure de Notification"
           }
         },
         "it" : {
@@ -1525,7 +1525,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sélectionner l'heure"
+            "value" : "Sélectionner l’Heure"
           }
         },
         "it" : {
@@ -1635,7 +1635,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Paramètres du son"
+            "value" : "Paramètres du Son"
           }
         },
         "it" : {
@@ -1657,7 +1657,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Type de son"
+            "value" : "Type de Son"
           }
         },
         "it" : {
@@ -1970,7 +1970,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bienvenue sur Ombrace."
+            "value" : "Bienvenue sur Ombrace!"
           }
         },
         "it" : {
@@ -2370,7 +2370,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tu peux fermer les yeux si tu le souhaites, pour mieux ressentir ce qui se passe dans ton corps"
+            "value" : "Tu peux fermer les yeux si tu le souhaites, pour mieux ressentir ce qui se passe dans ton corps."
           }
         },
         "it" : {
@@ -2482,7 +2482,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Votre session"
+            "value" : "Votre Session"
           }
         },
         "it" : {
