@@ -73,6 +73,16 @@
         }
       }
     },
+    "As you rest in this space, know that you are already whole, already worthy, already enough." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mentre riposi in questo spazio, sappi che sei già completo, già degno, già abbastanza."
+          }
+        }
+      }
+    },
     "Can you allow yourself to be worthy of this moment, just as you are?" : {
       "localizations" : {
         "it" : {
@@ -136,12 +146,32 @@
         }
       }
     },
+    "Each breath is an invitation to return—to yourself, to this moment, to kindness." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ogni respiro è un invito a tornare—a te stesso, a questo momento, alla gentilezza.\n"
+          }
+        }
+      }
+    },
     "Enter your name" : {
       "localizations" : {
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inserisci il tuo nome"
+          }
+        }
+      }
+    },
+    "Even amidst the noise of the world, you can always return to this quiet refuge within yourself." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anche nel mezzo del caos del mondo, puoi sempre tornare a questo rifugio silenzioso dentro di te.\n"
           }
         }
       }
@@ -279,8 +309,35 @@
         }
       }
     },
+    "If your mind wanders, that’s okay. Gently bring it back, as you would guide a dear friend with patience and care." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se la tua mente vaga, va bene così. Riportala dolcemente indietro, come guideresti un caro amico con pazienza e cura.\n"
+          }
+        }
+      }
+    },
+    "Imagine what it would feel like to treat yourself with the same patience and warmth you offer to others." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Immagina come sarebbe trattarti con la stessa pazienza e lo stesso calore che offri agli altri.\n"
+          }
+        }
+      }
+    },
     "Immersive Session" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sessione Immersiva"
+          }
+        }
+      }
     },
     "Insert Later" : {
       "comment" : "Button text that is below a continue button, allowing the user to continue the onboarding process without entering a name",
@@ -385,6 +442,16 @@
         }
       }
     },
+    "Let this moment be a small act of self-care—an offering of peace, of presence, of acceptance." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lascia che questo momento sia un piccolo atto di cura per te stesso—un’offerta di pace, di presenza, di accettazione.\n"
+          }
+        }
+      }
+    },
     "Let your body soften just a little… and take a gentle breath—no need to change anything, just noticing your inhale and exhale." : {
       "localizations" : {
         "it" : {
@@ -467,6 +534,16 @@
         }
       }
     },
+    "No matter what is happening around you, your breath is here, steady and constant, a quiet companion." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non importa cosa sta accadendo intorno a te, il tuo respiro è qui, costante e silenzioso, un compagno fidato.\n"
+          }
+        }
+      }
+    },
     "None" : {
       "comment" : "Button option in sound settings, no sound selected, visible in the sound picker",
       "localizations" : {
@@ -474,6 +551,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nessun Suono"
+          }
+        }
+      }
+    },
+    "Notice the quiet support beneath you—the ground, the chair, the space that holds you without question." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nota il supporto silenzioso sotto di te—il pavimento, la sedia, lo spazio che ti sostiene senza esitazione.\n"
           }
         }
       }
@@ -601,6 +688,16 @@
         }
       }
     },
+    "Right now, there is nothing you need to do… nowhere you need to be… just this moment, just this breath." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In questo momento, non c’è nulla che tu debba fare… nessun luogo in cui tu debba essere… solo questo istante, solo questo respiro.\n"
+          }
+        }
+      }
+    },
     "Select Time" : {
       "localizations" : {
         "it" : {
@@ -689,6 +786,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Un respiro profondo ed inizia quando sei pronto."
+          }
+        }
+      }
+    },
+    "Take a moment to arrive, here and now. Allow yourself to settle into this space, just as you are." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prenditi un momento per arrivare, qui e ora. Permetti a te stesso di rilassarti in questo spazio, così come sei.\n"
+          }
+        }
+      }
+    },
+    "There is no rush. No pressure. Just a gentle unfolding of this moment, exactly as it is." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non c’è fretta. Nessuna pressione. Solo un delicato dispiegarsi di questo momento, esattamente com’è.\n"
           }
         }
       }
@@ -847,12 +964,22 @@
         }
       }
     },
+    "What if, for a moment, you simply let go of the need to be anything other than enough?" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E se, invece di sforzarti, ti permettessi di ricevere?"
+          }
+        }
+      }
+    },
     "What if, instead of judging yourself, you simply offered understanding?" : {
       "localizations" : {
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "E se, invece di giudicarti, ti offrissi semplicemente comprensione?"
+            "value" : "E se, invece di giudicarti, provassi semplicemente a offrirti comprensione?\n"
           }
         }
       }
@@ -863,6 +990,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "E se, invece di forzare, ti concedessi una pausa?"
+          }
+        }
+      }
+    },
+    "What if, instead of striving, you allowed yourself to receive?" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E se, invece di sforzarti, ti permettessi di ricevere?"
           }
         }
       }
@@ -929,6 +1066,16 @@
         }
       }
     },
+    "You are allowed to slow down, to soften, to simply be as you are." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puoi concederti il permesso di rallentare, di ammorbidire, di esistere semplicemente così come sei.\n"
+          }
+        }
+      }
+    },
     "You are worthy of kindness—especially from yourself." : {
       "comment" : "Information about the app",
       "localizations" : {
@@ -967,6 +1114,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hai completato la sessione!\nPuoi essere fiero di ciò che hai realizzato oggi."
+          }
+        }
+      }
+    },
+    "You don’t have to earn this kindness. It is already yours, freely given, always available." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non devi guadagnarti questa gentilezza. È già tua, offerta liberamente, sempre disponibile.\n"
           }
         }
       }

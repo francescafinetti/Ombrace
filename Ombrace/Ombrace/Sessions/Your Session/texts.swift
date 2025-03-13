@@ -2,6 +2,7 @@ import SwiftUI
 import AVFoundation
 
 let texts: [LocalizedStringKey] = [
+       "Take a moment to arrive, here and now. Allow yourself to settle into this space, just as you are.",
        "If you’d like, you can close your eyes and allow yourself to settle into this moment.",
        "Let your body soften just a little… and take a gentle breath—no need to change anything, just noticing your inhale and exhale.",
        "Now, bring awareness to your hands. Feel their warmth, their presence, the gentle contact with your body.",
@@ -29,7 +30,19 @@ let texts: [LocalizedStringKey] = [
        "To return to it when you need a reminder that you are not alone, that you are worthy of kindness?",
        "Let yourself rest in this space, even if just for a few breaths.",
        "And when you’re ready… gently release your hands… knowing that this sense of warmth and care is always within reach.",
-       "You can return to it anytime… like a soft whisper of kindness… reminding you that you are worthy of love and compassion, just as you are."
+       "You can return to it anytime… like a soft whisper of kindness… reminding you that you are worthy of love and compassion, just as you are.",
+       "Right now, there is nothing you need to do… nowhere you need to be… just this moment, just this breath.",
+       "You are allowed to slow down, to soften, to simply be as you are.",
+       "Each breath is an invitation to return—to yourself, to this moment, to kindness.",
+       "If your mind wanders, that’s okay. Gently bring it back, as you would guide a dear friend with patience and care.",
+       "Notice the quiet support beneath you—the ground, the chair, the space that holds you without question.",
+       "What if, for a moment, you simply let go of the need to be anything other than enough?",
+       "Even amidst the noise of the world, you can always return to this quiet refuge within yourself.",
+       "You don’t have to earn this kindness. It is already yours, freely given, always available.",
+       "Imagine what it would feel like to treat yourself with the same patience and warmth you offer to others.",
+       "There is no rush. No pressure. Just a gentle unfolding of this moment, exactly as it is.",
+       "What if, instead of striving, you allowed yourself to receive?",
+       "Let this moment be a small act of self-care—an offering of peace, of presence, of acceptance.",
+       "No matter what is happening around you, your breath is here, steady and constant, a quiet companion.",
+       "As you rest in this space, know that you are already whole, already worthy, already enough."
    ]
-
-
