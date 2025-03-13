@@ -1,6 +1,7 @@
 import SwiftUI
 import SwiftData
 import UserNotifications
+import AppIntents // 🔹 Importiamo App Intents per Siri
 
 @main
 struct OmbraceApp: App {
@@ -23,6 +24,7 @@ struct OmbraceApp: App {
     init() {
         UIView.appearance().overrideUserInterfaceStyle = .dark
         setupNotifications()
+        print("📢 OmbraceApp avviata!") // Debug
     }
     
     var body: some Scene {
