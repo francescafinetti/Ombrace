@@ -39,7 +39,7 @@ struct GlowingBodyContainerView: View {
             HStack {
                 Spacer()
                 Button(action: {
-                    SoundManager.shared.stopSound() 
+                    SoundManager.shared.stopSound()
                     withAnimation {
                         sessionCompleted = true
                     }
@@ -74,15 +74,12 @@ struct GlowingBodyContainerView: View {
         .navigationDestination(isPresented: $sessionCompleted) {
             CompletedView()
         }
-        .onReceive(NotificationCenter.default.publisher(for: .startGuidedSessionNotification)) { _ in
-            startSession()
-        }
     }
     
     private func startSession() {
         advanceStep()
         if isSoundOn {
-            SoundManager.shared.playSelectedSound() // 🎵 IL SUONO PARTE E GIRA IN LOOP
+            SoundManager.shared.playSelectedSound()
         }
         
     }
@@ -125,7 +122,7 @@ struct GlowingBodyContainerView: View {
     }
 
     private func endSession() {
-        SoundManager.shared.stopSound() // 🛑 FERMA IL SUONO QUANDO LA SESSIONE FINISCE
+        SoundManager.shared.stopSound()
         withAnimation {
             sessionCompleted = true
         }

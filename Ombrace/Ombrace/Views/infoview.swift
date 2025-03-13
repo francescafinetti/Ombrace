@@ -6,7 +6,7 @@ struct InfoView: View {
             VStack(alignment: .center, spacing: 20) {
                 
                 Spacer()
-                Image("heart")
+                Image("prova")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 100, height: 100)
@@ -54,7 +54,7 @@ struct InfoView: View {
             }
             .padding()
         }
-        .background(Color(.systemGray6).ignoresSafeArea()) 
+        .background(Color(.systemGray6).ignoresSafeArea())
     }
 }
 

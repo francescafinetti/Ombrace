@@ -54,14 +54,6 @@ struct ContentView: View {
                                
                             )
                         }
-                        NavigationLink(destination: HandTrackingView()) {
-                            CardView(
-                                title: "Immersive Session",
-                                subtitle: "4 MIN",
-                                icon: "your"
-                               
-                            )
-                        }
                     }
                 }
                 

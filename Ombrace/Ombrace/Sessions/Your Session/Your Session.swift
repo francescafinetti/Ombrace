@@ -50,19 +50,16 @@ struct IntertwinedCirclesView: View {
                 .foregroundColor(.white)
                 .bold()
                 .font(.body)
-                .frame(maxWidth: .infinity, minHeight: 50, maxHeight: 70)
                 .multilineTextAlignment(.center)
+                .cornerRadius(12)
+                .shadow(radius: 5)
                 .transition(.opacity)
                 .animation(.easeInOut(duration: 3), value: textIndex)
-                .padding(.bottom, 40)
-                .padding(.horizontal, 20)
+                .padding(.bottom, 60)
         }
         .navigationBarBackButtonHidden(true)
         .navigationDestination(isPresented: $sessionCompleted) {
             CompletedView()
-        }
-        .onReceive(NotificationCenter.default.publisher(for: .startSessionNotification)) { _ in
-            startSession() // 🔊 Avvia la sessione SOLO se dici "Start your session"
         }
     }
     

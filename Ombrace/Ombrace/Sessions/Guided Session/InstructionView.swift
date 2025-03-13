@@ -13,7 +13,9 @@ struct InstructionView: View {
     var body: some View {
         VStack {
             Text(text)
-                .font(.title2)
+                .foregroundColor(.white)
+                .bold()
+                .font(.body)
                 .multilineTextAlignment(.center)
                 .cornerRadius(12)
                 .shadow(radius: 5)
@@ -24,3 +26,4 @@ struct InstructionView: View {
         .padding(.bottom, 60)
     }
 }
+
