@@ -16,6 +16,18 @@
             "state" : "translated",
             "value" : "Ombrace"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ombrace"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ombrace"
+          }
         }
       }
     },
@@ -28,6 +40,24 @@
             "state" : "new",
             "value" : "Questa app utilizza la fotocamera per il tracciamento delle mani."
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa app utilizza la fotocamera per il tracciamento delle mani."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa app utilizza la fotocamera per il tracciamento delle mani."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa app utilizza la fotocamera per il tracciamento delle mani."
+          }
         }
       }
     },
@@ -38,6 +68,24 @@
         "en" : {
           "stringUnit" : {
             "state" : "new",
+            "value" : "Utilizzato per il riconoscimento delle mani con Vision"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilizzato per il riconoscimento delle mani con Vision"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilizzato per il riconoscimento delle mani con Vision"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
             "value" : "Utilizzato per il riconoscimento delle mani con Vision"
           }
         }

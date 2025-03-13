@@ -1,0 +1,282 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "4 MIN" : {
+
+    },
+    "A self-guided and personal space where you can select exercises, reflections, and practices that best support your journey toward self-acceptance. \n You're free to end the session anytime you need and repeat it whenever you want." : {
+      "comment" : "Text that explains the user how to start the session"
+    },
+    "A space designed to support individuals who are navigating body dysmorphia with self-awareness and a desire for change." : {
+      "comment" : "Information about the app"
+    },
+    "About" : {
+
+    },
+    "Allow yourself to enjoy this space of calm, knowing that you can always return to it whenever you need." : {
+
+    },
+    "Are you sure you want to leave?" : {
+
+    },
+    "Bring your attention to the heartbeat, letting your breath guide you." : {
+
+    },
+    "Calmly, move both hands toward your elbows." : {
+
+    },
+    "Complete" : {
+      "comment" : "A button that allows the user to go back to the home screen after completing the session, the button give the idea of had completed it."
+    },
+    "Connect with your body and embrace self-kindness. Through guided exercises and mindfulness, you'll build a healthier, more balanced relationship with yourself—at your own pace, without pressure. \n\n You’re in the right place. Let’s begin." : {
+      "comment" : "The text of the onboarding"
+    },
+    "Continue" : {
+      "comment" : "A button to continue to the next screen of the onboarding\nButton text to continue the onboarding process after the user has inserted their name"
+    },
+    "Done" : {
+
+    },
+    "Enter your name" : {
+
+    },
+    "Gently bring your attention to the part of you that feels good right now, even if it’s just a small area of comfort." : {
+
+    },
+    "Give yourself a little squeeze, as if you’re offering yourself a gentle hug with love." : {
+
+    },
+    "Give yourself the time to listen to what your body is communicating today." : {
+
+    },
+    "Guided Session" : {
+      "comment" : "Title that welcome the user after selecting Guided Session mode in the menu"
+    },
+    "Hello, %@" : {
+      "comment" : "Title of the app, it give a greeting to the the user as Hello, UserName"
+    },
+    "How does this sensation feel? Stay for a moment and experience it." : {
+
+    },
+    "How would you like to be called?" : {
+      "comment" : "The title of the view where the user can insert their name inside a text field"
+    },
+    "HOW WOULD YOU LIKE TO BE CALLED?" : {
+
+    },
+    "I now invite you to try on your own, exploring the movement and feeling what helps you feel better." : {
+
+    },
+    "If it feels right, try gently shifting your attention to another part of your body, perhaps one you haven’t considered yet." : {
+
+    },
+    "If it feels right, you can accompany this sensation with a light touch, as if giving yourself a gentle hug." : {
+
+    },
+    "If you’d like, try bringing your hand to that area with kindness, without judging the sensation." : {
+
+    },
+    "If you’d like, you can close your eyes to focus more on the sensations your body is experiencing." : {
+
+    },
+    "If you’d like, you can gently move your thumbs, exploring the sensation of contact." : {
+
+    },
+    "Imagine offering that area the same warmth and care you would give to someone you love." : {
+
+    },
+    "Immersive Session" : {
+
+    },
+    "Insert Later" : {
+      "comment" : "Button text that is below a continue button, allowing the user to continue the onboarding process without entering a name"
+    },
+    "Insert name" : {
+
+    },
+    "Inspired by research on self-compassion and supportive touch, our approach encourages gentle, non-judgmental engagement with your body, helping you shift towards a more balanced and appreciative self-perception." : {
+      "comment" : "Information about the app"
+    },
+    "It's okay to take a break. \nYou can always come back whenever you're ready." : {
+
+    },
+    "Leave Session" : {
+
+    },
+    "Let the air gently flow in and expand where it is needed." : {
+
+    },
+    "Let the glowing dots guide your hands with mindfulness and intention." : {
+      "comment" : "Text that explains the user how to start the session"
+    },
+    "Let the warmth of your hand bring support and security, like an act of care towards yourself." : {
+
+    },
+    "Let’s begin together, taking a moment to listen. Make sure your body feels comfortable and ready to follow the movement." : {
+
+    },
+    "Listen to what your body is telling you, trusting its wisdom." : {
+
+    },
+    "Make soft movements, as if you’re gently caressing yourself with tenderness." : {
+
+    },
+    "Meditation" : {
+      "comment" : "Button option in sound settings for meditation sound, visible in the sound picker"
+    },
+    "Melody" : {
+      "comment" : "Button option in sound settings for melody sound, visible in the sound picker"
+    },
+    "Move your right hand and place it gently on your left shoulder, so that both shoulders are supported by your hands." : {
+
+    },
+    "None" : {
+      "comment" : "Button option in sound settings, no sound selected, visible in the sound picker"
+    },
+    "Notification" : {
+
+    },
+    "Notification Settings" : {
+
+    },
+    "Notification Time" : {
+
+    },
+    "Now slowly move your hands down to your biceps, letting your right and left hands slide down your arms, at your own pace." : {
+
+    },
+    "Now, move your left hand over your heart and your right hand over your stomach, as if appreciating these two important spaces of your body." : {
+
+    },
+    "Now, slowly move both hands down your arms, bringing them together as if you want to unite the hearts of your hands." : {
+
+    },
+    "Now, slowly move your left hand to your right shoulder, as if you want to cradle yourself gently with the touch." : {
+
+    },
+    "Now, without forcing anything, notice if there is a part that feels tense, tired, or heavy." : {
+
+    },
+    "Opens the guided session with animations and sounds." : {
+
+    },
+    "Opens the interactive session." : {
+
+    },
+    "Our mission is to help you cultivate a healthier connection with your body through self-compassion, body-focused exercises, and mindful practices." : {
+      "comment" : "Information about the app"
+    },
+    "Piano" : {
+      "comment" : "Button option in sound settings for piano sound, visible in the sound picker"
+    },
+    "Relaxing" : {
+      "comment" : "Button option in sound settings for relaxing sound, visible in the sound picker"
+    },
+    "Select Time" : {
+
+    },
+    "Settings" : {
+
+    },
+    "Sound" : {
+
+    },
+    "Sound Settings" : {
+
+    },
+    "Sound Type" : {
+
+    },
+    "Start" : {
+      "comment" : "Button to start the session."
+    },
+    "Start by gently bringing your left hand to your right cheek, as if you want to softly caress your face with your palm." : {
+
+    },
+    "Start Guided Session" : {
+
+    },
+    "Start Session" : {
+
+    },
+    "Start Your Session" : {
+
+    },
+    "Stay in this feeling of well-being for a moment, allowing it to expand like a gentle light within you." : {
+
+    },
+    "Stay with the sensation of contact with your hand, without rushing. Simply notice how it makes you feel." : {
+
+    },
+    "Take a deep breath and begin when you're ready." : {
+      "comment" : "Text that explains the user how to start the session"
+    },
+    "Take a moment to feel the connection with your body and your breath." : {
+
+    },
+    "Take a moment to feel the difference between before and now, without expectations." : {
+
+    },
+    "Take a moment to feel your two hands moving together, as if they are gentle hands offering warmth and care." : {
+
+    },
+    "Thank your body for welcoming this experience, exactly as it could today." : {
+
+    },
+    "There is nothing to change or fix right away—simply stay present with your touch and your breath." : {
+
+    },
+    "This journey is personal, and progress looks different for everyone. Whether you're taking your first step or deepening your practice, Ombrace is here to guide you in fostering a more positive and compassionate relationship with yourself." : {
+      "comment" : "Information about the app"
+    },
+    "This position is very practical, and you can use it whenever you want, anywhere, to feel supported." : {
+
+    },
+    "Try to follow my gestures, but remember you can go at your own pace. There’s no rush." : {
+
+    },
+    "Use the position that makes you feel calmer and more serene, letting go of everything else." : {
+
+    },
+    "User" : {
+      "comment" : "Default username variable if the user dont set one, it is used on the greeting Hello, User"
+    },
+    "Welcome to Ombrace!" : {
+      "comment" : "Ombrace is the name of the app, is a welcoming title\nThe title of the Onboarding, Ombrace is the name of the App"
+    },
+    "Well done!" : {
+      "comment" : "I title that explains to the user that has completed the session"
+    },
+    "What do you feel when you support yourself gently, just like a kind friend would?" : {
+
+    },
+    "What happens in your body and mind when you offer yourself a gentle touch, just like you would for a friend?" : {
+
+    },
+    "When you’re ready, slowly let go of the contact and return your awareness to the space around you." : {
+
+    },
+    "Wherever this experience takes you, you are safe. You are welcomed exactly as you are." : {
+
+    },
+    "While we are not medical professionals, our methods are rooted in scientific studies that emphasize kindness, acceptance, and connection as tools for well-being." : {
+      "comment" : "Information about the app"
+    },
+    "Yoga" : {
+      "comment" : "Button option in sound settings for yoga sound, visible in the sound picker"
+    },
+    "You are worthy of kindness—especially from yourself." : {
+      "comment" : "Information about the app"
+    },
+    "You completed the session! \n You should be proud of what you have accomplished today." : {
+      "comment" : "A text that explains to the user that has completed the session"
+    },
+    "Your body has its own wisdom, knowing how to find balance between what feels light and what feels intense." : {
+
+    },
+    "Your Session" : {
+      "comment" : "Title that welcome the user after selecting Your Session mode in the menu"
+    }
+  },
+  "version" : "1.0"
+}
