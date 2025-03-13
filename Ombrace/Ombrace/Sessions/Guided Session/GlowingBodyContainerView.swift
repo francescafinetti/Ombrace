@@ -8,7 +8,7 @@ import SwiftUI
 
 struct GlowingBodyContainerView: View {
     @State private var activeStep = 0
-    @State private var textVisible = false
+    @State private var textVisible = true
     @State private var leftPosition = CGPoint(x: 80, y: 600)
     @State private var rightPosition = CGPoint(x: 320, y: 600)
     @State private var scale: CGFloat = 1.0
@@ -48,28 +48,36 @@ struct GlowingBodyContainerView: View {
     
     private func advanceStep() {
         if activeStep < instructionVM.instructions.count - 1 {
-            withAnimation(.easeInOut(duration: 2)) {
-                textVisible = false
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                       withAnimation(.easeInOut(duration: 1)) {
+                           textVisible = false
+                       }
+                   }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
                 activeStep += 1
                 let instruction = instructionVM.instructions[activeStep]
                 
                 // Directly access the left and right body points from handposition
                 let leftBodyPoint = instruction.handsposition.left
                 let rightBodyPoint = instruction.handsposition.right
-                
-                withAnimation(.easeInOut(duration: 1)) {
-                    // Set the positions of the left and right hands based on the body points
-                    leftPosition = bodyPointPositions[leftBodyPoint] ?? leftPosition
-                    rightPosition = bodyPointPositions[rightBodyPoint] ?? rightPosition
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     
-                    // Use the custom scale and offset for this instruction
-                    scale = instruction.scale
-                    offset = instruction.offset
+                    
+                    withAnimation(.easeInOut(duration: 3)) {
+                        // Set the positions of the left and right hands based on the body points
+                        leftPosition = bodyPointPositions[leftBodyPoint] ?? leftPosition
+                        rightPosition = bodyPointPositions[rightBodyPoint] ?? rightPosition
+                        
+                        // Use the custom scale and offset for this instruction
+                        scale = instruction.scale
+                        offset = instruction.offset
+                    }}
+
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    textVisible = true
                 }
 
-                textVisible = true
             }
             
             // Continue the sequence
