@@ -1725,6 +1725,12 @@
     },
     "Your body has its own wisdom, knowing how to find balance between what feels light and what feels intense." : {
       "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ton corps possède sa propre sagesse, sachant comment trouver l'équilibre entre ce qui est léger et ce qui est intense."
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
