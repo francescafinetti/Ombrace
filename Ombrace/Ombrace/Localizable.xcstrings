@@ -1,0 +1,997 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "4 MIN" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4 MIN"
+          }
+        }
+      }
+    },
+    "A moment of allowing… a moment of being." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un momento di accoglienza… un momento di pura presenza."
+          }
+        }
+      }
+    },
+    "A self-guided and personal space where you can select exercises, reflections, and practices that best support your journey toward self-acceptance. \n You're free to end the session anytime you need and repeat it whenever you want." : {
+      "comment" : "Text that explains the user how to start the session",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uno spazio personale e autoguidato in cui puoi scegliere esercizi, riflessioni e pratiche che meglio supportano il tuo percorso verso l’autoaccettazione.\nSei libero di concludere la sessione in qualsiasi momento e di ripeterla ogni volta che lo desideri."
+          }
+        }
+      }
+    },
+    "A space designed to support individuals who are navigating body dysmorphia with self-awareness and a desire for change." : {
+      "comment" : "Information about the app",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uno spazio pensato per supportare chi affronta la dismorfia con consapevolezza di sé e il desiderio di cambiamento."
+          }
+        }
+      }
+    },
+    "About" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info"
+          }
+        }
+      }
+    },
+    "And when you’re ready… gently release your hands… knowing that this sense of warmth and care is always within reach." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E quando ti senti pronto… lascia andare delicatamente le mani, sapendo che questa sensazione di calore e cura è sempre a tua disposizione."
+          }
+        }
+      }
+    },
+    "Are you sure you want to leave?" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sicuro di voler uscire?"
+          }
+        }
+      }
+    },
+    "Can you allow yourself to be worthy of this moment, just as you are?" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puoi concederti di essere degno di questo momento, esattamente così come sei?"
+          }
+        }
+      }
+    },
+    "Can you let yourself receive this small act of care as you would accept a gift from a dear friend?" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puoi permetterti di ricevere questo piccolo gesto di cura così come accetteresti un dono da un caro amico?"
+          }
+        }
+      }
+    },
+    "Complete" : {
+      "comment" : "A button that allows the user to go back to the home screen after completing the session, the button give the idea of had completed it.",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Completa"
+          }
+        }
+      }
+    },
+    "Connect with your body and embrace self-kindness. Through guided exercises and mindfulness, you'll build a healthier, more balanced relationship with yourself—at your own pace, without pressure. \n\n You’re in the right place. Let’s begin." : {
+      "comment" : "The text of the onboarding",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entra in connessione con il tuo corpo e abbraccia la gentilezza verso te stesso. Attraverso esercizi guidati e pratiche di mindfulness, potrai costruire un rapporto più sano ed equilibrato con te stesso—al tuo ritmo, senza pressioni.\n\nSei nel posto giusto. Cominciamo."
+          }
+        }
+      }
+    },
+    "Continue" : {
+      "comment" : "A button to continue to the next screen of the onboarding\nButton text to continue the onboarding process after the user has inserted their name",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continua"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fatto"
+          }
+        }
+      }
+    },
+    "Enter your name" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inserisci il tuo nome"
+          }
+        }
+      }
+    },
+    "Focus on your heartbeat" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Concentrati sul battito del tuo cuore"
+          }
+        }
+      }
+    },
+    "Give yourself a little squeeze." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Concediti un piccolo abbraccio."
+          }
+        }
+      }
+    },
+    "Give yourself gentle strokes" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accarezzati con dolcezza."
+          }
+        }
+      }
+    },
+    "Guided Session" : {
+      "comment" : "Title that welcome the user after selecting Guided Session mode in the menu",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sessione Guidata"
+          }
+        }
+      }
+    },
+    "Hello, %@" : {
+      "comment" : "Title of the app, it give a greeting to the the user as Hello, UserName",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ciao, %@"
+          }
+        }
+      }
+    },
+    "How does it feel to offer yourself this moment of comfort?" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come ti senti nel concederti questo momento di conforto?"
+          }
+        }
+      }
+    },
+    "How does this feel?" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come ti fa sentire?"
+          }
+        }
+      }
+    },
+    "How would you like to be called?" : {
+      "comment" : "The title of the view where the user can insert their name inside a text field",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come vorresti essere chiamato?"
+          }
+        }
+      }
+    },
+    "HOW WOULD YOU LIKE TO BE CALLED?" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "COME VORRESTI ESSERE CHIAMATO?"
+          }
+        }
+      }
+    },
+    "I want to invite you to practice on your own, and feel free to experiment." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ti invito a praticare in autonomia e a sentirti libero di sperimentare."
+          }
+        }
+      }
+    },
+    "If it feels right, you can explore different forms of touch. A light, soothing hold. A gentle press. A slow movement of your hands as if offering reassurance." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se ti sembra giusto, puoi esplorare diverse forme di contatto. Una presa leggera e rassicurante. Una pressione delicata. Un movimento lento delle mani, come a offrirti conforto."
+          }
+        }
+      }
+    },
+    "If you like, you can move your thumb gently, exploring this sensation." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se vuoi, puoi muovere delicatamente il pollice, esplorando questa sensazione."
+          }
+        }
+      }
+    },
+    "If you’d like, you can close your eyes and allow yourself to settle into this moment." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se lo desideri, puoi chiudere gli occhi e lasciarti immergere in questo momento."
+          }
+        }
+      }
+    },
+    "Immersive Session" : {
+
+    },
+    "Insert Later" : {
+      "comment" : "Button text that is below a continue button, allowing the user to continue the onboarding process without entering a name",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inserisci in seguito"
+          }
+        }
+      }
+    },
+    "Insert name" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inserisci il tuo nome"
+          }
+        }
+      }
+    },
+    "Inspired by research on self-compassion and supportive touch, our approach encourages gentle, non-judgmental engagement with your body, helping you shift towards a more balanced and appreciative self-perception." : {
+      "comment" : "Information about the app",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ispirato alla ricerca sulla compassione verso sé stessi e sul tocco di supporto, il nostro approccio incoraggia un’interazione gentile e priva di giudizio con il tuo corpo, aiutandoti a sviluppare una percezione di te più equilibrata e consapevole."
+          }
+        }
+      }
+    },
+    "It's okay to take a break. \nYou can always come back whenever you're ready." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Va bene prendersi una pausa.\nPuoi sempre tornare quando ti sentirai pronto."
+          }
+        }
+      }
+    },
+    "Just begin by bringing your left hand up to your cheek and cradling your face in your hand." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inizia portando la tua mano sinistra sulla guancia e accarezzando delicatamente il tuo viso."
+          }
+        }
+      }
+    },
+    "Just feel the contact of this hand." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Senti semplicemente il contatto di questa mano."
+          }
+        }
+      }
+    },
+    "Just like every human being, you deserve care, understanding, and gentleness." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proprio come ogni essere umano, meriti cura, comprensione e dolcezza."
+          }
+        }
+      }
+    },
+    "Just taking a moment to feel these two hands, perhaps imagining that they are caring hands, offering kindness and warmth." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prenditi un momento per sentire queste due mani, magari immaginando che siano mani premurose, pronte a offrirti gentilezza e calore."
+          }
+        }
+      }
+    },
+    "Leave Session" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abbandona la Sessione"
+          }
+        }
+      }
+    },
+    "Let the glowing dots guide your hands with mindfulness and intention." : {
+      "comment" : "Text that explains the user how to start the session",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lascia che i punti luminosi guidino le tue mani con consapevolezza e intenzione."
+          }
+        }
+      }
+    },
+    "Let your body soften just a little… and take a gentle breath—no need to change anything, just noticing your inhale and exhale." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lascia che il tuo corpo si rilassi leggermente… e fai un respiro delicato—senza bisogno di cambiare nulla, semplicemente osservando l’inspirazione e l’espirazione."
+          }
+        }
+      }
+    },
+    "Let yourself rest in this space, even if just for a few breaths." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Concediti di riposare in questo spazio, anche solo per qualche respiro."
+          }
+        }
+      }
+    },
+    "Listen to what your own body tells you." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ascolta ciò che il tuo corpo ti comunica."
+          }
+        }
+      }
+    },
+    "Meditation" : {
+      "comment" : "Button option in sound settings for meditation sound, visible in the sound picker",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meditazione"
+          }
+        }
+      }
+    },
+    "Melody" : {
+      "comment" : "Button option in sound settings for melody sound, visible in the sound picker",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Melodia"
+          }
+        }
+      }
+    },
+    "Move slowly and with both hands cup your elbows" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muoviti lentamente e, con entrambe le mani, avvolgi delicatamente i tuoi gomiti."
+          }
+        }
+      }
+    },
+    "Move your hand down a little bit to your shoulder." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sposta leggermente la tua mano verso la spalla."
+          }
+        }
+      }
+    },
+    "Move your other hand and rest gently on both of your shoulders" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sposta l’altra mano e appoggiala delicatamente su entrambe le spalle."
+          }
+        }
+      }
+    },
+    "None" : {
+      "comment" : "Button option in sound settings, no sound selected, visible in the sound picker",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessun Suono"
+          }
+        }
+      }
+    },
+    "Notification" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifiche"
+          }
+        }
+      }
+    },
+    "Notification Settings" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni delle Notifiche"
+          }
+        }
+      }
+    },
+    "Notification Time" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ora della Notifica"
+          }
+        }
+      }
+    },
+    "Now keep going down your arms and put your hands together" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ora continua a scendere lungo le braccia e unisci le mani."
+          }
+        }
+      }
+    },
+    "Now move one hand over your heart space, and one over your tummy." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ora porta una mano sul cuore e l’altra sul ventre."
+          }
+        }
+      }
+    },
+    "Now, bring awareness to your hands. Feel their warmth, their presence, the gentle contact with your body." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ora porta attenzione alle tue mani. Percepisci il loro calore, la loro presenza, il contatto delicato con il tuo corpo."
+          }
+        }
+      }
+    },
+    "Or simply recognize that this gesture is coming from you—to you. A quiet offering of kindness, no expectations, no demands." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O semplicemente riconosci che questo gesto viene da te, per te. Un’offerta silenziosa di gentilezza, senza aspettative, senza richieste."
+          }
+        }
+      }
+    },
+    "Our mission is to help you cultivate a healthier connection with your body through self-compassion, body-focused exercises, and mindful practices." : {
+      "comment" : "Information about the app",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La nostra missione è aiutarti a coltivare un rapporto più sano con il tuo corpo attraverso l’auto-compassione, esercizi focalizzati sul corpo e pratiche di mindfulness."
+          }
+        }
+      }
+    },
+    "Perhaps you can imagine them as kind, caring hands—offering comfort, support, and understanding." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forse puoi immaginarle come mani gentili e premurose, pronte a offrirti conforto, supporto e comprensione."
+          }
+        }
+      }
+    },
+    "Piano" : {
+      "comment" : "Button option in sound settings for piano sound, visible in the sound picker",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Piano"
+          }
+        }
+      }
+    },
+    "Picture yourself as someone truly deserving of compassion—because you are." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Immaginati come una persona davvero meritevole di compassione—perché lo sei."
+          }
+        }
+      }
+    },
+    "Relaxing" : {
+      "comment" : "Button option in sound settings for relaxing sound, visible in the sound picker",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rilassante"
+          }
+        }
+      }
+    },
+    "Select Time" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seleziona Orario"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni"
+          }
+        }
+      }
+    },
+    "Slowly move your hands down on your biceps" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muovi lentamente le tue mani lungo i bicipiti."
+          }
+        }
+      }
+    },
+    "So now, we're going to practice together" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ora iniziamo insieme"
+          }
+        }
+      }
+    },
+    "Sound" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suono"
+          }
+        }
+      }
+    },
+    "Sound Settings" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni Suono"
+          }
+        }
+      }
+    },
+    "Sound Type" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipo di Suono"
+          }
+        }
+      }
+    },
+    "Start" : {
+      "comment" : "Button to start the session.",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inizia"
+          }
+        }
+      }
+    },
+    "Take a deep breath and begin when you're ready." : {
+      "comment" : "Text that explains the user how to start the session",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un respiro profondo ed inizia quando sei pronto."
+          }
+        }
+      }
+    },
+    "There is nothing to force… nothing to fix… just a quiet moment of connection with yourself." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non c’è nulla da forzare… nulla da aggiustare… solo un momento di quieta connessione con te stesso."
+          }
+        }
+      }
+    },
+    "There is nothing you need to prove… nothing you need to earn. Right here, in this moment, you are enough." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non c’è nulla che tu debba dimostrare… nulla che tu debba guadagnare. Proprio qui, in questo momento, sei abbastanza."
+          }
+        }
+      }
+    },
+    "This journey is personal, and progress looks different for everyone. Whether you're taking your first step or deepening your practice, Ombrace is here to guide you in fostering a more positive and compassionate relationship with yourself." : {
+      "comment" : "Information about the app",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questo percorso è personale e il progresso appare diverso per ognuno. Che tu stia muovendo i primi passi o approfondendo la tua pratica, Ombrace è qui per guidarti nel coltivare un rapporto più positivo e compassionevole con te stesso."
+          }
+        }
+      }
+    },
+    "This position is nice because you can use it anywhere, anytime." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa posizione è ideale perché puoi utilizzarla ovunque e in qualsiasi momento."
+          }
+        }
+      }
+    },
+    "This small act of kindness is always available to you." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questo piccolo gesto di gentilezza è sempre a tua disposizione."
+          }
+        }
+      }
+    },
+    "To return to it when you need a reminder that you are not alone, that you are worthy of kindness?" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per tornarci ogni volta che hai bisogno di ricordare che non sei solo, che sei degno di gentilezza?"
+          }
+        }
+      }
+    },
+    "Try to follow along" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerca di seguire passo passo"
+          }
+        }
+      }
+    },
+    "Use any posture or position that helps you feel calm, and let go of the rest." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assumi la postura o la posizione che ti fa sentire più a tuo agio e lascia andare tutto il resto."
+          }
+        }
+      }
+    },
+    "User" : {
+      "comment" : "Default username variable if the user dont set one, it is used on the greeting Hello, User",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "User"
+          }
+        }
+      }
+    },
+    "Welcome to Ombrace!" : {
+      "comment" : "Ombrace is the name of the app, is a welcoming title\nThe title of the Onboarding, Ombrace is the name of the App",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Benvenuto su Ombrace!"
+          }
+        }
+      }
+    },
+    "Well done!" : {
+      "comment" : "I title that explains to the user that has completed the session",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ben Fatto!"
+          }
+        }
+      }
+    },
+    "What do you notice in your body as you do? Is there warmth, a sense of ease—or maybe just the simple awareness of being here?" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosa noti nel tuo corpo mentre lo fai? Senti calore, una sensazione di leggerezza—o forse semplicemente la consapevolezza di essere qui?"
+          }
+        }
+      }
+    },
+    "What does it feel like when you support yourself, like a good friend?" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come ti senti nel sostenerti, proprio come farebbe un buon amico?"
+          }
+        }
+      }
+    },
+    "What feels most comforting in this moment? And if something doesn’t feel quite right, can you give yourself permission to adjust or let it go?" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosa ti dona più conforto in questo momento? E se qualcosa non ti sembra del tutto giusto, puoi concederti il permesso di modificarlo o lasciarlo andare?"
+          }
+        }
+      }
+    },
+    "What happens in your nervous system, in your body, when you offer yourself a little bit of soothing, supportive touch?" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosa accade al tuo sistema nervoso, al tuo corpo, quando ti concedi un tocco delicato e rassicurante?"
+          }
+        }
+      }
+    },
+    "What if, instead of judging yourself, you simply offered understanding?" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E se, invece di giudicarti, ti offrissi semplicemente comprensione?"
+          }
+        }
+      }
+    },
+    "What if, instead of pushing through, you allowed yourself to pause?" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E se, invece di forzare, ti concedessi una pausa?"
+          }
+        }
+      }
+    },
+    "What if, just for a moment, you allowed yourself to be held in this gentle kindness, without resistance or hesitation?" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E se, anche solo per un momento, ti permettessi di accogliere questa dolce gentilezza, senza resistenza né esitazione?"
+          }
+        }
+      }
+    },
+    "What would it be like to carry this sense of care with you throughout the day?" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come sarebbe portare con te questa sensazione di cura per tutto il giorno?"
+          }
+        }
+      }
+    },
+    "What would it be like to receive this touch with an open heart?" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come sarebbe accogliere questo tocco con apertura e gentilezza?"
+          }
+        }
+      }
+    },
+    "Whether you’re sitting quietly at home, in the middle of a busy day, or moving through the world… you can return to this gentle touch whenever you need a moment of support." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Che tu sia a casa in silenzio, immerso nella frenesia della giornata o in movimento, puoi sempre ritrovare questo tocco gentile ogni volta che ne senti il bisogno."
+          }
+        }
+      }
+    },
+    "While we are not medical professionals, our methods are rooted in scientific studies that emphasize kindness, acceptance, and connection as tools for well-being." : {
+      "comment" : "Information about the app",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non siamo professionisti medici, ma i nostri metodi si basano su studi scientifici che evidenziano la gentilezza, l’accettazione e la connessione come strumenti per il benessere."
+          }
+        }
+      }
+    },
+    "Yoga" : {
+      "comment" : "Button option in sound settings for yoga sound, visible in the sound picker",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yoga"
+          }
+        }
+      }
+    },
+    "You are worthy of kindness—especially from yourself." : {
+      "comment" : "Information about the app",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meriti gentilezza, soprattutto da parte di te stesso."
+          }
+        }
+      }
+    },
+    "You can close your eyes if you like, so that you can pay attention to what’s happening in your body." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puoi chiudere gli occhi, se lo desideri, per concentrarti su ciò che sta accadendo nel tuo corpo."
+          }
+        }
+      }
+    },
+    "You can return to it anytime… like a soft whisper of kindness… reminding you that you are worthy of love and compassion, just as you are." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puoi tornarci in qualsiasi momento… come un lieve sussurro di gentilezza… che ti ricorda che sei degno di amore e compassione, esattamente così come sei."
+          }
+        }
+      }
+    },
+    "You completed the session! \n You should be proud of what you have accomplished today." : {
+      "comment" : "A text that explains to the user that has completed the session",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hai completato la sessione!\nPuoi essere fiero di ciò che hai realizzato oggi."
+          }
+        }
+      }
+    },
+    "You might even picture someone you love placing their hands there, offering the same warmth and care." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Potresti persino immaginare qualcuno che ami posare le sue mani lì, offrendoti lo stesso calore e la stessa cura."
+          }
+        }
+      }
+    },
+    "Your Session" : {
+      "comment" : "Title that welcome the user after selecting Your Session mode in the menu",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La Tua Sessione"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
