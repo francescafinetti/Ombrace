@@ -1,5 +1,6 @@
 import SwiftUI
 import AVFoundation
+import AppIntents
 
 struct IntertwinedCirclesView: View {
     @State private var animate = false
@@ -60,6 +61,9 @@ struct IntertwinedCirclesView: View {
         .navigationDestination(isPresented: $sessionCompleted) {
             CompletedView()
         }
+        .onReceive(NotificationCenter.default.publisher(for: .startSessionNotification)) { _ in
+            startSession() // 🔊 Avvia la sessione SOLO se dici "Start your session"
+        }
     }
     
     private func startSession() {
@@ -70,7 +74,6 @@ struct IntertwinedCirclesView: View {
     }
     
     private func startTextTimer() {
-        
         textTimer = Timer.scheduledTimer(withTimeInterval: 9, repeats: true) { _ in
             if textIndex < texts.count - 1 {
                 withAnimation {
@@ -84,9 +87,7 @@ struct IntertwinedCirclesView: View {
             }
         }
     }
-    
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         IntertwinedCirclesView()

@@ -991,6 +991,12 @@
         }
       }
     },
+    "Opens the guided session with animations and sounds." : {
+
+    },
+    "Opens the interactive session." : {
+
+    },
     "Or simply recognize that this gesture is coming from you—to you. A quiet offering of kindness, no expectations, no demands." : {
       "localizations" : {
         "es-419" : {
@@ -1234,6 +1240,12 @@
           }
         }
       }
+    },
+    "Start Guided Session" : {
+
+    },
+    "Start Your Session" : {
+
     },
     "Take a deep breath and begin when you're ready." : {
       "comment" : "Text that explains the user how to start the session",

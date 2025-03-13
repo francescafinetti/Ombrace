@@ -4,7 +4,9 @@
 //
 //  Created by Serena Pia Capasso on 11/03/25.
 //
+
 import SwiftUI
+import AVFoundation
 
 struct GlowingBodyContainerView: View {
     @State private var activeStep = 0
@@ -13,9 +15,10 @@ struct GlowingBodyContainerView: View {
     @State private var rightPosition = CGPoint(x: 320, y: 600)
     @State private var scale: CGFloat = 1.0
     @State private var offset: CGSize = .zero
+    @State private var isSoundOn = true
+    @State private var sessionCompleted = false
     var instructionVM = InstructionViewModel()
 
-    // A dictionary to map each BodyPoint to a corresponding CGPoint
     private var bodyPointPositions: [BodyPoint: CGPoint] = [
         .leftcheek: CGPoint(x: 170, y: 155),
         .rightcheek: CGPoint(x: 230, y: 155),
@@ -33,6 +36,29 @@ struct GlowingBodyContainerView: View {
     
     var body: some View {
         VStack {
+            HStack {
+                Spacer()
+                Button(action: {
+                    SoundManager.shared.stopSound() 
+                    withAnimation {
+                        sessionCompleted = true
+                    }
+                }) {
+                    NavigationLink(destination: ExitSessionView()) {
+                        Image(systemName: "figure.walk.departure")
+                            .resizable()
+                            .frame(width: 22, height: 22)
+                            .foregroundColor(.accent2)
+                            .bold()
+                    }
+                }
+            }
+            .padding(.horizontal)
+            .padding(.top, 20)
+            .onDisappear {
+                SoundManager.shared.stopSound()
+            }
+            
             BodyView(leftPosition: $leftPosition, rightPosition: $rightPosition, scale: $scale, offset: $offset)
                 .gesture(MagnificationGesture()
                     .onChanged { value in
@@ -41,49 +67,67 @@ struct GlowingBodyContainerView: View {
             
             InstructionView(text: instructionVM.instructions[activeStep].text, textVisible: $textVisible)
                 .onAppear {
-                    advanceStep()
+                    startSession()
                 }
         }
+        .navigationBarBackButtonHidden(true)
+        .navigationDestination(isPresented: $sessionCompleted) {
+            CompletedView()
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .startGuidedSessionNotification)) { _ in
+            startSession()
+        }
+    }
+    
+    private func startSession() {
+        advanceStep()
+        if isSoundOn {
+            SoundManager.shared.playSelectedSound() // 🎵 IL SUONO PARTE E GIRA IN LOOP
+        }
+        
     }
     
     private func advanceStep() {
         if activeStep < instructionVM.instructions.count - 1 {
-            
             DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-                       withAnimation(.easeInOut(duration: 1)) {
-                           textVisible = false
-                       }
-                   }
+                withAnimation(.easeInOut(duration: 1)) {
+                    textVisible = false
+                }
+            }
+
             DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
                 activeStep += 1
                 let instruction = instructionVM.instructions[activeStep]
-                
-                // Directly access the left and right body points from handposition
+
                 let leftBodyPoint = instruction.handsposition.left
                 let rightBodyPoint = instruction.handsposition.right
+                
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                    
-                    
                     withAnimation(.easeInOut(duration: 3)) {
-                        // Set the positions of the left and right hands based on the body points
                         leftPosition = bodyPointPositions[leftBodyPoint] ?? leftPosition
                         rightPosition = bodyPointPositions[rightBodyPoint] ?? rightPosition
-                        
-                        // Use the custom scale and offset for this instruction
                         scale = instruction.scale
                         offset = instruction.offset
-                    }}
+                    }
+                }
 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     textVisible = true
                 }
-
             }
             
-            // Continue the sequence
             DispatchQueue.main.asyncAfter(deadline: .now() + instructionVM.instructions[activeStep].duration) {
                 advanceStep()
             }
+        } else {
+            endSession()
+        }
+    }
+
+    private func endSession() {
+        SoundManager.shared.stopSound() // 🛑 FERMA IL SUONO QUANDO LA SESSIONE FINISCE
+        withAnimation {
+            sessionCompleted = true
         }
     }
 }
@@ -91,4 +135,3 @@ struct GlowingBodyContainerView: View {
 #Preview {
     GlowingBodyContainerView()
 }
-
