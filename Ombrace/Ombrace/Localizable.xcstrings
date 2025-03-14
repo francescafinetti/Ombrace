@@ -93,6 +93,12 @@
     },
     "Allow yourself to enjoy this space of calm, knowing that you can always return to it whenever you need." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permítete disfrutar de este espacio de calma, sabiendo que siempre puedes regresar a él cuando lo necesites."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -131,6 +137,12 @@
     },
     "Bring your attention to the heartbeat, letting your breath guide you." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lleva tu atención al latido de tu corazón, dejando que tu respiración te guíe."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -147,6 +159,12 @@
     },
     "Calmly, move both hands toward your elbows." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Con calma, mueve ambas manos hacia tus codos."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -276,6 +294,12 @@
     },
     "Gently bring your attention to the part of you that feels good right now, even if it’s just a small area of comfort." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lleva suavemente tu atención a la parte de ti que se siente bien en este momento, aunque solo sea una pequeña zona de confort."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -292,6 +316,12 @@
     },
     "Give yourself a little squeeze, as if you’re offering yourself a gentle hug with love." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Date un pequeño apretón, como si te estuvieras dando un abrazo suave y lleno de amor."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -308,6 +338,12 @@
     },
     "Give yourself the time to listen to what your body is communicating today." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Date el tiempo para escuchar lo que tu cuerpo te está comunicando hoy."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -370,6 +406,12 @@
     },
     "How does this sensation feel? Stay for a moment and experience it." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Cómo se siente esta sensación? Quédate un momento y experiméntala."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -431,6 +473,12 @@
     },
     "I now invite you to try on your own, exploring the movement and feeling what helps you feel better." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ahora te invito a probar por ti mismo, explorando el movimiento y sintiendo lo que te ayuda a sentirte mejor."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -447,6 +495,12 @@
     },
     "If it feels right, try gently shifting your attention to another part of your body, perhaps one you haven’t considered yet." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si se siente bien, intenta dirigir suavemente tu atención a otra parte de tu cuerpo, quizás una en la que aún no hayas pensado."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -463,6 +517,12 @@
     },
     "If it feels right, you can accompany this sensation with a light touch, as if giving yourself a gentle hug." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si se siente bien, puedes acompañar esta sensación con un toque suave, como si te estuvieras dando un abrazo gentil."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -479,6 +539,12 @@
     },
     "If you’d like, try bringing your hand to that area with kindness, without judging the sensation." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si lo deseas, intenta llevar tu mano a esa área con amabilidad, sin juzgar la sensación."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -495,6 +561,12 @@
     },
     "If you’d like, you can close your eyes to focus more on the sensations your body is experiencing." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si lo deseas, puedes cerrar los ojos para concentrarte más en las sensaciones que tu cuerpo está experimentando."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -511,6 +583,12 @@
     },
     "If you’d like, you can gently move your thumbs, exploring the sensation of contact." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si lo deseas, puedes mover suavemente tus pulgares, explorando la sensación del contacto."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -527,6 +605,12 @@
     },
     "Imagine offering that area the same warmth and care you would give to someone you love." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Imagina ofrecerle a esa área la misma calidez y cuidado que le darías a alguien que amas."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -678,6 +762,12 @@
     },
     "Let the air gently flow in and expand where it is needed." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deja que el aire fluya suavemente y se expanda donde sea necesario."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -717,6 +807,12 @@
     },
     "Let the warmth of your hand bring support and security, like an act of care towards yourself." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deja que el calor de tu mano brinde apoyo y seguridad, como un acto de cuidado hacia ti mismo."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -733,6 +829,12 @@
     },
     "Let’s begin together, taking a moment to listen. Make sure your body feels comfortable and ready to follow the movement." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comencemos juntos, tomando un momento para escuchar. Asegúrate de que tu cuerpo se sienta cómodo y listo para seguir el movimiento."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -749,6 +851,12 @@
     },
     "Listen to what your body is telling you, trusting its wisdom." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escucha lo que tu cuerpo te está diciendo, confiando en su sabiduría."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -765,6 +873,12 @@
     },
     "Make soft movements, as if you’re gently caressing yourself with tenderness." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haz movimientos suaves, como si te estuvieras acariciando suavemente con ternura."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -827,6 +941,12 @@
     },
     "Move your right hand and place it gently on your left shoulder, so that both shoulders are supported by your hands." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mueve tu mano derecha y colócala suavemente sobre tu hombro izquierdo, de manera que ambos hombros estén apoyados por tus manos."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -932,6 +1052,12 @@
     },
     "Now slowly move your hands down to your biceps, letting your right and left hands slide down your arms, at your own pace." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ahora, mueve lentamente tus manos hacia abajo, hasta tus bíceps, dejando que tus manos derecha e izquierda deslicen por tus brazos, a tu propio ritmo."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -948,6 +1074,12 @@
     },
     "Now, move your left hand over your heart and your right hand over your stomach, as if appreciating these two important spaces of your body." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ahora, mueve tu mano izquierda sobre tu corazón y tu mano derecha sobre tu estómago, como si estuvieras apreciando estos dos espacios importantes de tu cuerpo."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -964,6 +1096,12 @@
     },
     "Now, slowly move both hands down your arms, bringing them together as if you want to unite the hearts of your hands." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ahora, mueve lentamente ambas manos hacia abajo por tus brazos, uniéndolas como si quisieras juntar los corazones de tus manos."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -980,6 +1118,12 @@
     },
     "Now, slowly move your left hand to your right shoulder, as if you want to cradle yourself gently with the touch." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ahora, mueve lentamente tu mano izquierda hacia tu hombro derecho, como si quisieras abrazarte suavemente con el toque."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -996,6 +1140,12 @@
     },
     "Now, without forcing anything, notice if there is a part that feels tense, tired, or heavy." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ahora, sin forzar nada, observa si hay alguna parte que se sienta tensa, cansada o pesada."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1012,6 +1162,12 @@
     },
     "Opens the guided session with animations and sounds." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abre la sesión guiada con animaciones y sonidos."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1028,6 +1184,12 @@
     },
     "Opens the interactive session." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abre la sesión interactiva."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1246,6 +1408,12 @@
     },
     "Start by gently bringing your left hand to your right cheek, as if you want to softly caress your face with your palm." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comienza llevando suavemente tu mano izquierda a tu mejilla derecha, como si quisieras acariciar suavemente tu rostro con la palma de tu mano."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1262,6 +1430,12 @@
     },
     "Start Guided Session" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comienza la Sesión Guiada"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1278,6 +1452,12 @@
     },
     "Start Your Session" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comienza Tu Sesión"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1294,6 +1474,12 @@
     },
     "Stay in this feeling of well-being for a moment, allowing it to expand like a gentle light within you." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permanece en esta sensación de bienestar por un momento, permitiéndole expandirse como una luz suave dentro de ti."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1310,6 +1496,12 @@
     },
     "Stay with the sensation of contact with your hand, without rushing. Simply notice how it makes you feel." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permanece con la sensación de contacto con tu mano, sin prisa. Simplemente observa cómo te hace sentir."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1349,6 +1541,12 @@
     },
     "Take a moment to feel the connection with your body and your breath." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tómate un momento para sentir la conexión con tu cuerpo y tu respiración."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1365,6 +1563,12 @@
     },
     "Take a moment to feel the difference between before and now, without expectations." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tómate un momento para sentir la diferencia entre antes y ahora, sin expectativas."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1381,6 +1585,12 @@
     },
     "Take a moment to feel your two hands moving together, as if they are gentle hands offering warmth and care." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tómate un momento para sentir tus dos manos moviéndose juntas, como si fueran manos suaves que ofrecen calidez y cuidado."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1397,6 +1607,12 @@
     },
     "Thank your body for welcoming this experience, exactly as it could today." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agradece a tu cuerpo por acoger esta experiencia, tal como pudo ser hoy."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1413,6 +1629,12 @@
     },
     "There is nothing to change or fix right away—simply stay present with your touch and your breath." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No hay nada que cambiar o arreglar de inmediato; simplemente permanece presente con tu toque y tu respiración."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1452,6 +1674,12 @@
     },
     "This position is very practical, and you can use it whenever you want, anywhere, to feel supported." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta posición es muy práctica, y puedes usarla cuando quieras, en cualquier lugar, para sentirte apoyado."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1468,6 +1696,12 @@
     },
     "Try to follow my gestures, but remember you can go at your own pace. There’s no rush." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intenta seguir mis gestos, pero recuerda que puedes ir a tu propio ritmo. No hay prisa."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1484,6 +1718,12 @@
     },
     "Use the position that makes you feel calmer and more serene, letting go of everything else." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa la posición que te haga sentir más tranquilo y sereno, dejando ir todo lo demás."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1569,6 +1809,12 @@
     },
     "What do you feel when you support yourself gently, just like a kind friend would?" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Qué sientes cuando te apoyas suavemente, como lo haría un amigo amable?"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1585,6 +1831,12 @@
     },
     "What happens in your body and mind when you offer yourself a gentle touch, just like you would for a friend?" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Qué sucede en tu cuerpo y mente cuando te ofreces un toque suave, como lo harías con un amigo?"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1601,6 +1853,12 @@
     },
     "When you’re ready, slowly let go of the contact and return your awareness to the space around you." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuando estés listo, suelta lentamente el contacto y devuelve tu conciencia al espacio que te rodea."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1617,6 +1875,12 @@
     },
     "Wherever this experience takes you, you are safe. You are welcomed exactly as you are." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dondequiera que te lleve esta experiencia, estás a salvo. Eres bienvenido tal como eres."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1725,6 +1989,12 @@
     },
     "Your body has its own wisdom, knowing how to find balance between what feels light and what feels intense." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu cuerpo tiene su propia sabiduría, sabiendo cómo encontrar el equilibrio entre lo que se siente ligero y lo que se siente intenso."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
