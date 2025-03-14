@@ -1,10 +1,3 @@
-//
-//  GlowingBodyContainerView.swift
-//  Ombrace
-//
-//  Created by Serena Pia Capasso on 11/03/25.
-//
-
 import SwiftUI
 import AVFoundation
 
@@ -17,6 +10,9 @@ struct GlowingBodyContainerView: View {
     @State private var offset: CGSize = .zero
     @State private var isSoundOn = true
     @State private var sessionCompleted = false
+    @State private var showExitConfirmation = false
+    @State private var navigateToContentView = false // 🔹 Per navigare a ContentView
+
     var instructionVM = InstructionViewModel()
 
     private var bodyPointPositions: [BodyPoint: CGPoint] = [
@@ -35,44 +31,53 @@ struct GlowingBodyContainerView: View {
     ]
     
     var body: some View {
-        VStack {
-            HStack {
-                Spacer()
-                Button(action: {
-                    SoundManager.shared.stopSound()
-                    withAnimation {
-                        sessionCompleted = true
-                    }
-                }) {
-                    NavigationLink(destination: ExitSessionView()) {
-                        Image(systemName: "figure.walk.departure")
+        NavigationStack {
+            VStack {
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        showExitConfirmation = true
+                    }) {
+                        Image(systemName: "arrow.forward.circle.fill")
                             .resizable()
-                            .frame(width: 22, height: 22)
+                            .frame(width: 23, height: 23)
                             .foregroundColor(.accent2)
                             .bold()
                     }
+                    .alert("Are you sure you want to leave?", isPresented: $showExitConfirmation) {
+                        Button("Cancel", role: .cancel) { }
+                        Button("Leave", role: .destructive) {
+                            exitSession()
+                        }
+                    } message: {
+                        Text("It's okay to take a break.\nYou can always come back whenever you're ready.")
+                    }
+                    .padding(10)
                 }
-            }
-            .padding(.horizontal)
-            .padding(.top, 20)
-            .onDisappear {
-                SoundManager.shared.stopSound()
-            }
-            
-            BodyView(leftPosition: $leftPosition, rightPosition: $rightPosition, scale: $scale, offset: $offset)
-                .gesture(MagnificationGesture()
-                    .onChanged { value in
-                        scale = value.magnitude
-                    })
-            
-            InstructionView(text: instructionVM.instructions[activeStep].text, textVisible: $textVisible)
-                .onAppear {
-                    startSession()
+                .padding(.horizontal)
+                .padding(.top, 20)
+                .onDisappear {
+                    SoundManager.shared.stopSound()
                 }
-        }
-        .navigationBarBackButtonHidden(true)
-        .navigationDestination(isPresented: $sessionCompleted) {
-            CompletedView()
+                
+                BodyView(leftPosition: $leftPosition, rightPosition: $rightPosition, scale: $scale, offset: $offset)
+                    .gesture(MagnificationGesture()
+                        .onChanged { value in
+                            scale = value.magnitude
+                        })
+                
+                InstructionView(text: instructionVM.instructions[activeStep].text, textVisible: $textVisible)
+                    .onAppear {
+                        startSession()
+                    }
+            }
+            .navigationBarBackButtonHidden(true)
+            .navigationDestination(isPresented: $sessionCompleted) {
+                CompletedView() // 🔹 Se la sessione finisce, va a CompletedView
+            }
+            .navigationDestination(isPresented: $navigateToContentView) {
+                ContentView() // 🔹 Se si esce, va a ContentView
+            }
         }
     }
     
@@ -81,7 +86,6 @@ struct GlowingBodyContainerView: View {
         if isSoundOn {
             SoundManager.shared.playSelectedSound()
         }
-        
     }
     
     private func advanceStep() {
@@ -126,6 +130,11 @@ struct GlowingBodyContainerView: View {
         withAnimation {
             sessionCompleted = true
         }
+    }
+
+    private func exitSession() {
+        SoundManager.shared.stopSound()
+        navigateToContentView = true // 🔹 Naviga a ContentView
     }
 }
 

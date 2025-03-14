@@ -14,16 +14,21 @@ struct InstructionView: View {
         VStack {
             Text(text)
                 .foregroundColor(.white)
-                .bold()
-                .font(.body)
+                .font(.system(size: min(UIScreen.main.bounds.width * 0.05, 18), weight: .semibold, design: .rounded))
                 .multilineTextAlignment(.center)
+                .frame(maxWidth: UIScreen.main.bounds.width * 0.8) 
+                .padding()
                 .cornerRadius(12)
-                .shadow(radius: 5)
+                .shadow(color: .white.opacity(0.4), radius: 6, x: 0, y: 3)
                 .opacity(textVisible ? 1 : 0)
                 .transition(.opacity)
                 .animation(.easeInOut(duration: 1), value: textVisible)
         }
-        .padding(.bottom, 60)
+        .padding(.horizontal, 20)
+        .padding(.bottom, 40)
     }
 }
 
+#Preview {
+    GlowingBodyContainerView()
+}
