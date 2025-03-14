@@ -21,21 +21,24 @@ struct IntertwinedCirclesView: View {
                     }
                 }) {
                     NavigationLink(destination: ExitSessionView()) {
-                        Image(systemName: "figure.walk.departure")
+                        Image(systemName: "arrow.forward.circle.fill")
                             .resizable()
                             .frame(width: 22, height: 22)
                             .foregroundColor(.accent2)
                             .bold()
                     }
                 }
+                .padding(10)
             }
             .padding(.horizontal)
-            .padding(.top, 20)
+            .padding(.top, 10)
+
+            Spacer()
             
             ZStack {
                 Color.black.ignoresSafeArea()
                 animazione()
-                    .frame(width: 500, height: 150)
+                    .frame(width: 300, height: 100) // Ridimensionato per una migliore adattabilità
             }
             .onAppear {
                 animate.toggle()
@@ -48,16 +51,18 @@ struct IntertwinedCirclesView: View {
             
             Text(texts[textIndex])
                 .foregroundColor(.white)
-                .font(.system(size: min(UIScreen.main.bounds.width * 0.06, 19), weight: .semibold, design: .rounded))
+                .font(.system(size: min(UIScreen.main.bounds.width * 0.05, 18), weight: .semibold, design: .rounded))
                 .multilineTextAlignment(.center)
+                .frame(maxWidth: UIScreen.main.bounds.width * 0.8) // Evita che il testo sia troppo largo
                 .padding()
-                .background(Color.black.opacity(0.6))
                 .cornerRadius(16)
                 .shadow(color: .white.opacity(0.4), radius: 8, x: 0, y: 4)
                 .transition(.opacity.combined(with: .scale))
                 .animation(.easeInOut(duration: 3), value: textIndex)
                 .padding(.horizontal, 20)
-                .padding(.bottom, 40)
+                .padding(.bottom, 30)
+
+            Spacer()
         }
         .navigationBarBackButtonHidden(true)
         .navigationDestination(isPresented: $sessionCompleted) {
@@ -87,6 +92,7 @@ struct IntertwinedCirclesView: View {
         }
     }
 }
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         IntertwinedCirclesView()
