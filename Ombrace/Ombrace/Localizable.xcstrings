@@ -625,29 +625,6 @@
         }
       }
     },
-    "Immersive Session" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sesión Inmersiva"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Session Immersive"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sessione Immersiva"
-          }
-        }
-      }
-    },
     "Insert Later" : {
       "comment" : "Button text that is below a continue button, allowing the user to continue the onboarding process without entering a name",
       "localizations" : {
