@@ -48,14 +48,16 @@ struct IntertwinedCirclesView: View {
             
             Text(texts[textIndex])
                 .foregroundColor(.white)
-                .bold()
-                .font(.body)
+                .font(.system(size: min(UIScreen.main.bounds.width * 0.06, 19), weight: .semibold, design: .rounded))
                 .multilineTextAlignment(.center)
-                .cornerRadius(12)
-                .shadow(radius: 5)
-                .transition(.opacity)
+                .padding()
+                .background(Color.black.opacity(0.6))
+                .cornerRadius(16)
+                .shadow(color: .white.opacity(0.4), radius: 8, x: 0, y: 4)
+                .transition(.opacity.combined(with: .scale))
                 .animation(.easeInOut(duration: 3), value: textIndex)
-                .padding(.bottom, 60)
+                .padding(.horizontal, 20)
+                .padding(.bottom, 40)
         }
         .navigationBarBackButtonHidden(true)
         .navigationDestination(isPresented: $sessionCompleted) {

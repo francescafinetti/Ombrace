@@ -9,9 +9,7 @@ import SwiftUI
 
 struct SessionCircleView: View {
     @State private var animate = false
-    
-    // Ora i colori sono passati come parametro
-    var gradientColors: [Color]
+        var gradientColors: [Color]
     
     var body: some View {
         ZStack {
