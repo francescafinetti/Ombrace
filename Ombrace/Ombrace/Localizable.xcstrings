@@ -35,7 +35,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Un espace personnel et autonome où vous pouvez choisir les exercices, réflexions et pratiques qui soutiennent le mieux votre chemin vers l’acceptation de soi.\nVous êtes libre de terminer la session à tout moment et de la recommencer quand vous le souhaitez."
+            "value" : "Un espace personnel et autonome où tu peux choisir les exercices, réflexions et pratiques qui soutiennent le mieux ton chemin vers l’acceptation de toi-même.  \nTu es libre de terminer la session à tout moment et de la recommencer quand tu le souhaites."
           }
         },
         "it" : {
@@ -102,7 +102,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Offrez-vous ce moment de calme, en sachant que vous pouvez toujours y revenir lorsque vous en ressentez le besoin."
+            "value" : "Permets-toi de savourer cet espace de calme, en sachant que tu peux toujours y revenir quand tu en as besoin."
           }
         },
         "it" : {
@@ -124,7 +124,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Êtes-vous sûr de vouloir quitter ?"
+            "value" : "Es-tu sûr de vouloir quitter ?"
           }
         },
         "it" : {
@@ -146,7 +146,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Portez votre attention sur les battements de votre cœur, en laissant votre respiration vous guider."
+            "value" : "Ramène ton attention sur le battement de ton cœur,\net laisse ta respiration te guider, naturellement."
           }
         },
         "it" : {
@@ -168,7 +168,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tranquillement, glissez vos mains vers vos coudes."
+            "value" : "Tranquillement, glisse tes mains vers tes coudes."
           }
         },
         "it" : {
@@ -214,7 +214,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Connectez-vous à votre corps et adoptez la bienveillance envers vous-même. Grâce à des exercices guidés et à la pleine conscience, vous construirez une relation plus saine et plus équilibrée avec vous-même, à votre rythme, sans pression.\n\nVous êtes au bon endroit. Commençons."
+            "value" : "Connecte-toi à ton corps et adopte la bienveillance envers toi-même. Grâce à des exercices guidés et à la pleine conscience, tu construiras une relation plus saine et plus équilibrée avec toi-même, à ton rythme, sans pression.  \n\nTu es au bon endroit. Commençons."
           }
         },
         "it" : {
@@ -281,7 +281,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Entrez votre nom"
+            "value" : "Entre ton nom"
           }
         },
         "it" : {
@@ -303,7 +303,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ramenez doucement votre attention sur la partie de votre corps qui se sent bien en ce moment, même si ce n’est qu’une petite zone de confort."
+            "value" : "Dirige doucement ton attention vers la partie de toi qui se sent bien en ce moment, même si ce n’est qu’une petite zone de confort."
           }
         },
         "it" : {
@@ -325,7 +325,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Faites-vous un petit câlin, comme un geste de douceur et d’amour pour vous-même."
+            "value" : "Accorde-toi un petit serrage,\ncomme si tu t’offrais un câlin doux et réconfortant."
           }
         },
         "it" : {
@@ -347,7 +347,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Accordez-vous le temps d’écouter ce que votre corps vous dit aujourd’hui."
+            "value" : "Accorde-toi le temps d’écouter ce que ton corps a à te dire aujourd’hui."
           }
         },
         "it" : {
@@ -415,7 +415,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Comment tu te sens ? Reste un moment et laisse-toi vraiment ressentir."
+            "value" : "Comment te sens-tu avec cette sensation ?\nPrends le temps de rester dans cette posture, d’accueillir ce qui se présente."
           }
         },
         "it" : {
@@ -438,7 +438,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Comment aimeriez-vous qu'on vous appelle ?"
+            "value" : "Comment aimerais-tu qu'on t'appelle ?"
           }
         },
         "it" : {
@@ -460,7 +460,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "COMMENT AIMERIEZ-VOUS QU’ON VOUS APPELLE?"
+            "value" : "COMMENT AIMERAIS-TU QU’ON T’APPELLE?"
           }
         },
         "it" : {
@@ -482,7 +482,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Je t'invite maintenant à essayer par toi-même, à explorer le mouvement et à ressentir ce qui t’aide à te sentir mieux."
+            "value" : "Je t’invite maintenant à explorer ces gestes par toi-même,\nen découvrant ce qui t’apporte le plus de calme et de réconfort."
           }
         },
         "it" : {
@@ -504,7 +504,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Si ça te semble ok, essaie de déplacer doucement ton attention vers une autre partie de ton corps, peut-être une que tu n’as pas encore remarquée."
+            "value" : "Si tu en ressens l’envie, essaie de déplacer doucement ton attention vers une autre partie de ton corps, peut-être une que tu n’as pas encore explorée."
           }
         },
         "it" : {
@@ -526,7 +526,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Si ça te semble juste, tu peux accompagner cette sensation d'un léger toucher, comme si tu te donnais un câlin tout doux."
+            "value" : "Si cela te semble juste, tu peux accompagner cette sensation d’un geste doux, comme si tu t’offrais une étreinte bienveillante."
           }
         },
         "it" : {
@@ -548,7 +548,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Si tu veux, pose ta main sur cette zone avec bienveillance, sans juger la sensation."
+            "value" : "Si tu le souhaites, pose ta main sur cette zone avec bienveillance, sans juger la sensation."
           }
         },
         "it" : {
@@ -570,7 +570,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Si tu veux, tu peux fermer les yeux pour te concentrer davantage sur les sensations que ton corps ressent."
+            "value" : "Si tu en as envie, tu peux fermer les yeux\npour te concentrer pleinement sur les sensations qui émergent."
           }
         },
         "it" : {
@@ -592,7 +592,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Si tu veux, tu peux doucement bouger tes pouces, en explorant la sensation du contact."
+            "value" : "Calmement, descends encore tes mains vers tes coudes.\nSi tu le souhaites, tu peux bouger doucement tes pouces,\nexplorant la sensation de ce contact, en toute curiosité."
           }
         },
         "it" : {
@@ -614,7 +614,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Imagine offrir à cette zone la même chaleur et bienveillance que tu donnerais à quelqu'un que tu aimes."
+            "value" : "Observe ce qui se passe en toi lorsque tu t’offres ce toucher doux,\ncomme tu le ferais pour quelqu’un que tu aimes."
           }
         },
         "it" : {
@@ -704,7 +704,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Il est normal de faire une pause.  \nVous pouvez toujours revenir quand vous vous sentez prêt."
+            "value" : "Il est normal de faire une pause.  \nTu peux toujours revenir quand tu es prêt(e)."
           }
         },
         "it" : {
@@ -748,7 +748,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Laisse l'air circuler doucement et se déployer là où il est nécessaire."
+            "value" : "Laisse l’air circuler doucement et se déployer là où c’est nécessaire, sans effort."
           }
         },
         "it" : {
@@ -771,7 +771,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Laissez les points lumineux guider vos mains avec pleine conscience et intention."
+            "value" : "Laisse les points lumineux guider tes mains avec pleine conscience et intention."
           }
         },
         "it" : {
@@ -793,7 +793,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Laisse la chaleur de ta main apporter soutien et sécurité, comme un geste de bienveillance envers toi-même."
+            "value" : "Laisse la chaleur de ta main apporter soutien et réconfort, comme un acte de soin envers toi-même."
           }
         },
         "it" : {
@@ -815,7 +815,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Commençons ensemble, en prenant un moment pour écouter. Assure-toi que ton corps se sent à l'aise et prêt à suivre le mouvement."
+            "value" : "Commençons ensemble, en prenant un instant pour écouter.\nAssure-toi que ton corps se sente à l’aise et prêt à suivre le mouvement, sans effort."
           }
         },
         "it" : {
@@ -837,7 +837,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Écoute ce que ton corps te dit, en faisant confiance à sa sagesse."
+            "value" : "Écoute ce que ton corps te murmure,\net fais-lui confiance : il possède sa propre sagesse."
           }
         },
         "it" : {
@@ -859,7 +859,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Fais des mouvements doux, comme si tu te caressais doucement avec tendresse."
+            "value" : "Accompagne chaque mouvement de douceur,\ncomme si tu te caressais avec la plus grande tendresse."
           }
         },
         "it" : {
@@ -927,7 +927,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Déplace ta main droite et place-la doucement sur ton épaule gauche, de manière à ce que tes deux épaules soient soutenues par tes mains."
+            "value" : "Puis, amène ta main droite sur ton épaule gauche,\noffrant à tes deux épaules un soutien tendre et bienveillant."
           }
         },
         "it" : {
@@ -1038,7 +1038,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Maintenant, déplace lentement tes mains vers tes biceps, laissant tes mains droite et gauche glisser le long de tes bras, à ton propre rythme."
+            "value" : "Lorsque tu es prêt(e), fais glisser lentement tes mains vers tes biceps,\nen laissant chaque mouvement être porté par la douceur et l’attention."
           }
         },
         "it" : {
@@ -1060,7 +1060,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Maintenant, place ta main gauche sur ton cœur et ta main droite sur ton ventre, comme si tu appréciais ces deux espaces importants de ton corps."
+            "value" : "Place maintenant ta main gauche sur ton cœur et ta main droite sur ton ventre,\nreconnaissant ces deux espaces essentiels de ton corps."
           }
         },
         "it" : {
@@ -1082,7 +1082,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Maintenant, déplace lentement tes deux mains le long de tes bras, en les rapprochant comme si tu voulais unir les cœurs de tes mains."
+            "value" : "Quand tu es prêt(e), fais glisser lentement tes mains le long de tes bras,\nen les rapprochant doucement, comme si tu cherchais à unir les cœurs de tes mains."
           }
         },
         "it" : {
@@ -1104,7 +1104,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Maintenant, déplace lentement ta main gauche vers ton épaule droite, comme si tu voulais te bercer doucement avec ce toucher."
+            "value" : "Quand tu es prêt(e), déplace lentement ta main gauche vers ton épaule droite,\ncomme si tu te berçais avec douceur, dans un geste réconfortant."
           }
         },
         "it" : {
@@ -1126,7 +1126,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Maintenant, sans forcer quoi que ce soit, remarque s'il y a une partie qui se sent tendue, fatiguée ou lourde."
+            "value" : "Sans rien forcer, remarque s’il y a une partie de toi qui se sent tendue, fatiguée ou lourde."
           }
         },
         "it" : {
@@ -1394,7 +1394,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Commence par amener doucement ta main gauche sur ta joue droite, comme si tu voulais caresser doucement ton visage avec ta paume."
+            "value" : "Commence en amenant doucement ta main gauche sur ta joue droite,\ncomme si tu caressais délicatement ton visage avec la paume de ta main."
           }
         },
         "it" : {
@@ -1438,7 +1438,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Commencer Votre Session"
+            "value" : "Commencer Ta Session"
           }
         },
         "it" : {
@@ -1460,7 +1460,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Reste un instant dans ce sentiment de bien-être, en lui permettant de s'étendre comme une lumière douce en toi."
+            "value" : "Reste un instant dans cette sensation de bien-être, en la laissant se diffuser comme une lumière douce à l’intérieur de toi."
           }
         },
         "it" : {
@@ -1482,7 +1482,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Reste avec la sensation du contact de ta main, sans te précipiter. Remarque simplement comment cela te fait sentir."
+            "value" : "Reste avec cette sensation de contact, sans te presser.\nObserve simplement comment cela te fait te sentir, sans chercher à changer quoi que ce soit."
           }
         },
         "it" : {
@@ -1505,7 +1505,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Prenez une profonde inspiration et commencez quand vous êtes prêt."
+            "value" : "Prends une profonde inspiration et commence quand tu es prêt(e)."
           }
         },
         "it" : {
@@ -1527,7 +1527,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Prends un moment pour ressentir la connexion avec ton corps et ta respiration."
+            "value" : "Prends un moment pour te connecter à ton corps et à ta respiration."
           }
         },
         "it" : {
@@ -1571,7 +1571,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Prends un moment pour ressentir tes deux mains se mouvoir ensemble, comme si elles étaient des mains douces offrant chaleur et bienveillance."
+            "value" : "Prends un moment pour ressentir la manière dont tes deux mains se déplacent ensemble,\ncomme si elles offraient chaleur et soin, avec toute leur bienveillance."
           }
         },
         "it" : {
@@ -1593,7 +1593,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Remercie ton corps d'avoir accueilli cette expérience, exactement tel qu'il était aujourd'hui."
+            "value" : "Remercie ton corps d’avoir accueilli cette expérience, tel qu’il est aujourd’hui."
           }
         },
         "it" : {
@@ -1615,7 +1615,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Il n'y a rien à changer ou à réparer immédiatement—reste simplement présent avec ton toucher et ta respiration."
+            "value" : "Il n’y a rien à changer ou à réparer tout de suite ; sois simplement présent(e) avec ton toucher et ta respiration."
           }
         },
         "it" : {
@@ -1660,7 +1660,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cette position est très pratique, et tu peux l'utiliser quand tu veux, n'importe où, pour te sentir soutenu."
+            "value" : "Cette posture est précieuse : tu peux l’adopter à tout moment, où que tu sois,\npour retrouver un sentiment de soutien et de sécurité."
           }
         },
         "it" : {
@@ -1682,7 +1682,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Essaie de suivre mes gestes, mais souviens-toi que tu peux aller à ton propre rythme. Il n'y a pas de précipitation."
+            "value" : "Tu peux suivre mes gestes si tu le souhaites, mais souviens-toi que tu peux toujours aller à ton propre rythme.\nIl n’y a aucune précipitation, prends le temps dont tu as besoin."
           }
         },
         "it" : {
@@ -1704,7 +1704,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Adopte la position qui te fait te sentir plus calme et serein, en laissant aller tout le reste."
+            "value" : "Choisis la posture qui te fait te sentir le plus serein(e),\net laisse tout le reste s’éloigner doucement."
           }
         },
         "it" : {
@@ -1795,7 +1795,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Que ressens-tu lorsque tu te soutiens doucement, comme le ferait un ami bienveillant ?"
+            "value" : "Que ressens-tu lorsque tu te soutiens ainsi, avec la tendresse d’un(e) ami(e) bienveillant(e) ?"
           }
         },
         "it" : {
@@ -1839,7 +1839,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lorsque tu es prêt, relâche doucement le contact et ramène ton attention à l'espace autour de toi."
+            "value" : "Lorsque tu te sens prêt(e), relâche doucement le contact et ramène ton attention à l’espace qui t’entoure."
           }
         },
         "it" : {
@@ -1861,7 +1861,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Où que cette expérience te mène, tu es en sécurité. Tu es accueilli tel que tu es."
+            "value" : "Où que cette expérience te mène, tu es en sécurité. Tu es accueilli(e) tel(le) que tu es."
           }
         },
         "it" : {
@@ -1930,7 +1930,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vous méritez la bienveillance, surtout de votre part."
+            "value" : "Tu mérites la bienveillance, surtout de ta part."
           }
         },
         "it" : {
@@ -1953,7 +1953,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vous avez terminé la session !  \nVous pouvez être fier de ce que vous avez accompli aujourd'hui."
+            "value" : "Exactement, il est important de se traiter avec bienveillance et de prendre soin de soi."
           }
         },
         "it" : {
@@ -1975,7 +1975,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ton corps possède sa propre sagesse, sachant comment trouver l'équilibre entre ce qui est léger et ce qui est intense."
+            "value" : "Ton corps possède sa propre sagesse et sait naturellement trouver l’équilibre entre ce qui est léger et ce qui est intense."
           }
         },
         "it" : {
@@ -1998,7 +1998,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Votre Session"
+            "value" : "Ta Session"
           }
         },
         "it" : {
