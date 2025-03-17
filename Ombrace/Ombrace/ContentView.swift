@@ -3,8 +3,6 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
     @State private var isSettingsPresented = false
     @AppStorage("username") private var username: String = ""
     var displayUsername: String {
@@ -58,7 +56,6 @@ struct ContentView: View {
                 }
                 
             }
-            .onAppear(perform: addItemIfEmpty)
             .sheet(isPresented: $isSettingsPresented) {
                 SettingsView()
             }
@@ -70,14 +67,6 @@ struct ContentView: View {
         
     }
     
-    private func addItemIfEmpty() {
-        if items.isEmpty {
-            withAnimation {
-                let newItem = Item(timestamp: Date())
-                modelContext.insert(newItem)
-            }
-        }
-    }
     
     private func currentDateFormatted() -> String {
         let formatter = DateFormatter()
@@ -89,6 +78,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }
 

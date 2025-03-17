@@ -65,7 +65,7 @@ class SoundManager {
 
     // 🌍 Ottiene la lingua corrente dell’app
     private func getCurrentLanguage() -> String {
-        let availableLanguages = ["it", "en", "fr", "es"]
+        let availableLanguages = ["it", "en", "fr", "es-419"]
         let preferredLanguage = Bundle.main.preferredLocalizations.first ?? "en"
         return availableLanguages.contains(preferredLanguage) ? preferredLanguage : "en"
     }

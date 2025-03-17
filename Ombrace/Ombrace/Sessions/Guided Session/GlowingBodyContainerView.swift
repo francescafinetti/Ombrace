@@ -11,7 +11,7 @@ struct GlowingBodyContainerView: View {
     @State private var isSoundOn = true
     @State private var sessionCompleted = false
     @State private var showExitConfirmation = false
-    @State private var navigateToContentView = false // 🔹 Per navigare a ContentView
+    @State private var navigateToContentView = false
 
     var instructionVM = InstructionViewModel()
 
@@ -58,6 +58,8 @@ struct GlowingBodyContainerView: View {
                 .padding(.top, 20)
                 .onDisappear {
                     SoundManager.shared.stopSound()
+                    SoundManager.shared.stopGuidedAudio()
+
                 }
                 
                 BodyView(leftPosition: $leftPosition, rightPosition: $rightPosition, scale: $scale, offset: $offset)
@@ -73,10 +75,10 @@ struct GlowingBodyContainerView: View {
             }
             .navigationBarBackButtonHidden(true)
             .navigationDestination(isPresented: $sessionCompleted) {
-                CompletedView() // 🔹 Se la sessione finisce, va a CompletedView
+                CompletedView()
             }
             .navigationDestination(isPresented: $navigateToContentView) {
-                ContentView() // 🔹 Se si esce, va a ContentView
+                ContentView()
             }
         }
     }
@@ -85,7 +87,7 @@ struct GlowingBodyContainerView: View {
         advanceStep()
         if isSoundOn {
             SoundManager.shared.playSelectedSound()
-            SoundManager.shared.playGuidedAudio()  // 🎤 Audio "guided_" della lingua
+            SoundManager.shared.playGuidedAudio()
         }
     }
     

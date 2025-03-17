@@ -64,5 +64,4 @@ struct CardView: View {
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }

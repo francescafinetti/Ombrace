@@ -179,6 +179,16 @@
         }
       }
     },
+    "Cancel" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancella"
+          }
+        }
+      }
+    },
     "Complete" : {
       "comment" : "A button that allows the user to go back to the home screen after completing the session, the button give the idea of had completed it.",
       "localizations" : {
@@ -693,6 +703,16 @@
         }
       }
     },
+    "It's okay to take a break.\nYou can always come back whenever you're ready." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Va bene prendersi una pausa. Puoi tornare non appena ti senti pronto."
+          }
+        }
+      }
+    },
     "It's okay to take a break. \nYou can always come back whenever you're ready." : {
       "localizations" : {
         "es-419" : {
@@ -715,24 +735,12 @@
         }
       }
     },
-    "Leave Session" : {
+    "Leave" : {
       "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Salir de la Sesión"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Quitter la Session"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Abbandona la Sessione"
+            "value" : "Esci"
           }
         }
       }

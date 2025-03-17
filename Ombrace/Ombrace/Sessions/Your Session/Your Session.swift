@@ -53,6 +53,7 @@ struct IntertwinedCirclesView: View {
                 .onDisappear {
                     textTimer?.invalidate()
                     SoundManager.shared.stopSound()
+                    SoundManager.shared.stopFreeAudio()
                 }
                 
                 Text(texts[textIndex])
@@ -84,7 +85,7 @@ struct IntertwinedCirclesView: View {
         startTextTimer()
         if isSoundOn {
             SoundManager.shared.playSelectedSound()
-            SoundManager.shared.playFreeAudio()  // 🎧 Parte la musica "free_" della lingua
+            SoundManager.shared.playFreeAudio()
         }
     }
     
@@ -97,7 +98,7 @@ struct IntertwinedCirclesView: View {
             } else {
                 textTimer?.invalidate()
                 withAnimation {
-                    sessionCompleted = true  // 🔹 Finisce e va a CompletedView
+                    sessionCompleted = true
                 }
             }
         }
@@ -106,8 +107,8 @@ struct IntertwinedCirclesView: View {
     private func exitSession() {
         textTimer?.invalidate()
         SoundManager.shared.stopSound()
-        SoundManager.shared.stopFreeAudio()  // 🎧 Parte la musica "free_" della lingua
-        navigateToContentView = true  // 🔹 Torna a ContentView
+        SoundManager.shared.stopFreeAudio()
+        navigateToContentView = true 
     }
 }
 
