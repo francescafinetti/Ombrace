@@ -6,11 +6,45 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F916066D2D881857009FF973 /* OmbraceW Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F91606602D881854009FF973 /* OmbraceW Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F916066B2D881857009FF973 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9BCD9A02D786CA30038F2E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F916065F2D881854009FF973;
+			remoteInfo = "OmbraceW Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F916066E2D881857009FF973 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F916066D2D881857009FF973 /* OmbraceW Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F91606602D881854009FF973 /* OmbraceW Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OmbraceW Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BCD9A82D786CA30038F2E6 /* Ombrace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ombrace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		F91606612D881855009FF973 /* OmbraceW Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "OmbraceW Watch App";
+			sourceTree = "<group>";
+		};
 		F9BCD9AA2D786CA30038F2E6 /* Ombrace */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Ombrace;
@@ -19,6 +53,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F916065D2D881854009FF973 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F9BCD9A52D786CA30038F2E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				F9BCD9AA2D786CA30038F2E6 /* Ombrace */,
+				F91606612D881855009FF973 /* OmbraceW Watch App */,
 				F9BCD9A92D786CA30038F2E6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				F9BCD9A82D786CA30038F2E6 /* Ombrace.app */,
+				F91606602D881854009FF973 /* OmbraceW Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +91,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F916065F2D881854009FF973 /* OmbraceW Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F91606712D881857009FF973 /* Build configuration list for PBXNativeTarget "OmbraceW Watch App" */;
+			buildPhases = (
+				F916065C2D881854009FF973 /* Sources */,
+				F916065D2D881854009FF973 /* Frameworks */,
+				F916065E2D881854009FF973 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F91606612D881855009FF973 /* OmbraceW Watch App */,
+			);
+			name = "OmbraceW Watch App";
+			packageProductDependencies = (
+			);
+			productName = "OmbraceW Watch App";
+			productReference = F91606602D881854009FF973 /* OmbraceW Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F9BCD9A72D786CA30038F2E6 /* Ombrace */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9BCD9B82D786CA40038F2E6 /* Build configuration list for PBXNativeTarget "Ombrace" */;
@@ -55,10 +120,12 @@
 				F9BCD9A42D786CA30038F2E6 /* Sources */,
 				F9BCD9A52D786CA30038F2E6 /* Frameworks */,
 				F9BCD9A62D786CA30038F2E6 /* Resources */,
+				F916066E2D881857009FF973 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F916066C2D881857009FF973 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				F9BCD9AA2D786CA30038F2E6 /* Ombrace */,
@@ -80,6 +147,9 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					F916065F2D881854009FF973 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					F9BCD9A72D786CA30038F2E6 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -103,11 +173,19 @@
 			projectRoot = "";
 			targets = (
 				F9BCD9A72D786CA30038F2E6 /* Ombrace */,
+				F916065F2D881854009FF973 /* OmbraceW Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F916065E2D881854009FF973 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F9BCD9A62D786CA30038F2E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -118,6 +196,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F916065C2D881854009FF973 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F9BCD9A42D786CA30038F2E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,7 +212,75 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F916066C2D881857009FF973 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F916065F2D881854009FF973 /* OmbraceW Watch App */;
+			targetProxy = F916066B2D881857009FF973 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		F916066F2D881857009FF973 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OmbraceW Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = E73CXZ7E4M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = OmbraceW;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = org.academy.developer.fran.Ombrace;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.academy.developer.fran.Ombrace.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		F91606702D881857009FF973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OmbraceW Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = E73CXZ7E4M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = OmbraceW;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = org.academy.developer.fran.Ombrace;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.academy.developer.fran.Ombrace.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
 		F9BCD9B62D786CA40038F2E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -256,7 +409,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ombrace/Preview Content\"";
-				DEVELOPMENT_TEAM = Z5DMH5698Z;
+				DEVELOPMENT_TEAM = E73CXZ7E4M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Questa app utilizza la fotocamera per il tracciamento delle mani.";
@@ -289,7 +442,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ombrace/Preview Content\"";
-				DEVELOPMENT_TEAM = Z5DMH5698Z;
+				DEVELOPMENT_TEAM = E73CXZ7E4M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Questa app utilizza la fotocamera per il tracciamento delle mani.";
@@ -316,6 +469,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F91606712D881857009FF973 /* Build configuration list for PBXNativeTarget "OmbraceW Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F916066F2D881857009FF973 /* Debug */,
+				F91606702D881857009FF973 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F9BCD9A32D786CA30038F2E6 /* Build configuration list for PBXProject "Ombrace" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
