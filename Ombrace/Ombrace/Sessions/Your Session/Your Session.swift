@@ -9,7 +9,7 @@ struct IntertwinedCirclesView: View {
     @State private var isSoundOn = true
     @State private var sessionCompleted = false
     @State private var showExitConfirmation = false
-    @State private var navigateToContentView = false  // Variabile per navigare a ContentView
+    @State private var navigateToContentView = false  
 
     var body: some View {
         NavigationStack {
@@ -84,6 +84,7 @@ struct IntertwinedCirclesView: View {
         startTextTimer()
         if isSoundOn {
             SoundManager.shared.playSelectedSound()
+            SoundManager.shared.playFreeAudio()  // 🎧 Parte la musica "free_" della lingua
         }
     }
     
@@ -105,6 +106,7 @@ struct IntertwinedCirclesView: View {
     private func exitSession() {
         textTimer?.invalidate()
         SoundManager.shared.stopSound()
+        SoundManager.shared.stopFreeAudio()  // 🎧 Parte la musica "free_" della lingua
         navigateToContentView = true  // 🔹 Torna a ContentView
     }
 }

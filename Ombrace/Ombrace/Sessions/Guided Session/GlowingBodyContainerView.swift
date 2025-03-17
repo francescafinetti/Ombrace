@@ -85,6 +85,7 @@ struct GlowingBodyContainerView: View {
         advanceStep()
         if isSoundOn {
             SoundManager.shared.playSelectedSound()
+            SoundManager.shared.playGuidedAudio()  // 🎤 Audio "guided_" della lingua
         }
     }
     
@@ -127,6 +128,8 @@ struct GlowingBodyContainerView: View {
 
     private func endSession() {
         SoundManager.shared.stopSound()
+        SoundManager.shared.stopGuidedAudio() 
+
         withAnimation {
             sessionCompleted = true
         }
