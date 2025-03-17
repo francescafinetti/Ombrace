@@ -16,15 +16,12 @@ struct SettingsView: View {
     @AppStorage("selectedSound") private var selectedSound: String = "None"
     @State private var isSoundMenuExpanded: Bool = false
     
-    let soundOptions = [
-        NSLocalizedString("None", comment: "Button option in sound settings, no sound selected, visible in the sound picker"),
-        NSLocalizedString("Meditation", comment: "Button option in sound settings for meditation sound, visible in the sound picker"),
-        NSLocalizedString("Melody", comment: "Button option in sound settings for melody sound, visible in the sound picker"),
-        NSLocalizedString("Piano", comment: "Button option in sound settings for piano sound, visible in the sound picker"),
-        NSLocalizedString("Relaxing", comment: "Button option in sound settings for relaxing sound, visible in the sound picker"),
-        NSLocalizedString("Yoga", comment: "Button option in sound settings for yoga sound, visible in the sound picker")
-    ]
+    @AppStorage("voiceEnabled") private var voiceEnabled: Bool = true
+
+  
     
+    let soundOptions = ["None", "Meditation", "Melody", "Piano", "Relaxing", "Yoga"]
+
     
     var body: some View {
         NavigationStack {
@@ -42,7 +39,7 @@ struct SettingsView: View {
                         DisclosureGroup(
                             isExpanded: $isSoundMenuExpanded,
                             content: {
-                                ForEach(soundOptions, id: \ .self) { sound in
+                                ForEach(soundOptions, id: \.self) { sound in
                                     HStack {
                                         Text(sound)
                                         Spacer()
@@ -73,11 +70,19 @@ struct SettingsView: View {
                     }
                 }
                 
+                Section(header: Text("Voice Settings")) {
+                    Toggle("Voice", isOn: $voiceEnabled)
+                        .tint(Color.accent2)
+                        .onChange(of: voiceEnabled) { _, newValue in
+                            
+                        }
+                }
+
                 
                 Section(header: Text("Notification Settings")) {
                     Toggle("Notification", isOn: $notificationsEnabled)
                         .tint(Color.accent2)
-                        .onChange(of: notificationsEnabled) { ldValue, newValue in
+                        .onChange(of: notificationsEnabled) { _, newValue in
                             if newValue {
                                 requestNotificationPermission()
                             } else {
@@ -101,7 +106,7 @@ struct SettingsView: View {
                             DatePicker("Select Time", selection: $notificationTime, displayedComponents: .hourAndMinute)
                                 .datePickerStyle(WheelDatePickerStyle())
                                 .labelsHidden()
-                                .onChange(of: notificationTime) { oldValue, newValue in
+                                .onChange(of: notificationTime) { _, _ in
                                     if notificationsEnabled {
                                         UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["dailyNotification"])
                                         scheduleNotification(title: "Hey, \(username)! ⏰", body: "Time for your session!", notificationTime: notificationTime)
@@ -111,7 +116,6 @@ struct SettingsView: View {
                     }
                 }
                 
-                
                 Section {
                     NavigationLink(destination: InfoView()) {
                         Text("About")
@@ -119,8 +123,7 @@ struct SettingsView: View {
                 }
             }
             .navigationTitle("Settings")
-            .navigationBarItems(trailing: Button("Done")
-                                {
+            .navigationBarItems(trailing: Button("Done") {
                 UserDefaults.standard.set(username, forKey: "username")
                 UserDefaults.standard.set(selectedLanguage, forKey: "selectedLanguage")
                 presentationMode.wrappedValue.dismiss()
@@ -128,9 +131,7 @@ struct SettingsView: View {
         }
         .accentColor(Color.accent2)
     }
-    
 }
-
 
 #Preview {
     SettingsView()

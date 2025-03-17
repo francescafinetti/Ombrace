@@ -6,10 +6,11 @@ struct IntertwinedCirclesView: View {
     @State private var animate = false
     @State private var textIndex = 0
     @State private var textTimer: Timer?
-    @State private var isSoundOn = true
+    @AppStorage("voiceEnabled") private var voiceEnabled: Bool = true
+    @AppStorage("soundEnabled") private var soundEnabled: Bool = true
     @State private var sessionCompleted = false
     @State private var showExitConfirmation = false
-    @State private var navigateToContentView = false  
+    @State private var navigateToContentView = false
 
     var body: some View {
         NavigationStack {
@@ -26,11 +27,10 @@ struct IntertwinedCirclesView: View {
                             .bold()
                     }
                     .alert("Are you sure you want to leave?", isPresented: $showExitConfirmation) {
-                        Button("Cancel", role: .cancel)
-                        { }
+                        Button("Cancel", role: .cancel) { }
                         Button("Leave", role: .destructive) {
                             exitSession()
-                        } 
+                        }
                     } message: {
                         Text("It's okay to take a break. \nYou can always come back whenever you're ready.")
                     }
@@ -51,9 +51,7 @@ struct IntertwinedCirclesView: View {
                     startSession()
                 }
                 .onDisappear {
-                    textTimer?.invalidate()
-                    SoundManager.shared.stopSound()
-                    SoundManager.shared.stopFreeAudio()
+                    stopSession()
                 }
                 
                 Text(texts[textIndex])
@@ -81,13 +79,27 @@ struct IntertwinedCirclesView: View {
         }
     }
     
+    // MARK: - Avvio e Stop della Sessione
+    
     private func startSession() {
         startTextTimer()
-        if isSoundOn {
+        
+        if soundEnabled {
             SoundManager.shared.playSelectedSound()
+        }
+        
+        if voiceEnabled {
             SoundManager.shared.playFreeAudio()
         }
     }
+    
+    private func stopSession() {
+        textTimer?.invalidate()
+        SoundManager.shared.stopSound()
+        SoundManager.shared.stopFreeAudio()
+    }
+
+    // MARK: - Timer Testo
     
     private func startTextTimer() {
         textTimer = Timer.scheduledTimer(withTimeInterval: 9, repeats: true) { _ in
@@ -104,11 +116,11 @@ struct IntertwinedCirclesView: View {
         }
     }
 
+    // MARK: - Uscita dalla Sessione
+    
     private func exitSession() {
-        textTimer?.invalidate()
-        SoundManager.shared.stopSound()
-        SoundManager.shared.stopFreeAudio()
-        navigateToContentView = true 
+        stopSession()
+        navigateToContentView = true
     }
 }
 

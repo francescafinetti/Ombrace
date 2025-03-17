@@ -880,6 +880,7 @@
     },
     "Meditation" : {
       "comment" : "Button option in sound settings for meditation sound, visible in the sound picker",
+      "extractionState" : "stale",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
@@ -903,6 +904,7 @@
     },
     "Melody" : {
       "comment" : "Button option in sound settings for melody sound, visible in the sound picker",
+      "extractionState" : "stale",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
@@ -948,6 +950,7 @@
     },
     "None" : {
       "comment" : "Button option in sound settings, no sound selected, visible in the sound picker",
+      "extractionState" : "stale",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
@@ -1214,6 +1217,7 @@
     },
     "Piano" : {
       "comment" : "Button option in sound settings for piano sound, visible in the sound picker",
+      "extractionState" : "stale",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
@@ -1237,6 +1241,7 @@
     },
     "Relaxing" : {
       "comment" : "Button option in sound settings for relaxing sound, visible in the sound picker",
+      "extractionState" : "stale",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
@@ -1746,6 +1751,12 @@
         }
       }
     },
+    "Voice" : {
+
+    },
+    "Voice Settings" : {
+
+    },
     "Welcome to Ombrace!" : {
       "comment" : "Ombrace is the name of the app, is a welcoming title\nThe title of the Onboarding, Ombrace is the name of the App",
       "localizations" : {
@@ -1905,6 +1916,7 @@
     },
     "Yoga" : {
       "comment" : "Button option in sound settings for yoga sound, visible in the sound picker",
+      "extractionState" : "stale",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
