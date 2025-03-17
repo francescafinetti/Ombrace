@@ -86,10 +86,15 @@ struct IntertwinedCirclesView: View {
         
         if soundEnabled {
             SoundManager.shared.playSelectedSound()
+        } else {
+            print("❌ Sound disattivato")
         }
         
         if voiceEnabled {
+            print("🎙 Tentativo di avviare Voice")
             SoundManager.shared.playFreeAudio()
+        } else {
+            print("❌ Voice disattivato")
         }
     }
     
