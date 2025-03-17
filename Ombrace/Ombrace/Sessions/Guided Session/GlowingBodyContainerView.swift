@@ -8,7 +8,8 @@ struct GlowingBodyContainerView: View {
     @State private var rightPosition = CGPoint(x: 320, y: 600)
     @State private var scale: CGFloat = 1.0
     @State private var offset: CGSize = .zero
-    @State private var isSoundOn = true
+    @AppStorage("voiceEnabled") private var voiceEnabled: Bool = true
+    @AppStorage("soundEnabled") private var soundEnabled: Bool = true
     @State private var sessionCompleted = false
     @State private var showExitConfirmation = false
     @State private var navigateToContentView = false
@@ -59,7 +60,6 @@ struct GlowingBodyContainerView: View {
                 .onDisappear {
                     SoundManager.shared.stopSound()
                     SoundManager.shared.stopGuidedAudio()
-
                 }
                 
                 BodyView(leftPosition: $leftPosition, rightPosition: $rightPosition, scale: $scale, offset: $offset)
@@ -85,8 +85,12 @@ struct GlowingBodyContainerView: View {
     
     private func startSession() {
         advanceStep()
-        if isSoundOn {
+        
+        if soundEnabled {
             SoundManager.shared.playSelectedSound()
+        }
+        
+        if voiceEnabled {
             SoundManager.shared.playGuidedAudio()
         }
     }
@@ -130,7 +134,7 @@ struct GlowingBodyContainerView: View {
 
     private func endSession() {
         SoundManager.shared.stopSound()
-        SoundManager.shared.stopGuidedAudio() 
+        SoundManager.shared.stopGuidedAudio()
 
         withAnimation {
             sessionCompleted = true
