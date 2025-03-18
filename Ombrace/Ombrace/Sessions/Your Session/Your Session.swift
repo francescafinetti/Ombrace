@@ -8,6 +8,9 @@ struct IntertwinedCirclesView: View {
     @State private var textTimer: Timer?
     @AppStorage("voiceEnabled") private var voiceEnabled: Bool = true
     @AppStorage("soundEnabled") private var soundEnabled: Bool = true
+    @AppStorage("soundVolume") private var soundVolume: Double = 0.5
+    @AppStorage("voiceVolume") private var voiceVolume: Double = 0.5 
+
     @State private var sessionCompleted = false
     @State private var showExitConfirmation = false
     @State private var navigateToContentView = false
@@ -82,27 +85,27 @@ struct IntertwinedCirclesView: View {
     // MARK: - Avvio e Stop della Sessione
     
     private func startSession() {
-        startTextTimer()
-        
-        if soundEnabled {
-            SoundManager.shared.playSelectedSound()
-        } else {
-            print("❌ Sound disattivato")
+            startTextTimer()
+            
+            if soundEnabled {
+                SoundManager.shared.playSelectedSound(volume: soundVolume)
+            } else {
+                print("❌ Sound disattivato")
+            }
+            
+            if voiceEnabled {
+                print("🎙 Tentativo di avviare Voice")
+                SoundManager.shared.playFreeAudio(volume: voiceVolume)
+            } else {
+                print("❌ Voice disattivato")
+            }
         }
         
-        if voiceEnabled {
-            print("🎙 Tentativo di avviare Voice")
-            SoundManager.shared.playFreeAudio()
-        } else {
-            print("❌ Voice disattivato")
+        private func stopSession() {
+            textTimer?.invalidate()
+            SoundManager.shared.stopSound()
+            SoundManager.shared.stopFreeAudio()
         }
-    }
-    
-    private func stopSession() {
-        textTimer?.invalidate()
-        SoundManager.shared.stopSound()
-        SoundManager.shared.stopFreeAudio()
-    }
 
     // MARK: - Timer Testo
     

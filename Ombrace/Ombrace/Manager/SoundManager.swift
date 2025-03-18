@@ -24,7 +24,7 @@ class SoundManager {
 
     // MARK: - Riproduzione Suoni
 
-    func playSound(named soundName: String, fadeInDuration: TimeInterval = 2.0) {
+    func playSound(named soundName: String, volume: Double, fadeInDuration: TimeInterval = 2.0) {
         guard let url = Bundle.main.url(forResource: soundName, withExtension: "mp3") else {
             print("⚠️ Errore: Suono \(soundName) non trovato!")
             return
@@ -34,17 +34,18 @@ class SoundManager {
             print("▶️ Creazione player per \(soundName)")
             audioPlayer = try AVAudioPlayer(contentsOf: url)
             audioPlayer?.numberOfLoops = -1
-            audioPlayer?.volume = 1.0  // 🔹 Volume massimo da subito
+            audioPlayer?.volume = Float(volume) // 🔹 Volume impostato dinamicamente
             audioPlayer?.play()
-            fadeIn(to: 1.0, duration: fadeInDuration, for: audioPlayer)
-            print("✅ Sound in riproduzione: \(soundName)")
+            fadeIn(to: Float(volume), duration: fadeInDuration, for: audioPlayer)
+            print("✅ Sound in riproduzione: \(soundName) con volume \(volume)")
         } catch {
             print("⚠️ Errore nella riproduzione di \(soundName): \(error.localizedDescription)")
         }
     }
-    func playSelectedSound(fadeInDuration: TimeInterval = 2.0) {
+
+    func playSelectedSound(volume: Double, fadeInDuration: TimeInterval = 2.0) {
         let selectedSound = UserDefaults.standard.string(forKey: "selectedSound") ?? "Default"
-        playSound(named: selectedSound, fadeInDuration: fadeInDuration)
+        playSound(named: selectedSound, volume: volume, fadeInDuration: fadeInDuration)
     }
     
     func stopSound() {
@@ -55,9 +56,9 @@ class SoundManager {
         fadeTimer = nil
     }
 
-    func playFreeAudio(fadeInDuration: TimeInterval = 2.0) {
-        print("▶️ Avvio Free Audio")
-        playLocalizedAudio(prefix: "free_", fadeInDuration: fadeInDuration, player: &freePlayer)
+    func playFreeAudio(volume: Double, fadeInDuration: TimeInterval = 2.0) {
+        print("▶️ Avvio Free Audio con volume \(volume)")
+        playLocalizedAudio(prefix: "free_", volume: volume, fadeInDuration: fadeInDuration, player: &freePlayer)
     }
 
     func stopFreeAudio() {
@@ -66,9 +67,9 @@ class SoundManager {
         freePlayer = nil
     }
 
-    func playGuidedAudio(fadeInDuration: TimeInterval = 2.0) {
-        print("▶️ Avvio Guided Audio")
-        playLocalizedAudio(prefix: "guided_", fadeInDuration: fadeInDuration, player: &guidedPlayer)
+    func playGuidedAudio(volume: Double, fadeInDuration: TimeInterval = 2.0) {
+        print("▶️ Avvio Guided Audio con volume \(volume)")
+        playLocalizedAudio(prefix: "guided_", volume: volume, fadeInDuration: fadeInDuration, player: &guidedPlayer)
     }
 
     func stopGuidedAudio() {
@@ -85,7 +86,7 @@ class SoundManager {
         return availableLanguages.contains(preferredLanguage) ? preferredLanguage : "en"
     }
 
-    private func playLocalizedAudio(prefix: String, fadeInDuration: TimeInterval, player: inout AVAudioPlayer?) {
+    private func playLocalizedAudio(prefix: String, volume: Double, fadeInDuration: TimeInterval, player: inout AVAudioPlayer?) {
         let language = getCurrentLanguage()
         let fileName = "\(prefix)\(language)"
         
@@ -98,14 +99,15 @@ class SoundManager {
             print("▶️ Creazione player per \(fileName)")
             player = try AVAudioPlayer(contentsOf: url)
             player?.numberOfLoops = -1
-            player?.volume = 1.0  // 🔹 Volume massimo da subito
+            player?.volume = Float(volume)  // 🔹 Volume dinamico impostato prima della riproduzione
             player?.play()
-            fadeIn(to: 1.0, duration: fadeInDuration, for: player)
-            print("✅ Free Audio in riproduzione: \(fileName)")
+            fadeIn(to: Float(volume), duration: fadeInDuration, for: player)
+            print("✅ Audio in riproduzione: \(fileName) con volume \(volume)")
         } catch {
             print("⚠️ Errore nella riproduzione di \(fileName): \(error.localizedDescription)")
         }
     }
+
     private func fadeIn(to targetVolume: Float, duration: TimeInterval, for player: AVAudioPlayer?) {
         let fadeSteps = 20
         let stepTime = duration / Double(fadeSteps)

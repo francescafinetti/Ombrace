@@ -13,6 +13,8 @@ struct GlowingBodyContainerView: View {
     @State private var sessionCompleted = false
     @State private var showExitConfirmation = false
     @State private var navigateToContentView = false
+    @AppStorage("soundVolume") private var soundVolume: Double = 0.5
+    @AppStorage("voiceVolume") private var voiceVolume: Double = 0.5
 
     var instructionVM = InstructionViewModel()
 
@@ -87,13 +89,16 @@ struct GlowingBodyContainerView: View {
         advanceStep()
         
         if soundEnabled {
-            SoundManager.shared.playSelectedSound()
+            SoundManager.shared.playSelectedSound(volume: soundVolume)
         }
         
         if voiceEnabled {
-            SoundManager.shared.playGuidedAudio()
+            SoundManager.shared.playGuidedAudio(volume: voiceVolume)
         }
     }
+    
+    
+
     
     private func advanceStep() {
         if activeStep < instructionVM.instructions.count - 1 {

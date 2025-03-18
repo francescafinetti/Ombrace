@@ -13,15 +13,14 @@ struct SettingsView: View {
     @State private var showingLanguagePicker = false
     
     @AppStorage("soundEnabled") private var soundEnabled: Bool = true
+    @AppStorage("soundVolume") private var soundVolume: Double = 0.5 
     @AppStorage("selectedSound") private var selectedSound: String = "None"
     @State private var isSoundMenuExpanded: Bool = false
     
     @AppStorage("voiceEnabled") private var voiceEnabled: Bool = true
+    @AppStorage("voiceVolume") private var voiceVolume: Double = 0.5
 
-  
-    
     let soundOptions = ["None", "Meditation", "Melody", "Piano", "Relaxing", "Yoga"]
-
     
     var body: some View {
         NavigationStack {
@@ -67,18 +66,24 @@ struct SettingsView: View {
                                 }
                             }
                         )
+                        
+                        VStack {
+                            Slider(value: $soundVolume, in: 0...1, step: 0.1)
+                        }
                     }
                 }
                 
                 Section(header: Text("Voice Settings")) {
                     Toggle("Voice", isOn: $voiceEnabled)
                         .tint(Color.accent2)
-                        .onChange(of: voiceEnabled) { _, newValue in
-                            
+                    
+                    if voiceEnabled {
+                        VStack {
+                            Slider(value: $voiceVolume, in: 0...1, step: 0.1)
                         }
+                    }
                 }
 
-                
                 Section(header: Text("Notification Settings")) {
                     Toggle("Notification", isOn: $notificationsEnabled)
                         .tint(Color.accent2)
