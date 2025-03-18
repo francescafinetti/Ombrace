@@ -13,6 +13,7 @@ The app currently includes two session types: **Guided Session** and **Your Sess
 <img alt="SSMainView" src="https://github.com/user-attachments/assets/64d919a9-72bb-47c4-b848-a11fdda807b2" width=200/>
 <img alt="SSGuidedSession" src="https://github.com/user-attachments/assets/0843452e-f0f3-4194-ae25-91d0333a6bb3" width=200/>
 <img alt="SSYourSession" src="https://github.com/user-attachments/assets/81feedb6-4e0e-4fb3-8197-3a3b42131975" width=200/>
+<img alt="Ombrace Watch Home" src="https://github.com/user-attachments/assets/fe64a8f7-a5ea-4012-9c7b-8e79f3d11000" width=200/>
 
 ## Features
 - Choose between two session types: **Guided Session** or **Your Session**
