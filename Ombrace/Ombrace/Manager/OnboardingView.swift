@@ -1,10 +1,3 @@
-//
-//  OnBoardingView.swift
-//  challenge5
-//
-//  Created by Francesca Finetti on 05/03/25.
-//
-
 import SwiftUI
 
 struct OnboardingView: View {
@@ -27,15 +20,10 @@ struct OnboardingView: View {
     }
     
     private var welcomeScreen: some View {
-        
-        
         VStack(spacing: 50) {
-            
             AnimatedCircleView()
                 .frame(maxWidth: .infinity)
                 .padding(.bottom)
-            
-            
             
             Text("Welcome to Ombrace!", comment: "The title of the Onboarding, Ombrace is the name of the App")
                 .font(.title)
@@ -49,8 +37,6 @@ struct OnboardingView: View {
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
-            
-            
             
             Button(action: {
                 withAnimation {
@@ -67,7 +53,6 @@ struct OnboardingView: View {
                     .cornerRadius(12)
                     .shadow(radius: 5)
                     .padding(.horizontal, 40)
-                
             }
         }
         .padding(.top, 50)
@@ -82,20 +67,27 @@ struct OnboardingView: View {
                 .bold()
                 .foregroundColor(.white)
             
-            ZStack {
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.gray.opacity(0.5), lineWidth: 1)
-                    .frame(height: 50)
-                    .padding(.horizontal)
+            ZStack(alignment: .leading) {
+                // Placeholder personalizzato
+                if tempUsername.isEmpty {
+                    Text("Insert name")
+                        .foregroundColor(.gray)
+                        .padding(.leading, 10)
+                }
                 
-                TextField("Insert name", text: $tempUsername)
-                    .padding()
-                    .foregroundColor(.white)
+                TextEditor(text: $tempUsername)
                     .frame(height: 50)
-                    .background(Color.clear)
+                    .padding(.horizontal, 10)
+                    .background(Color.black.opacity(0.2))
                     .cornerRadius(10)
-                    .padding(.horizontal, 30)
+                    .foregroundColor(.white)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.gray.opacity(0.5), lineWidth: 1)
+                    )
+                    .scrollContentBackground(.hidden) // Evita sfondi strani su iOS 16+
             }
+            .frame(height: 50)
             .padding(.horizontal)
             
             Spacer()
@@ -136,4 +128,3 @@ struct OnboardingView: View {
 #Preview {
     OnboardingView()
 }
-

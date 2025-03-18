@@ -9,11 +9,27 @@ struct IntertwinedCirclesView: View {
     @AppStorage("voiceEnabled") private var voiceEnabled: Bool = true
     @AppStorage("soundEnabled") private var soundEnabled: Bool = true
     @AppStorage("soundVolume") private var soundVolume: Double = 0.5
-    @AppStorage("voiceVolume") private var voiceVolume: Double = 0.5 
+    @AppStorage("voiceVolume") private var voiceVolume: Double = 0.5
 
     @State private var sessionCompleted = false
     @State private var showExitConfirmation = false
     @State private var navigateToContentView = false
+
+    private func getCurrentLanguage() -> String {
+        let preferredLanguage = Locale.preferredLanguages.first ?? "en"
+        if preferredLanguage.starts(with: "it") {
+            return "it"
+        } else if preferredLanguage.starts(with: "fr") {
+            return "fr"
+        } else if preferredLanguage.starts(with: "es") {
+            return "es-419"
+        }
+        return "en"
+    }
+
+    private var currentTexts: [(text: LocalizedStringKey, duration: TimeInterval)] {
+        return textsByLanguage[getCurrentLanguage(), default: textsByLanguage["en"]!]
+    }
 
     var body: some View {
         NavigationStack {
@@ -57,7 +73,7 @@ struct IntertwinedCirclesView: View {
                     stopSession()
                 }
                 
-                Text(texts[textIndex])
+                Text(currentTexts[textIndex].text) // 🔹 Usa currentTexts per il testo corretto
                     .foregroundColor(.white)
                     .font(.system(size: min(UIScreen.main.bounds.width * 0.05, 18), weight: .semibold, design: .rounded))
                     .multilineTextAlignment(.center)
@@ -85,47 +101,61 @@ struct IntertwinedCirclesView: View {
     // MARK: - Avvio e Stop della Sessione
     
     private func startSession() {
-            startTextTimer()
-            
-            if soundEnabled {
-                SoundManager.shared.playSelectedSound(volume: soundVolume)
-            } else {
-                print("❌ Sound disattivato")
-            }
-            
-            if voiceEnabled {
-                print("🎙 Tentativo di avviare Voice")
-                SoundManager.shared.playFreeAudio(volume: voiceVolume)
-            } else {
-                print("❌ Voice disattivato")
-            }
-        }
-        
-        private func stopSession() {
-            textTimer?.invalidate()
-            SoundManager.shared.stopSound()
-            SoundManager.shared.stopFreeAudio()
+        startTextTimer()
+
+        if soundEnabled {
+            SoundManager.shared.playSelectedSound(volume: soundVolume)
+        } else {
+            print("❌ Sound disattivato")
         }
 
+        if voiceEnabled {
+            print("🎙 Tentativo di avviare Voice")
+            SoundManager.shared.playFreeAudio(volume: voiceVolume)
+        } else {
+            print("❌ Voice disattivato")
+        }
+    }
+
+    private func stopSession() {
+        textTimer?.invalidate()
+        SoundManager.shared.stopSound()
+        SoundManager.shared.stopFreeAudio()
+    }
+
     // MARK: - Timer Testo
-    
     private func startTextTimer() {
-        textTimer = Timer.scheduledTimer(withTimeInterval: 9, repeats: true) { _ in
-            if textIndex < texts.count - 1 {
-                withAnimation {
-                    textIndex += 1
-                }
-            } else {
-                textTimer?.invalidate()
+        guard textIndex < currentTexts.count else {
+            textTimer?.invalidate()
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 withAnimation {
                     sessionCompleted = true
                 }
             }
+            return
+        }
+
+        let duration = currentTexts[textIndex].duration
+
+        textTimer = Timer.scheduledTimer(withTimeInterval: duration, repeats: false) { _ in
+            if textIndex < currentTexts.count - 1 {
+                withAnimation {
+                    textIndex += 1
+                    startTextTimer()
+                }
+            } else {
+                textTimer?.invalidate()
+
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    withAnimation {
+                        sessionCompleted = true
+                    }
+                }
+            }
         }
     }
-
     // MARK: - Uscita dalla Sessione
-    
     private func exitSession() {
         stopSession()
         navigateToContentView = true

@@ -91,6 +91,15 @@
         }
       }
     },
+    "Accorde-toi le temps d’écouter ce que ton corps a à te dire aujourd’hui." : {
+
+    },
+    "Agradece a tu cuerpo por acoger esta experiencia, tal como pudo ser hoy." : {
+
+    },
+    "Ahora, sin forzar nada, nota si hay alguna parte que se siente tensa, cansada o pesada." : {
+
+    },
     "Allow yourself to enjoy this space of calm, knowing that you can always return to it whenever you need." : {
       "localizations" : {
         "es-419" : {
@@ -181,6 +190,18 @@
     },
     "Cancel" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuler"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -211,6 +232,12 @@
           }
         }
       }
+    },
+    "Concediti di godere di questo spazio di calma, sapendo che puoi sempre tornarci quando ne hai bisogno." : {
+
+    },
+    "Concediti il tempo di ascoltare cosa il tuo corpo ti comunica oggi." : {
+
     },
     "Connect with your body and embrace self-kindness. Through guided exercises and mindfulness, you'll build a healthier, more balanced relationship with yourself—at your own pace, without pressure. \n\n You’re in the right place. Let’s begin." : {
       "comment" : "The text of the onboarding",
@@ -257,6 +284,27 @@
           }
         }
       }
+    },
+    "Cuando estés listo, suelta lentamente el contacto y devuelve tu conciencia al espacio que te rodea." : {
+
+    },
+    "Dáte el tiempo para escuchar lo que tu cuerpo te está comunicando hoy." : {
+
+    },
+    "Deja que el aire fluya suavemente y se expanda donde sea necesario." : {
+
+    },
+    "Deja que el calor de tu mano brinde apoyo y seguridad, como un acto de cuidado hacia ti mismo." : {
+
+    },
+    "Dirige doucement ton attention vers la partie de toi qui se sent bien en ce moment, même si ce n’est qu’une petite zone de confort." : {
+
+    },
+    "Dirige suavemente tu atención hacia la parte de ti que se siente bien en este momento, aunque solo sea una pequeña zona de confort." : {
+
+    },
+    "Dondequiera que te lleve esta experiencia, estás a salvo. Eres bienvenido tal como eres." : {
+
     },
     "Done" : {
       "localizations" : {
@@ -613,6 +661,15 @@
         }
       }
     },
+    "Il n’y a rien à changer ou à réparer tout de suite ; sois simplement présent(e) avec ton toucher et ta respiration." : {
+
+    },
+    "Il tuo corpo ha una sua saggezza, sa trovare equilibrio tra ciò che è leggero e ciò che è più intenso." : {
+
+    },
+    "Imagina ofrecerle a esa área la misma calidez y cuidado que le darías a alguien que amas." : {
+
+    },
     "Imagine offering that area the same warmth and care you would give to someone you love." : {
       "localizations" : {
         "es-419" : {
@@ -624,7 +681,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Observe ce qui se passe en toi lorsque tu t’offres ce toucher doux,\ncomme tu le ferais pour quelqu’un que tu aimes."
+            "value" : "Imagine ce qui se passe en toi lorsque tu t’offres ce toucher doux,\ncomme tu le ferais pour quelqu’un que tu aimes."
           }
         },
         "it" : {
@@ -634,6 +691,12 @@
           }
         }
       }
+    },
+    "Imagine offrir à cette zone la même chaleur et la même tendresse que tu donnerais à quelqu’un que tu aimes." : {
+
+    },
+    "Immagina di poter offrire a quella zona la stessa cura e calore che daresti a qualcuno a cui vuoi bene." : {
+
     },
     "Insert Later" : {
       "comment" : "Button text that is below a continue button, allowing the user to continue the onboarding process without entering a name",
@@ -735,8 +798,32 @@
         }
       }
     },
+    "Laisse l’air circuler doucement et se déployer là où c’est nécessaire, sans effort." : {
+
+    },
+    "Laisse la chaleur de ta main apporter soutien et réconfort, comme un acte de soin envers toi-même." : {
+
+    },
+    "Lascia che il calore della tua mano porti sostegno e sicurezza, come un gesto di cura verso di te." : {
+
+    },
+    "Lascia che l’aria entri dolcemente e si espanda dove serve." : {
+
+    },
     "Leave" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salir"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quitter"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -856,6 +943,9 @@
         }
       }
     },
+    "Lorsque tu te sens prêt(e), relâche doucement le contact et ramène ton attention à l’espace qui t’entoure." : {
+
+    },
     "Make soft movements, as if you’re gently caressing yourself with tenderness." : {
       "localizations" : {
         "es-419" : {
@@ -880,7 +970,7 @@
     },
     "Meditation" : {
       "comment" : "Button option in sound settings for meditation sound, visible in the sound picker",
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
@@ -904,7 +994,7 @@
     },
     "Melody" : {
       "comment" : "Button option in sound settings for melody sound, visible in the sound picker",
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
@@ -948,9 +1038,15 @@
         }
       }
     },
+    "No hay nada que cambiar o arreglar de inmediato; simplemente permanece presente con tu toque y tu respiración." : {
+
+    },
+    "Non c’è nulla da cambiare o risolvere subito, semplicemente rimani presente con il tuo tocco e il tuo respiro." : {
+
+    },
     "None" : {
       "comment" : "Button option in sound settings, no sound selected, visible in the sound picker",
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
@@ -1192,6 +1288,12 @@
         }
       }
     },
+    "Ora, senza forzare, nota se c’è una parte che si sente più tesa, stanca o appesantita." : {
+
+    },
+    "Où que cette expérience te mène, tu es en sécurité. Tu es accueilli(e) tel(le) que tu es." : {
+
+    },
     "Our mission is to help you cultivate a healthier connection with your body through self-compassion, body-focused exercises, and mindful practices." : {
       "comment" : "Information about the app",
       "localizations" : {
@@ -1215,9 +1317,21 @@
         }
       }
     },
+    "Ovunque ti porti questa esperienza, sei al sicuro. Sei accolto esattamente così come sei." : {
+
+    },
+    "Permaneces en esta sensación de bienestar por un momento, permitiendo que se expanda como una luz suave dentro de ti." : {
+
+    },
+    "Permets-toi de savourer cet espace de calme, en sachant que tu peux toujours y revenir quand tu en as besoin." : {
+
+    },
+    "Permítete disfrutar de este espacio de calma, sabiendo que siempre puedes regresar a él cuando lo necesites." : {
+
+    },
     "Piano" : {
       "comment" : "Button option in sound settings for piano sound, visible in the sound picker",
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
@@ -1239,9 +1353,27 @@
         }
       }
     },
+    "Porta dolcemente l’attenzione su quella parte di te che in questo momento si sente bene, anche solo un piccolo angolo di comfort." : {
+
+    },
+    "Prenditi un momento per sentire il contatto con il tuo corpo e il tuo respiro." : {
+
+    },
+    "Prenditi un momento per sentire la differenza tra prima e ora, senza aspettative." : {
+
+    },
+    "Prends un moment pour ressentir la différence entre avant et maintenant, sans attentes." : {
+
+    },
+    "Prends un moment pour te connecter à ton corps et à ta respiration." : {
+
+    },
+    "Quando sei pronto, lascia andare il contatto lentamente e torna a sentire l’ambiente intorno a te." : {
+
+    },
     "Relaxing" : {
       "comment" : "Button option in sound settings for relaxing sound, visible in the sound picker",
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
@@ -1262,6 +1394,30 @@
           }
         }
       }
+    },
+    "Remercie ton corps d’avoir accueilli cette expérience, tel qu’il est aujourd’hui." : {
+
+    },
+    "Reste un instant dans cette sensation de bien-être, en la laissant se diffuser comme une lumière douce à l’intérieur de toi." : {
+
+    },
+    "Rimani un momento in questa sensazione di benessere, lasciandola espandere come una luce gentile dentro di te." : {
+
+    },
+    "Ringrazia il tuo corpo per aver accolto questa esperienza, esattamente come poteva oggi." : {
+
+    },
+    "Sans rien forcer, remarque s’il y a une partie de toi qui se sent tendue, fatiguée ou lourde." : {
+
+    },
+    "Se ti fa piacere, prova a spostare dolcemente l’attenzione verso un’altra zona del corpo, magari una che finora non hai considerato." : {
+
+    },
+    "Se ti fa piacere, puoi accompagnare questa sensazione con un tocco leggero, come fosse un abbraccio gentile a te stesso." : {
+
+    },
+    "Se ti va, prova ad avvicinare una mano con gentilezza, senza giudicare quella sensazione." : {
+
     },
     "Select Time" : {
       "localizations" : {
@@ -1306,6 +1462,24 @@
           }
         }
       }
+    },
+    "Si cela te semble juste, tu peux accompagner cette sensation d’un geste doux, comme si tu t’offrais une étreinte bienveillante." : {
+
+    },
+    "Si lo deseas, intenta llevar tu mano a esa área con amabilidad, sin juzgar la sensación." : {
+
+    },
+    "Si se siente bien, intenta mover suavemente tu atención hacia otra parte de tu cuerpo, quizás una que aún no has considerado." : {
+
+    },
+    "Si se siente bien, puedes acompañar esta sensación con un toque suave, como si te estuvieras dando un abrazo gentil." : {
+
+    },
+    "Si tu en ressens l’envie, essaie de déplacer doucement ton attention vers une autre partie de ton corps, peut-être une que tu n’as pas encore explorée." : {
+
+    },
+    "Si tu le souhaites, pose ta main sur cette zone avec bienveillance, sans juger la sensation." : {
+
     },
     "Sound" : {
       "localizations" : {
@@ -1634,7 +1808,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "⁠“Non c’è nulla da cambiare o risolvere subito, semplicemente rimani presente con il tuo tocco e il tuo respiro"
+            "value" : "⁠Non c’è nulla da cambiare o risolvere subito, semplicemente rimani presente con il tuo tocco e il tuo respiro"
           }
         }
       }
@@ -1684,6 +1858,15 @@
         }
       }
     },
+    "Tómate un momento para sentir la conexión con tu cuerpo y tu respiración." : {
+
+    },
+    "Tómate un momento para sentir la diferencia entre antes y ahora, sin expectativas." : {
+
+    },
+    "Ton corps possède sa propre sagesse et sait naturellement trouver l’équilibre entre ce qui est léger et ce qui est intense." : {
+
+    },
     "Try to follow my gestures, but remember you can go at your own pace. There’s no rush." : {
       "localizations" : {
         "es-419" : {
@@ -1705,6 +1888,9 @@
           }
         }
       }
+    },
+    "Tu cuerpo tiene su propia sabiduría, sabiendo cómo encontrar el equilibrio entre lo que se siente ligero y lo que se siente intenso." : {
+
     },
     "Use the position that makes you feel calmer and more serene, letting go of everything else." : {
       "localizations" : {
@@ -1752,10 +1938,48 @@
       }
     },
     "Voice" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voz"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voix"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voce"
+          }
+        }
+      }
     },
     "Voice Settings" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuración de voz"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paramètres de la voix"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni della Voce"
+          }
+        }
+      }
     },
     "Welcome to Ombrace!" : {
       "comment" : "Ombrace is the name of the app, is a welcoming title\nThe title of the Onboarding, Ombrace is the name of the App",
@@ -1916,7 +2140,7 @@
     },
     "Yoga" : {
       "comment" : "Button option in sound settings for yoga sound, visible in the sound picker",
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
