@@ -86,7 +86,11 @@ struct GlowingBodyContainerView: View {
     }
     
     private func startSession() {
-        advanceStep()
+        let firstInstruction = instructionVM.instructions[activeStep]
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + firstInstruction.duration) {
+            self.advanceStep()
+        }
         
         if soundEnabled {
             SoundManager.shared.playSelectedSound(volume: soundVolume)
@@ -97,25 +101,23 @@ struct GlowingBodyContainerView: View {
         }
     }
     
+
+    
     private func advanceStep() {
         if activeStep < instructionVM.instructions.count - 1 {
-            let instructionDuration = instructionVM.instructions[activeStep].duration
-
-            // 🔹 Il testo rimane visibile per tutta la durata dell'istruzione
-            DispatchQueue.main.asyncAfter(deadline: .now() + instructionDuration - 1.0) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
                 withAnimation(.easeInOut(duration: 1)) {
                     textVisible = false
                 }
             }
 
-            // 🔹 Passa alla prossima istruzione dopo la durata completa
-            DispatchQueue.main.asyncAfter(deadline: .now() + instructionDuration) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
                 activeStep += 1
                 let instruction = instructionVM.instructions[activeStep]
 
                 let leftBodyPoint = instruction.handsposition.left
                 let rightBodyPoint = instruction.handsposition.right
-
+                
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     withAnimation(.easeInOut(duration: 3)) {
                         leftPosition = bodyPointPositions[leftBodyPoint] ?? leftPosition
@@ -128,8 +130,10 @@ struct GlowingBodyContainerView: View {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     textVisible = true
                 }
-
-                advanceStep() // Continua con la prossima istruzione
+            }
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + instructionVM.instructions[activeStep].duration) {
+                advanceStep()
             }
         } else {
             endSession()
