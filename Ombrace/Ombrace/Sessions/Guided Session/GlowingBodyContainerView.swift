@@ -97,24 +97,25 @@ struct GlowingBodyContainerView: View {
         }
     }
     
-    
-
-    
     private func advanceStep() {
         if activeStep < instructionVM.instructions.count - 1 {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+            let instructionDuration = instructionVM.instructions[activeStep].duration
+
+            // 🔹 Il testo rimane visibile per tutta la durata dell'istruzione
+            DispatchQueue.main.asyncAfter(deadline: .now() + instructionDuration - 1.0) {
                 withAnimation(.easeInOut(duration: 1)) {
                     textVisible = false
                 }
             }
 
-            DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+            // 🔹 Passa alla prossima istruzione dopo la durata completa
+            DispatchQueue.main.asyncAfter(deadline: .now() + instructionDuration) {
                 activeStep += 1
                 let instruction = instructionVM.instructions[activeStep]
 
                 let leftBodyPoint = instruction.handsposition.left
                 let rightBodyPoint = instruction.handsposition.right
-                
+
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     withAnimation(.easeInOut(duration: 3)) {
                         leftPosition = bodyPointPositions[leftBodyPoint] ?? leftPosition
@@ -127,10 +128,8 @@ struct GlowingBodyContainerView: View {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     textVisible = true
                 }
-            }
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + instructionVM.instructions[activeStep].duration) {
-                advanceStep()
+
+                advanceStep() // Continua con la prossima istruzione
             }
         } else {
             endSession()
