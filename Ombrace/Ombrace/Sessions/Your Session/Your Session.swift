@@ -1,6 +1,5 @@
 import SwiftUI
 import AVFoundation
-import AppIntents
 
 struct IntertwinedCirclesView: View {
     @State private var animate = false

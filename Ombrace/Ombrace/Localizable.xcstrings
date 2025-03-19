@@ -1,6 +1,15 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "¿Cómo se siente esta sensación? Quédate un momento y vívela." : {
+
+    },
+    "¿Qué sientes cuando te apoyas suavemente, como lo haría un amigo amable?" : {
+
+    },
+    "¿Qué sucede en tu cuerpo y mente cuando te ofreces un toque suave, como lo harías con un amigo?" : {
+
+    },
     "4 MIN" : {
       "localizations" : {
         "es-419" : {
@@ -91,10 +100,31 @@
         }
       }
     },
+    "Accompagne chaque mouvement de douceur, comme si tu te caressais avec la plus grande tendresse." : {
+
+    },
     "Accorde-toi le temps d’écouter ce que ton corps a à te dire aujourd’hui." : {
 
     },
+    "Accorde-toi un petit serrage, comme si tu t’offrais un câlin doux et réconfortant." : {
+
+    },
     "Agradece a tu cuerpo por acoger esta experiencia, tal como pudo ser hoy." : {
+
+    },
+    "Ahora mueve lentamente tus manos hacia abajo, hasta tus bíceps, dejando que tus manos derecha e izquierda deslicen por tus brazos, a tu propio ritmo." : {
+
+    },
+    "Ahora te invito a intentarlo por ti mismo, explorando el movimiento y sintiendo lo que te ayuda a sentirte mejor." : {
+
+    },
+    "Ahora, mueve lentamente ambas manos hacia abajo por tus brazos, juntándolas como si quisieras unir los corazones de tus manos." : {
+
+    },
+    "Ahora, mueve lentamente tu mano izquierda hacia tu hombro derecho, como si quisieras acunarte suavemente con el toque." : {
+
+    },
+    "Ahora, mueve tu mano izquierda sobre tu corazón y tu mano derecha sobre tu estómago, como si estuvieras apreciando estos dos espacios importantes de tu cuerpo." : {
 
     },
     "Ahora, sin forzar nada, nota si hay alguna parte que se siente tensa, cansada o pesada." : {
@@ -169,6 +199,9 @@
         }
       }
     },
+    "Calmement, descends encore tes mains vers tes coudes. Si tu le souhaites, tu peux bouger doucement tes pouces, explorant la sensation de ce contact, en toute curiosité." : {
+
+    },
     "Calmly, move both hands toward your elbows." : {
       "localizations" : {
         "es-419" : {
@@ -213,7 +246,28 @@
         }
       }
     },
+    "Cette posture est précieuse : tu peux l’adopter à tout moment, où que tu sois, pour retrouver un sentiment de soutien et de sécurité." : {
+
+    },
+    "Choisis la posture qui te fait te sentir le plus serein(e), et laisse tout le reste s’éloigner doucement." : {
+
+    },
     "Come ti sembra questa sensazione? Resta un momento a percepirla." : {
+
+    },
+    "Comencemos juntos, tomando un momento para escuchar. Asegúrate de que tu cuerpo se sienta cómodo y listo para seguir el movimiento." : {
+
+    },
+    "Comienza llevando suavemente tu mano izquierda a tu mejilla derecha, como si quisieras acariciar suavemente tu rostro con la palma de tu mano." : {
+
+    },
+    "Commence en amenant doucement ta main gauche sur ta joue droite, comme si tu caressais délicatement ton visage avec la paume de ta main." : {
+
+    },
+    "Commençons ensemble, en prenant un instant pour écouter. Assure-toi que ton corps se sente à l’aise et prêt à suivre le mouvement, sans effort." : {
+
+    },
+    "Comment te sens-tu avec cette sensation ? Prends le temps de rester dans cette posture, d’accueillir ce qui se présente." : {
 
     },
     "Complete" : {
@@ -238,6 +292,9 @@
           }
         }
       }
+    },
+    "Con calma, mueve ambas manos hacia tus codos." : {
+
     },
     "Con calma, muovi entrambe le mani verso i gomiti." : {
 
@@ -306,6 +363,9 @@
     "Dáte el tiempo para escuchar lo que tu cuerpo te está comunicando hoy." : {
 
     },
+    "Dáte un pequeño apretón, como si te estuvieras ofreciendo un abrazo suave con amor." : {
+
+    },
     "Datti una piccola stretta, come un abbraccio gentile che ti offri con amore." : {
 
     },
@@ -346,6 +406,9 @@
         }
       }
     },
+    "Écoute ce que ton corps te murmure, et fais-lui confiance : il possède sa propre sagesse." : {
+
+    },
     "Enter your name" : {
       "localizations" : {
         "es-419" : {
@@ -367,6 +430,12 @@
           }
         }
       }
+    },
+    "Escucha lo que tu cuerpo te está diciendo, confiando en su sabiduría." : {
+
+    },
+    "Esta posición es muy práctica, y puedes usarla siempre que quieras, en cualquier lugar, para sentirte apoyado." : {
+
     },
     "Fai dei movimenti delicati, come se stessi accarezzando te stesso con dolcezza." : {
 
@@ -459,6 +528,9 @@
           }
         }
       }
+    },
+    "Haz movimientos suaves, como si te estuvieras acariciando con ternura." : {
+
     },
     "Hello, %@" : {
       "comment" : "Title of the app, it give a greeting to the the user as Hello, UserName",
@@ -796,6 +868,9 @@
         }
       }
     },
+    "Intenta seguir mis gestos, pero recuerda que puedes ir a tu propio ritmo. No hay prisa." : {
+
+    },
     "It's okay to take a break.\nYou can always come back whenever you're ready." : {
       "localizations" : {
         "it" : {
@@ -827,6 +902,9 @@
           }
         }
       }
+    },
+    "Je t’invite maintenant à explorer ces gestes par toi-même, en découvrant ce qui t’apporte le plus de calme et de réconfort." : {
+
     },
     "Laisse l’air circuler doucement et se déployer là où c’est nécessaire, sans effort." : {
 
@@ -973,6 +1051,12 @@
         }
       }
     },
+    "Lleva tu atención al latido de tu corazón, dejando que tu respiración te guíe." : {
+
+    },
+    "Lorsque tu es prêt(e), fais glisser lentement tes mains vers tes biceps, en laissant chaque mouvement être porté par la douceur et l’attention." : {
+
+    },
     "Lorsque tu te sens prêt(e), relâche doucement le contact et ramène ton attention à l’espace qui t’entoure." : {
 
     },
@@ -1067,6 +1151,9 @@
           }
         }
       }
+    },
+    "Mueve tu mano derecha y colócala suavemente sobre tu hombro izquierdo, para que ambos hombros estén apoyados por tus manos." : {
+
     },
     "Muovi la mano destra e appoggiala con dolcezza sulla tua spalla sinistra, così da sentire entrambe le spalle supportate dalle mani." : {
 
@@ -1277,7 +1364,11 @@
         }
       }
     },
+    "Observe ce qui se passe en toi lorsque tu t’offres ce toucher doux, comme tu le ferais pour quelqu’un que tu aimes." : {
+
+    },
     "Opens the guided session with animations and sounds." : {
+      "extractionState" : "stale",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
@@ -1300,6 +1391,7 @@
       }
     },
     "Opens the interactive session." : {
+      "extractionState" : "stale",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
@@ -1395,6 +1487,9 @@
         }
       }
     },
+    "Place maintenant ta main gauche sur ton cœur et ta main droite sur ton ventre, reconnaissant ces deux espaces essentiels de ton corps." : {
+
+    },
     "Porta dolcemente l’attenzione su quella parte di te che in questo momento si sente bene, anche solo un piccolo angolo di comfort." : {
 
     },
@@ -1413,16 +1508,37 @@
     "Prends un moment pour ressentir la différence entre avant et maintenant, sans attentes." : {
 
     },
+    "Prends un moment pour ressentir la manière dont tes deux mains se déplacent ensemble, comme si elles offraient chaleur et soin, avec toute leur bienveillance." : {
+
+    },
     "Prends un moment pour te connecter à ton corps et à ta respiration." : {
 
     },
     "Prova a seguire i miei gesti, ma ricorda che puoi andare al tuo ritmo. Non c’è fretta." : {
 
     },
+    "Puis, amène ta main droite sur ton épaule gauche, offrant à tes deux épaules un soutien tendre et bienveillant." : {
+
+    },
+    "Quand tu es prêt(e), déplace lentement ta main gauche vers ton épaule droite, comme si tu te berçais avec douceur, dans un geste réconfortant." : {
+
+    },
+    "Quand tu es prêt(e), fais glisser lentement tes mains le long de tes bras, en les rapprochant doucement, comme si tu cherchais à unir les cœurs de tes mains." : {
+
+    },
     "Quando sei pronto, lascia andare il contatto lentamente e torna a sentire l’ambiente intorno a te." : {
 
     },
+    "Que ressens-tu lorsque tu te soutiens ainsi, avec la tendresse d’un(e) ami(e) bienveillant(e) ?" : {
+
+    },
+    "Quédate con la sensación de contacto con tu mano, sin prisa. Simplemente observa cómo te hace sentir." : {
+
+    },
     "Questa posizione è molto pratica e puoi usarla quando vuoi, ovunque ti trovi, per sentirti supportato." : {
+
+    },
+    "Ramène ton attention sur le battement de ton cœur, et laisse ta respiration te guider, naturellement." : {
 
     },
     "Relaxing" : {
@@ -1450,6 +1566,9 @@
       }
     },
     "Remercie ton corps d’avoir accueilli cette expérience, tel qu’il est aujourd’hui." : {
+
+    },
+    "Reste avec cette sensation de contact, sans te presser. Observe simplement comment cela te fait te sentir, sans chercher à changer quoi que ce soit." : {
 
     },
     "Reste un instant dans cette sensation de bien-être, en la laissant se diffuser comme une lumière douce à l’intérieur de toi." : {
@@ -1532,10 +1651,19 @@
     "Si lo deseas, intenta llevar tu mano a esa área con amabilidad, sin juzgar la sensación." : {
 
     },
+    "Si lo deseas, puedes cerrar los ojos para concentrarte más en las sensaciones que tu cuerpo está experimentando." : {
+
+    },
+    "Si lo deseas, puedes mover suavemente tus pulgares, explorando la sensación de contacto." : {
+
+    },
     "Si se siente bien, intenta mover suavemente tu atención hacia otra parte de tu cuerpo, quizás una que aún no has considerado." : {
 
     },
     "Si se siente bien, puedes acompañar esta sensación con un toque suave, como si te estuvieras dando un abrazo gentil." : {
+
+    },
+    "Si tu en as envie, tu peux fermer les yeux pour te concentrer pleinement sur les sensations qui émergent." : {
 
     },
     "Si tu en ressens l’envie, essaie de déplacer doucement ton attention vers une autre partie de ton corps, peut-être une que tu n’as pas encore explorée." : {
@@ -1656,6 +1784,7 @@
       }
     },
     "Start Guided Session" : {
+      "extractionState" : "stale",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
@@ -1678,6 +1807,7 @@
       }
     },
     "Start Your Session" : {
+      "extractionState" : "stale",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
@@ -1924,6 +2054,9 @@
     "Ti invito ora a provare da solo, esplorando il movimento e sentendo cosa ti fa star meglio." : {
 
     },
+    "Tómate un momento para sentir cómo se mueven juntas tus dos manos, como si fueran manos suaves que ofrecen calor y cuidado." : {
+
+    },
     "Tómate un momento para sentir la conexión con tu cuerpo y tu respiración." : {
 
     },
@@ -1956,6 +2089,12 @@
       }
     },
     "Tu cuerpo tiene su propia sabiduría, sabiendo cómo encontrar el equilibrio entre lo que se siente ligero y lo que se siente intenso." : {
+
+    },
+    "Tu peux suivre mes gestes si tu le souhaites, mais souviens-toi que tu peux toujours aller à ton propre rythme. Il n’y a aucune précipitation, prends le temps dont tu as besoin." : {
+
+    },
+    "Usa la posición que te haga sentir más tranquilo y sereno, dejando ir todo lo demás." : {
 
     },
     "Usa la posizione che ti fa sentire più calmo e sereno, lasciando andare tutto il resto." : {

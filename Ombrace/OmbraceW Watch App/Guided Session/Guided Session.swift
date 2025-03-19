@@ -33,7 +33,10 @@ struct GuidedSession: View {
                     .foregroundColor(.white)
                     .font(.system(size: 14, weight: .semibold, design: .rounded))
                     .multilineTextAlignment(.center)
-                    .frame(maxWidth: 140)
+                    .frame(maxWidth: 160)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .minimumScaleFactor(0.5)
+                    .lineLimit(nil)
                     .padding()
                     .shadow(color: .white.opacity(0.4), radius: 5, x: 0, y: 2)
                     .transition(.opacity.combined(with: .scale))
@@ -65,12 +68,12 @@ struct GuidedSession: View {
     }
     
     private func startText2Timer() {
-        text2Timer = Timer.scheduledTimer(withTimeInterval: 9, repeats: true) { _ in
+        text2Timer = Timer.scheduledTimer(withTimeInterval: 12, repeats: true) { _ in
             if text2Index < texts2.count - 1 {
                 withAnimation {
                     text2Index += 1
                 }
-                WKInterfaceDevice.current().play(.click) // Piccola vibrazione per segnalare il cambio testo
+                WKInterfaceDevice.current().play(.click)
             } else {
                 text2Timer?.invalidate()
                 HapticManager.shared.stopBreathingHaptic()
