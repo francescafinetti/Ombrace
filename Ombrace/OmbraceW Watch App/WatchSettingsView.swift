@@ -12,13 +12,13 @@ struct WatchSettingsView: View {
     @AppStorage("notificationTime") private var notificationTime: Date = Date()
     @State private var showingDatePicker = false
     let soundOptions = ["None", "Meditation", "Melody", "Piano", "Relaxing", "Yoga"]
-
+    
     var body: some View {
         NavigationStack {
             Form {
                 Section(header: Text("Sound Settings").font(.caption).foregroundColor(.gray)) {
                     Toggle("Sound", isOn: $soundEnabled)
-
+                    
                     if soundEnabled {
                         Picker("Sound Type", selection: $selectedSound) {
                             ForEach(soundOptions, id: \.self) { sound in
@@ -26,7 +26,6 @@ struct WatchSettingsView: View {
                             }
                         }
                         .pickerStyle(.navigationLink)
-
                         Slider(value: $soundVolume, in: 0...1, step: 0.1)
                             .accentColor(.blue)
                     }
@@ -37,10 +36,11 @@ struct WatchSettingsView: View {
                     
                     if voiceEnabled {
                         Slider(value: $voiceVolume, in: 0...1, step: 0.1)
-                            .accentColor(.blue)
+                            .accentColor(.accent2)
+                            .background(Color.clear)
+                        
                     }
                 }
-
                 Section(header: Text("Notification Settings").font(.caption).foregroundColor(.gray)) {
                     Toggle("Notification", isOn: $notificationsEnabled)
                         .onChange(of: notificationsEnabled) { _, newValue in
@@ -50,7 +50,7 @@ struct WatchSettingsView: View {
                                 UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
                             }
                         }
-
+                    
                     if notificationsEnabled {
                         HStack {
                             Text("Notification Time")
@@ -62,7 +62,7 @@ struct WatchSettingsView: View {
                                     .foregroundColor(.accent2)
                             }
                         }
-
+                        
                         if showingDatePicker {
                             DatePicker("Select Time", selection: $notificationTime, displayedComponents: .hourAndMinute)
                                 .datePickerStyle(.wheel)
@@ -79,6 +79,8 @@ struct WatchSettingsView: View {
             }
             .navigationTitle("Settings")
         } .tint(Color.accent2)
+        
+        
     }
     
     func requestNotificationPermission() {
@@ -94,10 +96,10 @@ struct WatchSettingsView: View {
         content.title = title
         content.body = body
         content.sound = UNNotificationSound.default
-
+        
         let triggerDate = Calendar.current.dateComponents([.hour, .minute], from: notificationTime)
         let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: true)
-
+        
         let request = UNNotificationRequest(identifier: "dailyNotification", content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request)
     }

@@ -230,7 +230,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OmbraceW Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = T7UTU5N7V5;
+				DEVELOPMENT_TEAM = E73CXZ7E4M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = OmbraceW;
@@ -263,7 +263,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OmbraceW Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = T7UTU5N7V5;
+				DEVELOPMENT_TEAM = E73CXZ7E4M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = OmbraceW;
@@ -415,7 +415,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ombrace/Preview Content\"";
-				DEVELOPMENT_TEAM = T7UTU5N7V5;
+				DEVELOPMENT_TEAM = E73CXZ7E4M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Questa app utilizza la fotocamera per il tracciamento delle mani.";
@@ -448,7 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ombrace/Preview Content\"";
-				DEVELOPMENT_TEAM = T7UTU5N7V5;
+				DEVELOPMENT_TEAM = E73CXZ7E4M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Questa app utilizza la fotocamera per il tracciamento delle mani.";

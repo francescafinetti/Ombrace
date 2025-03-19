@@ -89,7 +89,6 @@ struct WatchIntertwinedCirclesView: View {
     // MARK: - Avvio e Stop della Sessione
     
     private func startSession() {
-        HapticManager.shared.startBreathingHaptic(intensity: "Medium")
         startTextTimer()
 
         if soundEnabled {
@@ -110,7 +109,6 @@ struct WatchIntertwinedCirclesView: View {
         textTimer?.invalidate()
         SoundManager.shared.stopSound()
         SoundManager.shared.stopFreeAudio()
-        HapticManager.shared.stopBreathingHaptic()
     }
 
     // MARK: - Timer Testo
