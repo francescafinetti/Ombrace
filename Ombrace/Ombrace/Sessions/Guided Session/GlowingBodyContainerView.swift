@@ -104,41 +104,42 @@ struct GlowingBodyContainerView: View {
 
     
     private func advanceStep() {
-        if activeStep < instructionVM.instructions.count - 1 {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-                withAnimation(.easeInOut(duration: 1)) {
-                    textVisible = false
-                }
-            }
-
-            DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
-                activeStep += 1
-                let instruction = instructionVM.instructions[activeStep]
-
-                let leftBodyPoint = instruction.handsposition.left
-                let rightBodyPoint = instruction.handsposition.right
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                    withAnimation(.easeInOut(duration: 3)) {
-                        leftPosition = bodyPointPositions[leftBodyPoint] ?? leftPosition
-                        rightPosition = bodyPointPositions[rightBodyPoint] ?? rightPosition
-                        scale = instruction.scale
-                        offset = instruction.offset
-                    }
-                }
-
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                    textVisible = true
-                }
-            }
+        guard activeStep < instructionVM.instructions.count - 1 else {
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + instructionVM.instructions[activeStep].duration) {
-                advanceStep()
+            DispatchQueue.main.asyncAfter(deadline: .now() + instructionVM.instructions[activeStep - 1].duration) {
+                endSession()
+            };            return
+        }
+        
+        let instruction = instructionVM.instructions[activeStep]
+        let nextInstruction = instructionVM.instructions[activeStep + 1]
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + instruction.duration) {
+            withAnimation(.easeInOut(duration: 1)) {
+                textVisible = false
             }
-        } else {
-            endSession()
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + instruction.duration + 1.0) {
+            activeStep += 1
+            
+            withAnimation(.easeInOut(duration: 3)) {
+                leftPosition = bodyPointPositions[nextInstruction.handsposition.left] ?? leftPosition
+                rightPosition = bodyPointPositions[nextInstruction.handsposition.right] ?? rightPosition
+                scale = nextInstruction.scale
+                offset = nextInstruction.offset
+            }
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + instruction.duration + 2.0) {
+            textVisible = true
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + instruction.duration + 3.0) {
+            advanceStep()
         }
     }
+
 
     private func endSession() {
         SoundManager.shared.stopSound()
