@@ -13,7 +13,7 @@ struct GuidedStartView: View {
                             Text("Guided Session", comment: "Title that welcome the user after selecting Guided Session mode in the menu")
                                 .font(.largeTitle)
                                 .bold()
-                                .multilineTextAlignment(.leading)
+                                .multilineTextAlignment(.leading).frame(width: 200, alignment: .trailing)
                                 .foregroundColor(.white)
                                 .frame(width: 220, alignment: .trailing)
                                 .offset(x: -50)

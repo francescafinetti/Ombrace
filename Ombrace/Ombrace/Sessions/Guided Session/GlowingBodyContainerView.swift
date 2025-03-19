@@ -152,6 +152,7 @@ struct GlowingBodyContainerView: View {
 
     private func exitSession() {
         SoundManager.shared.stopSound()
+        SoundManager.shared.stopGuidedAudio()
         navigateToContentView = true // 🔹 Naviga a ContentView
     }
 }
