@@ -1368,6 +1368,7 @@
 
     },
     "Opens the guided session with animations and sounds." : {
+      "extractionState" : "stale",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
@@ -1390,6 +1391,7 @@
       }
     },
     "Opens the interactive session." : {
+      "extractionState" : "stale",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
@@ -1782,6 +1784,7 @@
       }
     },
     "Start Guided Session" : {
+      "extractionState" : "stale",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
@@ -1804,6 +1807,7 @@
       }
     },
     "Start Your Session" : {
+      "extractionState" : "stale",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {

@@ -128,7 +128,8 @@ struct SettingsView: View {
                 }
             }
             .navigationTitle("Settings")
-            .navigationBarItems(trailing: Button("Done") {
+            .navigationBarItems(trailing: Button("Done")
+                {
                 UserDefaults.standard.set(username, forKey: "username")
                 UserDefaults.standard.set(selectedLanguage, forKey: "selectedLanguage")
                 presentationMode.wrappedValue.dismiss()

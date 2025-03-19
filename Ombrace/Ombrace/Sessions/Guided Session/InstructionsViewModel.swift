@@ -5,10 +5,6 @@
 //  Created by Serena Pia Capasso on 05/03/25.
 //
 
-
-
-
-
 //ho cambiato un po di cose per far andare la durata diversa per ogni lingua, ma non prende le durate per le altre lingue - in INGLESE DURATION VA BENE.
 //non ho provato se francese e spagnolo vanno bene
 
@@ -134,7 +130,9 @@ class InstructionViewModel {
     ]
     
     var instructions: [Instruction] {
-        return instructionsByLanguage[getCurrentLanguage(), default: instructionsByLanguage["en"]!]
+        let language = getCurrentLanguage()
+        
+        return instructionsByLanguage[getCurrentLanguage()] ?? instructionsByLanguage["en"]!
     }
 }
 
