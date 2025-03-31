@@ -1,12 +1,16 @@
 import SwiftUI
+import UserNotifications
 
 struct OnboardingView: View {
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding: Bool = false
     @AppStorage("username") private var username: String = ""
+    
     @State private var isAnimating = false
     @State private var currentPage: Int = 0
     @State private var tempUsername: String = ""
     
+    @State private var showNotificationPrompt = false
+
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
@@ -16,6 +20,17 @@ struct OnboardingView: View {
             } else {
                 nameInputScreen
             }
+        }
+        .alert("Enable Notifications?", isPresented: $showNotificationPrompt) {
+            Button("Enable") {
+                requestNotificationPermission()
+                hasSeenOnboarding = true
+            }
+            Button("Not Now", role: .cancel) {
+                hasSeenOnboarding = true
+            }
+        } message: {
+            Text("Would you like to receive daily reminders to support your wellbeing?")
         }
     }
     
@@ -68,7 +83,6 @@ struct OnboardingView: View {
                 .foregroundColor(.white)
             
             ZStack(alignment: .leading) {
-                // Placeholder personalizzato
                 if tempUsername.isEmpty {
                     Text("Insert name")
                         .foregroundColor(.gray)
@@ -85,7 +99,7 @@ struct OnboardingView: View {
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(Color.gray.opacity(0.5), lineWidth: 1)
                     )
-                    .scrollContentBackground(.hidden) // Evita sfondi strani su iOS 16+
+                    .scrollContentBackground(.hidden)
             }
             .frame(height: 50)
             .padding(.horizontal)
@@ -96,7 +110,7 @@ struct OnboardingView: View {
                 if !tempUsername.isEmpty {
                     username = tempUsername
                 }
-                completeOnboarding()
+                showNotificationPrompt = true
             }) {
                 Text("Continue", comment: "Button text to continue the onboarding process after the user has inserted their name")
                     .frame(maxWidth: .infinity)
@@ -109,7 +123,7 @@ struct OnboardingView: View {
             }
             
             Button(action: {
-                completeOnboarding()
+                showNotificationPrompt = true
             }) {
                 Text("Insert Later", comment: "Button text that is below a continue button, allowing the user to continue the onboarding process without entering a name")
                     .foregroundColor(.gray)
@@ -119,9 +133,15 @@ struct OnboardingView: View {
         }
         .padding()
     }
-    
-    private func completeOnboarding() {
-        hasSeenOnboarding = true
+
+    private func requestNotificationPermission() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            if let error = error {
+                print("❌ Error requesting permission: \(error.localizedDescription)")
+            } else {
+                print(granted ? "✅ Notifications granted" : "🔕 Notifications denied")
+            }
+        }
     }
 }
 

@@ -78,6 +78,35 @@
         }
       }
     },
+    "Abilita Notifiche" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enable Notifications"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activar notificaciones"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activer les notifications"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Abilita Notifiche"
+          }
+        }
+      }
+    },
     "About" : {
       "localizations" : {
         "es-419" : {
@@ -407,6 +436,15 @@
       }
     },
     "Écoute ce que ton corps te murmure, et fais-lui confiance : il possède sa propre sagesse." : {
+
+    },
+    "Enable" : {
+
+    },
+    "Enable Notifications" : {
+
+    },
+    "Enable Notifications?" : {
 
     },
     "Enter your name" : {
@@ -1188,6 +1226,9 @@
         }
       }
     },
+    "Not Now" : {
+
+    },
     "Notification" : {
       "localizations" : {
         "es-419" : {
@@ -1250,6 +1291,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ora della Notifica"
+          }
+        }
+      }
+    },
+    "Notifications Disabled" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notificaciones desactivadas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifications désactivées"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifiche Disattivate"
           }
         }
       }
@@ -1366,6 +1429,28 @@
     },
     "Observe ce qui se passe en toi lorsque tu t’offres ce toucher doux, comme tu le ferais pour quelqu’un que tu aimes." : {
 
+    },
+    "Open Settings" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir configuración"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrir les réglages"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vai alle Impostazioni"
+          }
+        }
+      }
     },
     "Opens the guided session with animations and sounds." : {
       "extractionState" : "stale",
@@ -2054,6 +2139,28 @@
     "Ti invito ora a provare da solo, esplorando il movimento e sentendo cosa ti fa star meglio." : {
 
     },
+    "To enable notifications, go to your app settings." : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para activar las notificaciones, ve a la configuración de la aplicación"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pour activer les notifications, allez dans les réglages de l’application"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per attivare le notifiche, vai nelle impostazioni dell’app."
+          }
+        }
+      }
+    },
     "Tómate un momento para sentir cómo se mueven juntas tus dos manos, como si fueran manos suaves que ofrecen calor y cuidado." : {
 
     },
@@ -2345,6 +2452,9 @@
           }
         }
       }
+    },
+    "Would you like to receive daily reminders to support your wellbeing?" : {
+
     },
     "Yoga" : {
       "comment" : "Button option in sound settings for yoga sound, visible in the sound picker",

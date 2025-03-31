@@ -11,7 +11,6 @@ struct OmbraceApp: App {
     
     init() {
         UIView.appearance().overrideUserInterfaceStyle = .dark
-        setupNotifications()
         print("📢 OmbraceApp avviata!") // Debug
     }
     

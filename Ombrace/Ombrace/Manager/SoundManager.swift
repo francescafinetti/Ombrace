@@ -14,7 +14,7 @@ class SoundManager {
     
     private func configureAudioSession() {
         do {
-            try AVAudioSession.sharedInstance().setCategory(.ambient, mode: .default, options: [.mixWithOthers])
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [.mixWithOthers])
             try AVAudioSession.sharedInstance().setActive(true)
             print("🎵 AVAudioSession configurato correttamente per più suoni")
         } catch {

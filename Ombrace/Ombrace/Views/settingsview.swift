@@ -13,12 +13,14 @@ struct SettingsView: View {
     @State private var showingLanguagePicker = false
     
     @AppStorage("soundEnabled") private var soundEnabled: Bool = true
-    @AppStorage("soundVolume") private var soundVolume: Double = 0.5 
+    @AppStorage("soundVolume") private var soundVolume: Double = 0.5
     @AppStorage("selectedSound") private var selectedSound: String = "None"
     @State private var isSoundMenuExpanded: Bool = false
     
     @AppStorage("voiceEnabled") private var voiceEnabled: Bool = true
     @AppStorage("voiceVolume") private var voiceVolume: Double = 0.5
+
+    @State private var showPermissionAlert = false
 
     let soundOptions = ["None", "Meditation", "Melody", "Piano", "Relaxing", "Yoga"]
     
@@ -128,14 +130,84 @@ struct SettingsView: View {
                 }
             }
             .navigationTitle("Settings")
-            .navigationBarItems(trailing: Button("Done")
-                {
+            .navigationBarItems(trailing: Button("Done") {
                 UserDefaults.standard.set(username, forKey: "username")
                 UserDefaults.standard.set(selectedLanguage, forKey: "selectedLanguage")
                 presentationMode.wrappedValue.dismiss()
             })
+            .onAppear {
+                checkNotificationAuthorizationStatus()
+            }
+            .alert(isPresented: $showPermissionAlert) {
+                Alert(
+                    title: Text("Notifications Disabled"),
+                    message: Text("To enable notifications, go to your app settings."),
+                    primaryButton: .default(Text("Open Settings"), action: {
+                        openAppSettings()
+                    }),
+                    secondaryButton: .cancel(Text("Cancel"))
+                    
+                )
+            }
         }
         .accentColor(Color.accent2)
+    }
+    
+    // 🔐 Verifica reale dei permessi di notifica
+    func checkNotificationAuthorizationStatus() {
+        UNUserNotificationCenter.current().getNotificationSettings { settings in
+            DispatchQueue.main.async {
+                notificationsEnabled = (settings.authorizationStatus == .authorized)
+                print("🔍 Stato permessi notifiche: \(settings.authorizationStatus.rawValue)")
+            }
+        }
+    }
+
+    // 🔔 Richiesta di permesso
+    func requestNotificationPermission() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            DispatchQueue.main.async {
+                if let error = error {
+                    print("Errore nella richiesta di permesso: \(error.localizedDescription)")
+                    notificationsEnabled = false
+                } else if granted {
+                    notificationsEnabled = true
+                    print("✅ Permesso notifiche concesso")
+                } else {
+                    print("❌ Permesso notifiche negato")
+                    notificationsEnabled = false
+                    showPermissionAlert = true
+                }
+            }
+        }
+    }
+
+    // 📅 Programmazione della notifica
+    func scheduleNotification(title: String, body: String, notificationTime: Date) {
+        let content = UNMutableNotificationContent()
+        content.title = NSLocalizedString(title, comment: "")
+        content.body = NSLocalizedString(body, comment: "")
+        content.sound = .default
+
+        let dateComponents = Calendar.current.dateComponents([.hour, .minute], from: notificationTime)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        let request = UNNotificationRequest(identifier: "dailyNotification", content: content, trigger: trigger)
+
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("Errore nella programmazione della notifica: \(error.localizedDescription)")
+            } else {
+                print("✅ Notifica programmata per \(dateComponents.hour ?? 0):\(String(format: "%02d", dateComponents.minute ?? 0))")
+            }
+        }
+    }
+
+    // ⚙️ Apri Impostazioni App
+    func openAppSettings() {
+        guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else { return }
+        if UIApplication.shared.canOpenURL(settingsURL) {
+            UIApplication.shared.open(settingsURL, options: [:], completionHandler: nil)
+        }
     }
 }
 
