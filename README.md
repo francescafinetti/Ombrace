@@ -45,5 +45,4 @@ The app currently includes two session types: **Guided Session** and **Your Sess
 - Julio Sánchez
 - Serena Capasso
 
-## License
-This project is licensed under the MIT License.
+
