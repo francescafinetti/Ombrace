@@ -1,7 +1,7 @@
 import SwiftUI
 import AVFoundation
 
-struct GlowingBodyContainerView: View {
+struct GuidedSession: View {
     @State private var activeStep = 0
     @State private var textVisible = true
     @State private var leftPosition = CGPoint(x: 80, y: 600)
@@ -37,12 +37,13 @@ struct GlowingBodyContainerView: View {
         NavigationStack {
             VStack {
                 HStack {
-                    Spacer()
+                    
                     Button(action: {
                         showExitConfirmation = true
                     }) {
                         Image(systemName: "arrow.forward.circle.fill")
                             .resizable()
+                            .scaleEffect(x: -1, y: 1)
                             .frame(width: 23, height: 23)
                             .foregroundColor(.accent2)
                             .bold()
@@ -55,6 +56,7 @@ struct GlowingBodyContainerView: View {
                     } message: {
                         Text("It's okay to take a break.\nYou can always come back whenever you're ready.")
                     }
+                    Spacer()
                     .padding(10)
                 }
                 .padding(.horizontal)
@@ -158,5 +160,5 @@ struct GlowingBodyContainerView: View {
 }
 
 #Preview {
-    GlowingBodyContainerView()
+    GuidedSession()
 }

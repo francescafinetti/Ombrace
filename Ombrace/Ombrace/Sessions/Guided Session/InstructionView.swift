@@ -30,5 +30,5 @@ struct InstructionView: View {
 }
 
 #Preview {
-    GlowingBodyContainerView()
+    GuidedSession()
 }

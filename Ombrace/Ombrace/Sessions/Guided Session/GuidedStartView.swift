@@ -69,7 +69,7 @@ struct GuidedStartView: View {
             }
         }
         .navigationDestination(isPresented: $navigateToSession) {
-            GlowingBodyContainerView()
+            GuidedSession()
         }
     }
 }

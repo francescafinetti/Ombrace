@@ -138,5 +138,5 @@ class InstructionViewModel {
 
 
 #Preview {
-    GlowingBodyContainerView()
+    GuidedSession()
 }

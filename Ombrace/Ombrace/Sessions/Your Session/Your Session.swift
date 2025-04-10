@@ -34,12 +34,13 @@ struct IntertwinedCirclesView: View {
         NavigationStack {
             VStack {
                 HStack {
-                    Spacer()
+                  
                     Button(action: {
                         showExitConfirmation = true
                     }) {
                         Image(systemName: "arrow.forward.circle.fill")
                             .resizable()
+                            .scaleEffect(x: -1, y: 1)
                             .frame(width: 23, height: 23)
                             .foregroundColor(.accent2)
                             .bold()
@@ -53,6 +54,7 @@ struct IntertwinedCirclesView: View {
                         Text("It's okay to take a break. \nYou can always come back whenever you're ready.")
                     }
                     .padding(10)
+                    Spacer()
                 }
                 .padding(.horizontal)
                 .padding(.top, 10)
