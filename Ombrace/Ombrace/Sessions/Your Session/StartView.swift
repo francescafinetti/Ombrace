@@ -58,6 +58,4 @@ struct StartView: View {
     StartView()
 }
 
-#Preview {
-    ContentView()
-}
+

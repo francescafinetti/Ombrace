@@ -2297,7 +2297,7 @@
       }
     },
     "Welcome to Ombrace!" : {
-      "comment" : "Ombrace is the name of the app, is a welcoming title\nThe title of the Onboarding, Ombrace is the name of the App",
+      "comment" : "Ombrace is the name of the app, is a welcoming title",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
